@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderVideo :videoId="videoId" />
+    <ExpanderVideo :videoId="videoId" :mobile="mobile" />
   </section>
 
   <section class="section-main">
@@ -44,7 +44,8 @@
       return {
         resourcesId: 1488,
         videoId: 2,
-        version: 1
+        version: 1,
+        mobile: false
       }
     },
     created() {

@@ -1,6 +1,6 @@
 <template>
   <div class="video-container">
-    <div class="video-frame">
+    <div class="video-frame" :class="{mobile: mobile}">
       <video :data-res-id="videoId" preload="auto"></video>
     </div>
   </div>
@@ -10,7 +10,8 @@
   export default {
     name: 'ExpanderVideo',
     props: {
-      videoId: { type: Number, required: true }
+      videoId: { type: Number, required: true },
+      mobile: { type: Boolean, required: false }
     }
   }
 </script>
@@ -27,5 +28,12 @@
     display: block;
     width: 100%;
     aspect-ratio: 16/9;
+  }
+  .video-frame {
+    &.mobile {
+      video {
+        aspect-ratio: 9/16;
+      }
+    }
   }
 </style>
