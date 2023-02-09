@@ -31,7 +31,7 @@ function upload(creds) {
   
     s3Params: {
       Bucket: "campaigns-adten-eu",
-      Prefix: "sweden/2022-hyundai-w42",
+      Prefix: "finland/2023-ikea-marimekko-w8",
       ACL: "public-read",
     }
   };

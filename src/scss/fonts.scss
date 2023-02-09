@@ -1,8 +1,18 @@
 @font-face {
-    font-family: 'HelveticaNeue';
-    src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-        url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
+    font-family: 'Noto IKEA Latin';
+    src: url('assets/fonts/NotoIKEALatin-Regular.woff2') format('woff2'),
+        url('assets/fonts/NotoIKEALatin-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Noto IKEA Latin';
+    src: url('assets/fonts/NotoIKEALatin-Bold.woff2') format('woff2'),
+        url('assets/fonts/NotoIKEALatin-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
