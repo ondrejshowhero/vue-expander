@@ -31,7 +31,7 @@ function upload(creds) {
   
     s3Params: {
       Bucket: "campaigns-adten-eu",
-      Prefix: "sweden/2022-hyundai-w42",
+      Prefix: "sweden/2023-hornbach-w6",
       ACL: "public-read",
     }
   };

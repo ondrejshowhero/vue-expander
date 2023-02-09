@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Werk Hornbach';
+    src: url('WerkHornbach-Regular.woff2') format('woff2'),
+        url('WerkHornbach-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ninna';
+    src: url('Ninna-Regular.woff2') format('woff2'),
+        url('Ninna-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
