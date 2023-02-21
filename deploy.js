@@ -1,5 +1,11 @@
-const s3 = require('s3');
-const fs = require('fs')
+const fs = require('fs');
+const path = require('path');
+const async = require('async');
+const AWS = require('aws-sdk');
+const readdir = require('recursive-readdir');
+
+const rootFolder = path.resolve(__dirname, './');
+const uploadFolder = './dist';
 
 async function getCreds() {
   fs.readFile('../../../playadS3credentials.json', 'utf8' , (err, data) => {
@@ -7,43 +13,59 @@ async function getCreds() {
       console.error(err)
       return
     }
-    upload(data)
+    deploy(uploadFolder, data)
+      .then(() => {
+        console.log('task complete');
+        process.exit(0);
+      })
+      .catch((err) => {
+        console.error(err.message);
+        process.exit(1);
+      });
   })
 }
 
-function upload(creds) {
-  s3creds = JSON.parse(creds)
-  let s3Options = {}
-  const client = s3.createClient({
-    maxAsyncS3: 20,     // this is the default
-    s3RetryCount: 3,    // this is the default
-    s3RetryDelay: 1000, // this is the default
-    multipartUploadThreshold: 20971520, // this is the default (20 MB)
-    multipartUploadSize: 15728640, // this is the default (15 MB)
-    s3Options: {
-      ...s3creds,
-      ...s3Options
-    },
+function getFiles(dirPath) {
+  return fs.existsSync(dirPath) ? readdir(dirPath) : [];
+}
+
+async function deploy(upload, s3creds) {
+
+  const s3 = new AWS.S3({
+    signatureVersion: 'v4',
+    ...JSON.parse(s3creds)
   });
 
-  const params = {
-    localDir: "dist",
-  
-    s3Params: {
-      Bucket: "campaigns-adten-eu",
-      Prefix: "sweden/2022-hyundai-w42",
-      ACL: "public-read",
-    }
-  };
-  const uploader = client.uploadDir(params);
-  uploader.on('error', function(err) {
-    console.error("unable to sync:", err.stack);
-  });
-  uploader.on('progress', function() {
-    console.log("progress", uploader.progressAmount, uploader.progressTotal);
-  });
-  uploader.on('end', function() {
-    console.log("done uploading");
+  const filesToUpload = await getFiles(path.resolve(__dirname, upload));
+
+  return new Promise((resolve, reject) => {
+    async.eachOfLimit(filesToUpload, 10, async.asyncify(async (file) => {
+      // The expected directory structure is as follows: [year]/[country]/[project-name]
+      let projectDir = path.basename(__dirname);
+      let countryDir = path.basename(path.resolve(__dirname, '../'));
+      let yearDir = path.basename(path.resolve(__dirname, '../../'));
+      let newPath = `${countryDir}/${yearDir}-${projectDir}`
+      const Key = file.replace(`${rootFolder}/dist`, newPath);
+      console.log(`uploading: [${Key}]`);
+      return new Promise((res, rej) => {
+        s3.upload({
+          Key,
+          Bucket: 'campaigns-adten-eu',
+          Body: fs.readFileSync(file),
+          ACL: "public-read",
+        }, (err) => {
+          if (err) {
+            return rej(new Error(err));
+          }
+          res({ result: true });
+        });
+      });
+    }), (err) => {
+      if (err) {
+        return reject(new Error(err));
+      }
+      resolve({ result: true });
+    });
   });
 }
 
