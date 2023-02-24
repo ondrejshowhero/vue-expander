@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderVideo :videoId="videoId" :mobile="mobile" />
+    <ExpanderVideo :videoId="resourceVideoId" :mobile="mobile" />
   </section>
 
   <section class="section-main">
@@ -43,7 +43,7 @@
     data() {
       return {
         resourcesId: 1488,
-        videoId: 2,
+        resourceVideoId: 2,
         version: 1,
         mobile: false
       }
