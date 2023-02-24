@@ -55,15 +55,11 @@
         width: 100%;
       }
     }
-    .tns-controls {
+    
+    :deep(.tns-controls) {
       outline: 0;
-      @include d {
-        position: absolute;
-        bottom: 2.5rem;
-        left: 13rem;
-        z-index: 10;
-      }
       button {
+        position: absolute;
         height: 1.75rem;
         width: 1.75rem;
         background: none;
@@ -72,23 +68,16 @@
         overflow: hidden;
         border-radius: 50%;
         background-color: $color-2 !important;
-        @include m {
-          position: absolute;
-          top: 8.75rem;
-          z-index: 100;
-        }
-        @include d {
-          height: 3.125rem;
-          width: 3.125rem;
-          transition: .15s;
-        }
+        transform: translate(0, -50%);
         &:first-child {
+          left: 1rem;
           // background: url('../assets/arr-l.svg') no-repeat center center / contain;
           @include m {
             left: .5rem;
           }
         }
         &:last-child {
+          right: 1rem;
           // background: url('../assets/arr-r.svg') no-repeat center center / contain;
           @include m {
             right: .5rem;
@@ -106,6 +95,27 @@
             background-color: transparent !important;
           }
         }
+      }
+    }
+
+    :deep(.tns-nav) {
+      outline: 0;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: .5rem;
+        height: .5rem;
+        margin: 0 .375rem;
+        background: #888;
+        border-radius: 50%;
+      }
+      .tns-nav-active {
+        background: #fff;
       }
     }
   }
