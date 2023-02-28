@@ -109,24 +109,23 @@
   }
 
   .nav {
+    display: none;
     position: absolute;
-    top: 40vw;
+    top: 0;
     z-index: 10;
     width: 4rem;
-    height: 4rem;
-    margin-top: -2rem;
+    height: 100%;
     border: 0;
     overflow: hidden;
     cursor: pointer;
     text-indent: -999em;
-    display: none;
     &.prev {
       left: 0;
-      // background: url('../assets/arr-l.svg') no-repeat center center / 50% auto;
+      // background: url('../assets/arr-l.svg') no-repeat center center / 2rem auto;
     }
     &.next {
       right: 0;
-      // background: url('../assets/arr-r.svg') no-repeat center center / 50% auto;
+      // background: url('../assets/arr-r.svg') no-repeat center center / 2rem auto;
     }
   }
 

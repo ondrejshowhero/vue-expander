@@ -70,30 +70,21 @@
         background-color: $color-2 !important;
         transform: translate(0, -50%);
         &:first-child {
-          left: 1rem;
+          left: .5rem;
           // background: url('../assets/arr-l.svg') no-repeat center center / contain;
-          @include m {
-            left: .5rem;
+          @include d {
+            left: 1rem;
           }
         }
         &:last-child {
-          right: 1rem;
+          right: .5rem;
           // background: url('../assets/arr-r.svg') no-repeat center center / contain;
           @include m {
-            right: .5rem;
+            right: 1rem;
           }
-          @include d {
-            margin-left: 0.625rem;
-          }
-        }
-        &:hover {
-          background-color: darken($color-2, 5%) !important;
         }
         &[disabled] {
-          opacity: .4;
-          &:hover {
-            background-color: transparent !important;
-          }
+          display: none;
         }
       }
     }
