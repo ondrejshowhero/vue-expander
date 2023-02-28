@@ -111,6 +111,7 @@
     border: 0;
     background: none;
     outline: 0 none;
+    cursor: pointer;
   }
 
 </style>
