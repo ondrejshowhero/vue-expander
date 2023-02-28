@@ -43,7 +43,7 @@
     data() {
       return {
         resourcesId: 1488,
-        resourceVideoId: 2,
+        resourcesVideoId: 2,
         version: 1,
         mobile: false
       }
