@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderVideo :videoId="resourceVideoId" :mobile="mobile" />
+    <ExpanderVideo :videoId="resourcesVideoId" :mobile="mobile" />
   </section>
 
   <section class="section-main">
