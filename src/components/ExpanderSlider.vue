@@ -1,9 +1,20 @@
 <template>
   <div class="wrapper">
     <div class="slider" ref="slider">
-      <div class="item" v-for="item in 5" :key="item">
-        <a href="" target="_blank" class="inner" @click="$emit('track', 'test')">
-          <img :src="getImage(item)">
+      <div class="item" v-for="item in items" :key="item">
+        <a href="https://ad.doubleclick.net/ddm/trackclk/N526202.4451786SHOWHEROS/B29276508.360566422;dc_trk_aid=551516635;dc_trk_cid=187783875;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" target="_blank" class="inner" @click="$emit('track', item[5])">
+          <div class="image">
+            <img :src="getImage(item[5])">
+          </div>
+          <div class="info">
+            <h2 class="title">{{item[0]}}</h2>
+            <p class="desc">
+              {{item[6]}}
+            </p>
+          </div>
+          <p class="text">
+            {{item[2]}}
+          </p> 
         </a>
       </div>
     </div>
@@ -16,23 +27,31 @@
   export default {
     name: 'ExpanderSlider',
     emits: ['track'],
+    props: {
+      items: Array,
+      highlighted: Array,
+    },
     mounted() {
       tns({
         container: this.$refs.slider,
         items: 1,
         gutter: 20,
         controls: false,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout: 2000,
+        nav: true,
+        autoplay: false,
         autoplayButtonOutput: false,
         speed: 750,
-        loop: true
+        loop: false,
+        responsive: {
+          480: {
+            disable: true
+          }
+        }
       });
     },
     methods: {
       getImage(image) {
-        return require(`@/assets/${image}`)
+        return require(`@/assets/models/${image}.jpg`)
       }
     }
   }
@@ -48,64 +67,120 @@
 
   .wrapper {
     position: relative;
-    .inner {
-      display: block;
-      img {
-        display: block;
-        width: 100%;
+    padding: 3rem 2.25rem;
+    @include m {
+      padding: 3rem 5rem 5rem;
+      :deep(.tns-ovh) {
+        overflow: visible;
       }
     }
-    .tns-controls {
-      outline: 0;
+    .slider {
       @include d {
-        position: absolute;
-        bottom: 2.5rem;
-        left: 13rem;
-        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        .item {
+          width: 32%;
+        }
       }
-      button {
-        height: 1.75rem;
-        width: 1.75rem;
-        background: none;
-        border: 0;
-        text-indent: -2000%;
-        overflow: hidden;
-        border-radius: 50%;
-        background-color: $color-2 !important;
-        @include m {
-          position: absolute;
-          top: 8.75rem;
-          z-index: 100;
-        }
+    }
+    .inner {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      .info {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: .75rem .75rem 1.5rem;
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
         @include d {
-          height: 3.125rem;
-          width: 3.125rem;
-          transition: .15s;
+          padding: 1.25rem 1.25rem 1.5rem;
         }
-        &:first-child {
-          // background: url('../assets/arr-l.svg') no-repeat center center / contain;
-          @include m {
-            left: .5rem;
-          }
-        }
-        &:last-child {
-          // background: url('../assets/arr-r.svg') no-repeat center center / contain;
-          @include m {
-            right: .5rem;
-          }
+        .title {
+          margin-bottom: .25rem;
+          font-size: .875rem;
           @include d {
-            margin-left: 0.625rem;
+            margin-bottom: .5rem;
+            font-size: 1.125rem;
           }
         }
-        &:hover {
-          background-color: darken($color-2, 5%) !important;
-        }
-        &[disabled] {
-          opacity: .4;
-          &:hover {
-            background-color: transparent !important;
+        .desc {
+          font-size: 1.125rem;
+          line-height: 1.1;
+          @include d {
+            font-size: 1.375rem;
+            line-height: 1.3;
           }
         }
+      }
+      .text {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        padding: 2rem .75rem 1rem;
+        font-size: .875rem;
+        font-weight: 300;
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        opacity: 0;
+        transition: opacity .25s;
+        line-height: 1.2;
+        @include d {
+          padding: 2rem 1.25rem 1.25rem;
+          bottom: -100%;
+          font-size: 1rem;
+          transition: .25s;
+          opacity: 1;
+          line-height: 1.3;
+        }
+      }
+      &:hover {
+        .text {
+          bottom: 0;
+        }
+      }
+      @include m {
+        .info {
+          background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 60%);
+        }
+        .image {
+          aspect-ratio: .9;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    .tns-slide-active {
+      @include m {
+        .text {
+          opacity: 1;
+        }
+      }
+    }
+    :deep(.tns-nav) {
+      outline: 0;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: .375rem;
+        height: .375rem;
+        margin: 0 .375rem;
+        background: #fff;
+        border-radius: 50%;
+      }
+      .tns-nav-active {
+        background: #454750;
       }
     }
   }

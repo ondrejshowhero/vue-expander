@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const async = require('async');
+const mime = require('mime-types')
 const AWS = require('aws-sdk');
 const readdir = require('recursive-readdir');
 
@@ -45,7 +46,8 @@ async function deploy(upload, s3creds) {
       let countryDir = path.basename(path.resolve(__dirname, '../'));
       let yearDir = path.basename(path.resolve(__dirname, '../../'));
       let newPath = `${countryDir}/${yearDir}-${projectDir}`
-      const Key = file.replace(`${rootFolder}/dist`, newPath);
+      let mimeType = mime.lookup(file)
+      let Key = file.replace(`${rootFolder}/dist`, newPath);
       console.log(`uploading: [${Key}]`);
       return new Promise((res, rej) => {
         s3.upload({
@@ -53,12 +55,13 @@ async function deploy(upload, s3creds) {
           Bucket: 'campaigns-adten-eu',
           Body: fs.readFileSync(file),
           ACL: "public-read",
+          ContentType: mimeType,
         }, (err) => {
           if (err) {
             return rej(new Error(err));
           }
           res({ result: true });
-        });
+          });
       });
     }), (err) => {
       if (err) {

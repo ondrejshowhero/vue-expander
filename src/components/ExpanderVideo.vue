@@ -28,6 +28,7 @@
     display: block;
     width: 100%;
     aspect-ratio: 16/9;
+    margin: -6.9% 0;
   }
   .video-frame {
     &.mobile {
