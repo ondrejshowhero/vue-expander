@@ -6,6 +6,19 @@
     height: 100%;
 }
 
+@mixin image($size: 1.025, $duration: .3s) {
+    overflow: hidden;
+    img {
+        transition: transform $duration;
+        transform: translate3d(0,0,0);
+    }
+    &:hover {
+        img {
+            transform: scale($size) translate3d(0,0,0);
+        }
+    }
+}
+
 @mixin mobile {
     @media (max-width: 479px) {
         @content;

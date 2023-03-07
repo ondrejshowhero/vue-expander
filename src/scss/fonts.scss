@@ -1,8 +1,24 @@
 @font-face {
-    font-family: 'HelveticaNeue';
-    src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-        url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
+    font-family: 'LocalTapiola';
+    src: url('assets/fonts/LocalTapiola-Regular.woff2') format('woff2'),
+        url('assets/fonts/LocalTapiola-Regular.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'LocalTapiola';
+    src: url('assets/fonts/LocalTapiola-Bold.woff2') format('woff2'),
+        url('assets/fonts/LocalTapiola-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'LocalTapiola';
+    src: url('assets/fonts/LocalTapiola-Extrabold.woff2') format('woff2'),
+        url('assets/fonts/LocalTapiola-Extrabold.woff') format('woff');
+    font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
