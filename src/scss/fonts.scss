@@ -1,8 +1,24 @@
 @font-face {
-    font-family: 'HelveticaNeue';
-    src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-        url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
+    font-family: 'FordAntennaCond';
+    src: url('assets/fonts/ford-antenna-cond-regular.woff2') format('woff2'),
+        url('assets/fonts/ford-antenna-cond-regular.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FordAntennaCond';
+    src: url('assets/fonts/ford-antenna-cond-bold.woff2') format('woff2'),
+        url('assets/fonts/ford-antenna-cond-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FordAntennaCond';
+    src: url('assets/fonts/ford-antenna-cond-medium.woff2') format('woff2'),
+        url('assets/fonts/ford-antenna-cond-medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
