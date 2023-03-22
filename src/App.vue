@@ -5,7 +5,7 @@
   </section>
 
   <section class="section-main">
-    <h1 class="headin">Some heading here</h1>
+    <h1 class="heading">Some heading here</h1>
     <p class="lead">
       Some introductory text is placed here
     </p>
