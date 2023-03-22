@@ -19,8 +19,10 @@
     <ExpanderSlider @track="track" />
   </section>
 
-  <section class="section-countdown">
-    <ExpanderCountdown />
+  <section class="section-footer">
+    <div class="logo">
+    </div> 
+    <a href="" target="_blank" class="cta" @click="track('cta')"></a>
   </section>
 
 
@@ -30,7 +32,6 @@
   import ExpanderVideo from './components/ExpanderVideo.vue'
   import ExpanderScroller from './components/ExpanderScroller.vue'
   import ExpanderSlider from './components/ExpanderSlider.vue'
-  import ExpanderCountdown from './components/ExpanderCountdown.vue'
 
   export default {
     name: 'App',
@@ -120,5 +121,17 @@
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
 
+  .section-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 1rem;
+    background: #000;
+  }
 
 </style>
