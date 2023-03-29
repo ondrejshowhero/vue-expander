@@ -19,11 +19,11 @@
     <ExpanderSlider @track="track" />
   </section>
 
-  <section class="section-footer">
+  <footer class="section-footer">
     <div class="logo">
     </div> 
     <a href="" target="_blank" class="cta" @click="track('cta')"></a>
-  </section>
+  </footer>
 
 
 </template>
@@ -39,7 +39,6 @@
       ExpanderVideo,
       ExpanderScroller,
       ExpanderSlider,
-      ExpanderCountdown,
     },
     data() {
       return {
