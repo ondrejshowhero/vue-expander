@@ -66,7 +66,7 @@
             entry.target.classList.remove('active')
         });
       };
-      let observer = new IntersectionObserver(handleIntersect, {root: rootEl, rootMargin: '0% -45% 0% -45%'})
+      let observer = new IntersectionObserver(handleIntersect, {root: rootEl, rootMargin: '100% -45% 100% -45%'})
       let targets = document.querySelectorAll('.section-scroller .item')
       targets.forEach(target => {
         observer.observe(target)
@@ -91,7 +91,7 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 var(--gap);
+    padding: 0 1rem;
   }
   .item {
     display: block;
@@ -118,7 +118,6 @@
     border: 0;
     overflow: hidden;
     cursor: pointer;
-    text-indent: -999em;
     &.prev {
       left: 0;
       // background: url('../assets/arr-l.svg') no-repeat center center / 2rem auto;
