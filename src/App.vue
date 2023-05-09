@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderVideo :videoId="resourcesVideoId" :mobile="mobile" />
+    <ExpanderResourceSetVideo :videoId="resourcesVideoId" :mobile="mobile" />
   </section>
 
   <section class="section-main">
@@ -9,6 +9,7 @@
     <p class="lead">
       Some introductory text is placed here
     </p>
+    <a href="" target="_blank" @click="track('las-mer')">Läs mer</a>
   </section>
 
   <section class="section-scroller">
@@ -29,14 +30,14 @@
 </template>
 
 <script>
-  import ExpanderVideo from './components/ExpanderVideo.vue'
+  import ExpanderResourceSetVideo from './components/ExpanderResourceSetVideo.vue'
   import ExpanderScroller from './components/ExpanderScroller.vue'
   import ExpanderSlider from './components/ExpanderSlider.vue'
 
   export default {
     name: 'App',
     components: {
-      ExpanderVideo,
+      ExpanderResourceSetVideo,
       ExpanderScroller,
       ExpanderSlider,
     },
@@ -121,16 +122,17 @@
   @import '@/scss/mixins.scss';
 
   .section-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    // position: fixed;
+    // left: 0;
+    // bottom: 0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: .5rem 1rem;
-    background: #000;
+    // width: 100%;
+    height: 4rem;
+    padding: .25rem 1rem;
+    background: #fff;
   }
 
 </style>
