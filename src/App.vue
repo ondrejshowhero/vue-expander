@@ -9,7 +9,7 @@
     <p class="lead">
       Some introductory text is placed here
     </p>
-    <a href="" target="_blank" @click="track('las-mer')">Läs mer</a>
+    <a href="" target="_blank" class="cta" @click="track('las-mer')">Läs mer</a>
   </section>
 
   <section class="section-scroller">
