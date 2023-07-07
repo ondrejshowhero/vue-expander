@@ -86,6 +86,11 @@
     overflow: auto;
     scroll-snap-type: x mandatory;
     padding-bottom: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scroller::-webkit-scrollbar {
+    display: none;
   }
   .items {
     display: inline-flex;
