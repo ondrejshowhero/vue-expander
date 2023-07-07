@@ -36,7 +36,9 @@
           ],
         ],
         leftMost: true,
-        rightMost: false
+        rightMost: false,
+        autoscroll: false,
+        autoscrollSpeed: 2500
       }
     },
     methods: {
@@ -71,6 +73,15 @@
       targets.forEach(target => {
         observer.observe(target)
       });
+
+      if (this.autoscroll) {
+        setInterval(() => {
+          if (this.rightMost)
+            this.$refs.scroller.scrollTo({left: 0, behavior: 'smooth'})
+          else
+            this.scrollToNext()
+        }, this.autoscrollSpeed || 2500)
+      }
     }
   }
 </script>
