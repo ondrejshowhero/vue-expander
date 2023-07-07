@@ -20,10 +20,13 @@
     <ExpanderSlider @track="track" />
   </section>
 
-  <footer class="section-footer">
-    <div class="logo">
-    </div> 
-    <a href="" target="_blank" class="cta" @click="track('cta')"></a>
+  <footer class="section-footer sticky">
+    <div class="container">
+      <a href="" target="_blank" class="logo" @click="track('logo')">
+        <img src="https://showheroes-group.com/app/uploads/2023/03/SH_logo_green.png?qc-size=1718,191" alt="Showheroes group" width="200">
+      </a> 
+      <a href="" target="_blank" class="cta" @click="track('cta')">Read more</a>
+    </div>
   </footer>
 
 
@@ -71,6 +74,13 @@
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
 
+  :root {
+    --footer-height: 2rem;
+    @include d {
+      --footer-height: 4rem;
+    }
+  }
+
   html {
     font-family: $font, sans-serif;
     font-size: 16px;
@@ -93,6 +103,7 @@
     background: $color-bg;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-bottom: var(--footer-height);
   }
 
   img {
@@ -122,17 +133,25 @@
   @import '@/scss/mixins.scss';
 
   .section-footer {
-    // position: fixed;
-    // left: 0;
-    // bottom: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // width: 100%;
-    height: 4rem;
-    padding: .25rem 1rem;
-    background: #fff;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: var(--footer-height);
+      padding: 0 1rem;
+      background: #fff;
+    }
+    &.sticky {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      z-index: 1000;
+      width: 100%;
+      .container {
+        max-width: $width;
+        margin: 0 auto;
+      }
+    }
   }
 
 </style>
