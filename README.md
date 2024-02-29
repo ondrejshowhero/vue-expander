@@ -1,4 +1,4 @@
-# hbo_w43
+# Vue expander template
 
 ## Project setup
 ```
