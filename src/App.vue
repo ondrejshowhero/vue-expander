@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderResourceSetVideo :videoId="resourcesVideoId" :mobile="mobile" />
+    <ExpanderVideo filename="1080.mp4" :autoplay="true" url="" />
   </section>
 
   <section class="section-main">
@@ -33,36 +33,30 @@
 </template>
 
 <script>
-  import ExpanderResourceSetVideo from './components/ExpanderResourceSetVideo.vue'
+  import ExpanderVideo from './components/ExpanderVideo.vue'
   import ExpanderScroller from './components/ExpanderScroller.vue'
   import ExpanderSlider from './components/ExpanderSlider.vue'
 
   export default {
     name: 'App',
     components: {
-      ExpanderResourceSetVideo,
+      ExpanderVideo,
       ExpanderScroller,
       ExpanderSlider,
     },
     data() {
       return {
-        resourcesId: 1488,
-        resourcesVideoId: 2,
-        version: 1,
         mobile: false
       }
     },
     created() {
-      let uri = window.location.search.substring(1)
-      let params = new URLSearchParams(uri)
-      let id = params.get('version')
-      if (id == 2) {
-        this.version = 2
+      if (window.innerWidth < 480) {
+        this.mobile = true
       }
     },
     methods: {
       track(label) {
-        window.ad10Resources?.trackAction(`${this.resourcesId}-${label}`)
+        return label
       },
     },
   }
