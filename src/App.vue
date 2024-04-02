@@ -9,7 +9,7 @@
     <p class="lead">
       Some introductory text is placed here
     </p>
-    <a href="" target="_blank" class="cta">Läs mer</a>
+    <a href="" target="_blank" class="cta">Read more</a>
   </section>
 
   <section class="section-scroller">
@@ -61,7 +61,7 @@
 
 <style lang="scss">
   @import "node_modules/minireset.css/minireset";
-  // @import '@/scss/fonts.scss';
+  @import '@/scss/fonts.scss';
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
 
