@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderResourceSetVideo :videoId="resourcesVideoId" :mobile="mobile" />
+    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="" />
   </section>
 
   <section class="section-main">
@@ -9,23 +9,23 @@
     <p class="lead">
       Some introductory text is placed here
     </p>
-    <a href="" target="_blank" class="cta" @click="track('las-mer')">Läs mer</a>
+    <a href="" target="_blank" class="cta">Läs mer</a>
   </section>
 
   <section class="section-scroller">
-    <ExpanderScroller @track="track" />
+    <ExpanderScroller />
   </section>
      
   <section class="section-slider">
-    <ExpanderSlider @track="track" />
+    <ExpanderSlider />
   </section>
 
   <footer class="section-footer sticky">
     <div class="container">
-      <a href="" target="_blank" class="logo" @click="track('logo')">
-        <img src="https://showheroes-group.com/app/uploads/2023/03/SH_logo_green.png?qc-size=1718,191" alt="Showheroes group" width="200">
+      <a href="" target="_blank" class="logo">
+        <img src="logo.png">
       </a> 
-      <a href="" target="_blank" class="cta" @click="track('cta')">Read more</a>
+      <a href="" target="_blank" class="cta">Read more</a>
     </div>
   </footer>
 
@@ -33,37 +33,28 @@
 </template>
 
 <script>
-  import ExpanderResourceSetVideo from './components/ExpanderResourceSetVideo.vue'
+  import ExpanderVideo from './components/ExpanderVideo.vue'
   import ExpanderScroller from './components/ExpanderScroller.vue'
   import ExpanderSlider from './components/ExpanderSlider.vue'
 
   export default {
     name: 'App',
     components: {
-      ExpanderResourceSetVideo,
+      ExpanderVideo,
       ExpanderScroller,
       ExpanderSlider,
     },
     data() {
       return {
-        resourcesId: 1488,
-        resourcesVideoId: 2,
-        version: 1,
-        mobile: false
+        mobile: false,
+        videoFile: '1080.mp4'
       }
     },
     created() {
-      let uri = window.location.search.substring(1)
-      let params = new URLSearchParams(uri)
-      let id = params.get('version')
-      if (id == 2) {
-        this.version = 2
-      }
-    },
-    methods: {
-      track(label) {
-        window.ad10Resources?.trackAction(`${this.resourcesId}-${label}`)
-      },
+      // if (window.innerWidth < 480) {
+      //   this.mobile = true
+      //   this.videofile = '480.mp4'
+      // }
     },
   }
 </script>
