@@ -23,7 +23,7 @@
   <footer class="section-footer sticky">
     <div class="container">
       <a href="" target="_blank" class="logo">
-        <img src="logo.png">
+        <img src="@/assets/logo.png">
       </a> 
       <a href="" target="_blank" class="cta">Read more</a>
     </div>
@@ -97,7 +97,9 @@
     padding-bottom: var(--footer-height);
   }
 
-  img {
+  img,
+  picture,
+  video {
     display: block;
   }
   a {
