@@ -1,8 +1,35 @@
 @font-face {
-    font-family: 'HelveticaNeue';
-    src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-        url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
+    font-family: 'Ford Antenna';
+    src: url('assets/fonts/FordAntenna-Light.woff2') format('woff2'),
+        url('assets/fonts/FordAntenna-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ford Antenna';
+    src: url('assets/fonts/FordAntenna-Regular.woff2') format('woff2'),
+        url('assets/fonts/FordAntenna-Regular.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ford Antenna';
+    src: url('assets/fonts/FordAntenna-Bold.woff2') format('woff2'),
+        url('assets/fonts/FordAntenna-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ford Antenna Cond';
+    src: url('assets/fonts/ford-antenna-cond-bold.woff2') format('woff2'),
+        url('assets/fonts/ford-antenna-cond-bold.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
