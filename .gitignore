@@ -1,5 +1,3 @@
 node_modules
 .DS_Store
 dist
-src/assets/*
-!src/assets/expander/icons
