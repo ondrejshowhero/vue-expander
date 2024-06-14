@@ -58,7 +58,7 @@
     },
     methods: {
       getImage(image) {
-        return require(`@/assets/images/${image}`)
+        return require(`@/assets/images/${image}.png`)
       }
     }
   }

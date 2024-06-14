@@ -6,7 +6,7 @@
 
   <section class="section-slider">
     <h1 class="heading">Mini Logo™ <span>Decks</span></h1>
-    <!-- <ExpanderSlider /> -->
+    <ExpanderSlider />
   </section>
 
   <section class="section-main" :style="{ backgroundImage: 'url(' + img + ')' }">
@@ -57,13 +57,13 @@
 
 <script>
   import ExpanderVideo from './components/ExpanderVideo.vue'
-  // import ExpanderSlider from './components/ExpanderSlider.vue'
+  import ExpanderSlider from './components/ExpanderSlider.vue'
 
   export default {
     name: 'App',
     components: {
       ExpanderVideo,
-      // ExpanderSlider,
+      ExpanderSlider,
     },
     data() {
       return {
