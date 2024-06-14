@@ -199,6 +199,24 @@
     }
   }
 
+  .cta,
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    border-radius: 624.938rem;
+    cursor: pointer;
+    color: $color-3;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    width: fit-content;
+
+    &:hover {
+      background-color: $color-text;
+    }
+  }
+
   .section-video {
     padding: 0;
   }
@@ -223,9 +241,29 @@
       max-width: 59.375rem;
       align-items: center;
       color: $color-3;
+
+      p {
+        font-size: 1.375rem;
+      }
       
       form {
-        border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-top: 2.5rem;
+
+        input {
+          width: 100%;
+          padding-top: 0.875rem;
+          padding-bottom: 0.875rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          border-radius: 0.75rem;
+          margin-bottom: 1.75rem;
+          background-color: rgba(255, 255, 255, .5);
+          color: $color-text;
+        }
       }
     }
   }
@@ -238,6 +276,10 @@
       flex-direction: column;
       max-width: 65%;
       color: $color-3;
+
+      .content {
+        margin-bottom: 2.5rem;
+      }
     }
   }
 
