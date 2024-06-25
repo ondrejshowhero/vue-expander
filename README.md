@@ -24,3 +24,9 @@ npm run serve
 npm run build
 ```
 6. Compress the content of the `dist` folder (not the folder itself) and upload to the Create platform.
+7. Make sure to push the new branch and all the future updates to git
+```
+git add -A
+git commit -m "Some comment"
+git push
+```
