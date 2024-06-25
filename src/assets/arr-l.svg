@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="23px" viewBox="0 0 44 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3 Copy 2</title>
+    <g id="Expander" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Expander_desktop" transform="translate(-538.000000, -1684.000000)" stroke="#000000" stroke-width="2">
+            <g id="Group-11" transform="translate(540.000000, 1683.000000)">
+                <g id="Group-3-Copy-2" transform="translate(20.055556, 12.500000) scale(-1, 1) translate(-20.055556, -12.500000) translate(0.000000, 2.000000)">
+                    <line x1="-6.9388939e-17" y1="10.5" x2="40" y2="10.5" id="Line"></line>
+                    <polyline id="Line" points="30 -5.55545193e-14 40.1111111 10.5 30 21"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

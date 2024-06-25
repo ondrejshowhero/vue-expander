@@ -182,7 +182,7 @@
   }
 
   .label {
-    padding: .625rem 0 2rem;
+    padding: .625rem 0 .5rem;
     font-size: 1.125rem;
     text-align: center;
   }
