@@ -3,7 +3,7 @@
     <div class="slider" ref="slider">
       <div class="item" v-for="item in 5" :key="item">
         <a href="" target="_blank" class="inner" @click="$emit('track', 'test')">
-          <img :src="getImage(item)" alt="test" />
+          <img :src="getImage(item)">
         </a>
       </div>
     </div>
@@ -16,32 +16,6 @@
   export default {
     name: 'ExpanderSlider',
     emits: ['track'],
-    data() {
-      return {
-        items: [
-          {
-            title: 'Title',
-            image: '@/assets/images/1.png',
-            text: 'Lorem ipsum bla bla blaaa....'
-          },
-          {
-            title: 'Title 2',
-            image: '@/assets/images/2.png',
-            text: 'Lorem ipsum bla bla blaaa.... 2'
-          },
-          {
-            title: 'Title 3',
-            image: '@/assets/images/3.png',
-            text: 'Lorem ipsum bla bla blaaa.... 3'
-          },
-          {
-            title: 'Title 3',
-            image: '@/assets/images/4.png',
-            text: 'Lorem ipsum bla bla blaaa.... 3'
-          }
-        ],
-      }
-    },
     mounted() {
       tns({
         container: this.$refs.slider,
@@ -58,7 +32,7 @@
     },
     methods: {
       getImage(image) {
-        return require(`@/assets/images/${image}.png`)
+        return require(`@/assets/${image}`)
       }
     }
   }
