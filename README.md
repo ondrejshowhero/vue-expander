@@ -3,7 +3,7 @@
 ## Creating a new campaign
 1. Clone the template to your local folder.
 ```
-git clone git@github.com:ondrejshowhero/vue-expander.git [campaign-folder]
+git clone git@github.com:ShowHeroes-Studios/vue-expander.git [campaign-folder]
 ```
 2. Create a new branch with the name of the project (including the delivery market, year and the week number of the campaign).
 ```
