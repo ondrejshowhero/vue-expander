@@ -1,60 +1,52 @@
 <template>
 
   <section class="section-video">
-    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="" />
+    <ExpanderVideo :filename="videoFile" :autoplay="true" :url="url" />
   </section>
 
   <section class="section-main">
-    <h1 class="heading">Some heading here</h1>
-    <p class="lead">
-      Some introductory text is placed here
-    </p>
-    <a href="" target="_blank" class="cta">Read more</a>
+    <a :href="url" target="_blank" class="link">
+      <picture>
+        <source :srcset="imageDesktop" media="(min-width: 480px)" />
+        <img :src="imageMobile" />
+      </picture>
+    </a>
+    <a :href="url" target="_blank" class="cta">
+      <img src="@/assets/cta.png" alt="Köp biljetter">
+    </a>
   </section>
-
-  <section class="section-scroller">
-    <ExpanderScroller />
-  </section>
-     
-  <section class="section-slider">
-    <ExpanderSlider />
-  </section>
-
-  <footer class="section-footer sticky">
-    <div class="container">
-      <a href="" target="_blank" class="logo">
-        <img src="@/assets/logo.png">
-      </a> 
-      <a href="" target="_blank" class="cta">Read more</a>
-    </div>
-  </footer>
-
 
 </template>
 
 <script>
   import ExpanderVideo from './components/ExpanderVideo.vue'
-  import ExpanderScroller from './components/ExpanderScroller.vue'
-  import ExpanderSlider from './components/ExpanderSlider.vue'
 
   export default {
     name: 'App',
     components: {
       ExpanderVideo,
-      ExpanderScroller,
-      ExpanderSlider,
     },
     data() {
       return {
-        mobile: false,
-        videoFile: '1080.mp4'
+        version: 'post',
+        url: 'https://ad.doubleclick.net/ddm/trackclk/N1218306.3993854SHOWHEROES/B32381922.399662644;dc_trk_aid=591774513;dc_trk_cid=219602784;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1'
       }
     },
+    computed: {
+      imageDesktop() {
+        return require(`@/assets/poster-${this.version}-desktop.jpg`)
+      },
+      imageMobile() {
+        return require(`@/assets/poster-${this.version}-mobile.jpg`)
+      },
+      videoFile() {
+        return `${this.version}.mp4`
+      },
+    },
     created() {
-      // if (window.innerWidth < 480) {
-      //   this.mobile = true
-      //   this.videofile = '480.mp4'
-      // }
+      if (window.innerWidth < 480) {
+        this.url = 'https://ad.doubleclick.net/ddm/trackclk/N1218306.3993854SHOWHEROES/B32381922.400092153;dc_trk_aid=591771270;dc_trk_cid=219049825;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1'
+      }
     },
   }
 </script>
@@ -64,13 +56,6 @@
   @import '@/scss/fonts.scss';
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
-
-  :root {
-    --footer-height: 2rem;
-    @include d {
-      --footer-height: 4rem;
-    }
-  }
 
   html {
     font-family: $font, sans-serif;
@@ -125,24 +110,26 @@
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
 
-  .section-footer {
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: var(--footer-height);
-      padding: 0 1rem;
-      background: #fff;
+  .section-main {
+    position: relative;
+    .link {
+      display: block;
     }
-    &.sticky {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      z-index: 1000;
-      width: 100%;
-      .container {
-        max-width: $width;
-        margin: 0 auto;
+    .cta {
+      position: absolute;
+      left: 50%;
+      bottom: 5.185vw;
+      width: 31.481vw;
+      transform: translate(-50%, 0);
+      @include d {
+        left: 66.51vw;
+        transform: none;
+        bottom: 8.541vw;
+        width: 17.7vw;
+        transition: .15s;
+        &:hover {
+          background: rgba(#fff, .2);
+        }
       }
     }
   }
