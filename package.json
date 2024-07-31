@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "vue-cli-service build && node deploy.js"
+    "deploy": "vue-cli-service build && node deploy.js",
+    "tinify": "node tinify.js"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

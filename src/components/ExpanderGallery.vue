@@ -1,25 +1,24 @@
 <template>
   <div class="wrapper">
     <div class="slider" ref="slider">
-      <div class="item" v-for="(item, index) in carouselItems" :key="item">
+      <div class="item" v-for="item in items" :key="item">
         <div class="inner">
           <div class="text">
-            <p class="lead">
-              Top 9: Sønderjyske naturoplevelser
-            </p>
-            <h2 class="title">{{index + 1}}. {{item[0]}}</h2>
+            <h2 class="title">{{item[0]}}</h2>
             <p class="description">
               {{item[1]}}
             </p>
-            <a href="https://www.visitsonderjylland.dk/turist/overnatning/camping?utm_source=web-2022&utm_medium=havas&utm_campaign=camping-22" target="_blank" class="link" :data-track="item[0]" :data-res-action="`1780-${item[3]}`">
-              Læs mere
-            </a>
           </div>
           <div class="image">
             <img :src="getImage(item[2])">
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="items">
+      <button v-for="item, index in items" :key="item" @click="goToSlide(index)" :class="{active: isNavActive(index)}">{{ item[0] }}</button>
     </div>
   </div>
 </template>
@@ -31,169 +30,153 @@
     name: 'ExpanderGallery',
     data() {
       return {
-        carouselItems: [
+        slider: undefined,
+        active: 0,
+        items: [
           [
-            'Aerodynamisk design',
-            'IONIQ 6 inspireras av konceptbilen Prophecy och kännetecknas av rena, enkla linjer och en slank aerodynamisk form som beskrivs som Emotional Efficiency.',
-            'slide-1',
+            'Breeze',
+            'Den friske brisen vi lengter etter på solrike dager.',
+            'breeze.jpg',
           ],
           [
-            'Upp till 610 km räckvidd',
-            'Tack vare en ultralåg luftmotståndskoefficient på endast 0,21 och ett anpassningsbart körsystem kan IONIQ 6 köra upp till 610 km på en enda laddning.',
-            'slide-2',
-            'Slutgiltigt typgodkännande för räckvidd är ännu ej fastställt.',
+            'Mist',
+            'Morgendugg som glitrer i morgengry.',
+            'mist.jpg',
           ],
           [
-            'Innovativa material',
-            'Innovativa och delvis återvunna material har använts vid skapandet av IONIQ 6, bland annat garn som tillverkats av återvunna plastflaskor och marint avfall.',
-            'slide-3',
+            'Pine',
+            'Det magiske fra de skandinaviske skoger.',
+            'pine.jpg',
           ],
           [
-            'Flexibla säten',
-            'Den rymliga interiören gör att passagerarna i framsätet enkelt kan sträcka på benen och koppla av under resan. Framsätena är enkla att justera och kan fällas ner med ett enda knapptryck. ',
-            'slide-4',
+            'Indigo',
+            'Nattemørket som svinner hen ved morgengry.',
+            'indigo.jpg',
           ],
         ]
       }
     },
     mounted() {
-      tns({
+      this.slider = tns({
         container: this.$refs.slider,
         items: 1,
         gutter: 0,
-        controls: true,
+        controls: false,
         nav: false,
-        autoplay: false,
+        autoplay: true,
         autoplayButtonOutput: false,
-        loop: false
+        autoplayTimeout: 4000,
+        loop: true
       });
+      this.slider.events.on('indexChanged', (e) => {
+        this.active = e.index - 1
+      })
     },
     methods: {
       getImage(image) {
-        return require(`@/assets/carousel/${image}.webp`)
+        return require(`@/assets/interior/${image}`)
+      },
+      goToSlide(index) {
+        this.slider.goTo(index)
+      },
+      isNavActive(index) {
+        return this.active === index
       }
     }
   }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
   @import "node_modules/tiny-slider/src/tiny-slider";
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
 
-  .section-slider {
+  .inner {
     position: relative;
-    .inner {
-      position: relative;
+    .title {
+      position: absolute;
+      left: 0;
+      top: 0;
+      padding: 1rem 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: -.015em;
+      text-shadow: 0 0 .5rem rgba(#000, .75);
       @include d {
-        display: flex;
-        .text,
-        .image {
-          width: 50%;
-        }
-      }
-      .text {
-        background: $color-2;
-        padding: 2rem 3rem;
-        @include d {
-          padding: 4rem 5rem 0;
-        }
-      }
-      .lead {
-        margin-bottom: 1.5rem;
-        font-size: .75rem;
-        font-weight: bold; 
-        color: #ADACAC;
-        @include d {
-          font-size: 1rem;
-        }
-      }
-      .title {
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
-        font-weight: bold;
-        @include d {
-          margin-bottom: 1.75rem;
-          font-size: 2.5rem;
-        }
-      }
-      .description {
-        font-size: .875rem;
-        @include d {
-          font-size: 1rem;
-        }
-      }
-      .link {
-        display: inline-block;
-        font-size: .875rem;
-        color: $color-1;
-        text-decoration: underline;
-        transition: .15s;
-        margin-top: 1rem;
-        @include d {
-          position: absolute;
-          left: 5rem;
-          bottom: 3.5rem;
-          font-size: 1rem;
-        }
-        &:hover {
-          color: darken($color-1, 10%);
-        }
+        top: auto;
+        bottom: 0;
+        text-shadow: none;
+        padding: 1.25rem 1.5rem;
       }
     }
-    .tns-controls {
-      outline: 0;
+    .description {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      padding: 0 1rem;
+      bottom: 1.125rem;
+      font-size: .875rem;
+      color: #fff;
       @include d {
+        left: 10.25rem;
+        width: 11.25rem;
+        padding: 0;
+      }
+    }
+  }
+
+  .navigation {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 0;
+    width: 100%;
+    padding: 0 var(--padding);
+    @include d {
+      bottom: 1.75rem;
+      left: 50%;
+      width: 50%;
+      padding: 0 var(--padding) 0 1.5rem;
+    }
+    .items {
+      position: relative;
+      display: flex;
+      justify-content: start;
+      &::after {
+        content: '';
         position: absolute;
-        bottom: 2.5rem;
-        left: 13rem;
-        z-index: 10;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: #aaa;
       }
       button {
-        height: 1.75rem;
-        width: 1.75rem;
-        background: none;
-        border: 0;
-        text-indent: -2000%;
-        overflow: hidden;
-        border-radius: 50%;
-        background-color: $color-2 !important;
-        @include m {
-          position: absolute;
-          top: 8.75rem;
-          z-index: 100;
-        }
-        @include d {
-          height: 3.125rem;
-          width: 3.125rem;
-          transition: .15s;
-        }
-        &:first-child {
-          background: url('../assets/arr-l.svg') no-repeat center center / contain;
-          @include m {
-            left: .5rem;
-          }
-        }
-        &:last-child {
-          background: url('../assets/arr-r.svg') no-repeat center center / contain;
-          @include m {
-            right: .5rem;
-          }
-          @include d {
-            margin-left: 0.625rem;
-          }
-        }
+        position: relative;
+        z-index: 2;
+        width: 6rem;
+        padding: 0 0 .5rem .125rem;
+        font-size: .875rem;
+        text-align: left;
+        letter-spacing: -.015;
         &:hover {
-          background-color: darken($color-2, 5%) !important;
+          font-weight: 500;
         }
-        &[disabled] {
-          opacity: .4;
-          &:hover {
-            background-color: transparent !important;
+        &.active {
+          font-weight: 500;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 3.375rem;
+            height: 2px;
+            background: #000;
           }
         }
       }
     }
+    
   }
 
 </style>

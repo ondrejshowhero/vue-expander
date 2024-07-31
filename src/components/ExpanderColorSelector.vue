@@ -1,23 +1,39 @@
 <template>
-  <div class="image">
-    <div class="container">
-      <Transition mode="in-out">
-        <img :src="getCurrentImage()" :key="activeIndex">
-      </Transition>
-    </div>
-  </div>
-  <div class="colors">
-    <div class="scroll">
-      <div class="items">
-        <button v-for="item, index in items" :key="item" :class="{active: isActive(index)}" @click="setActive(index)" @mouseover="setLabel(index)" @mouseleave="unsetLabel()">
-          <img :src="getColorThumb(item[2])">
-        </button>
+  <div class="wrapper">
+
+    <Transition mode="out-in">
+
+      <div class="container" :key="activeIndex">
+        <div class="text">
+          <h1 class="heading">Eksteriørfarger</h1>
+          <h2 class="subheading">{{ currentItem[0] }}</h2>
+          <p class="lead">
+            {{ currentItem[1] }}
+          </p>
+          <a href="https://secure.adnxs.com/clktrb?id=806046&redir=https://www.volvocars.com/no/build/ex30-electric?cbv=1&utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1&utm_campaign=no_electrification_awareness_2406_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="cta">Bygg din egen ></a>
+          <a href="https://secure.adnxs.com/clktrb?id=806046&redir=https://www.volvocars.com/no/build/ex30-electric?cbv=1&utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1&utm_campaign=no_electrification_awareness_2406_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="link"></a>
+        </div>
+        <div class="image">
+          <div class="container">
+              <img :src="getImage(currentItem[2])">
+          </div>
+        </div>
       </div>
+    </Transition>
+
+    <div class="colors">
+      <!-- <div class="scroll"> -->
+        <div class="items">
+          <button v-for="item, index in items" :key="item" :class="{active: isActive(index)}" @click="setActive(index)">
+            <div :class="item[3]">
+              <span class="color"></span>
+            </div>
+          </button>
+        </div>
+      <!-- </div> -->
     </div>
+
   </div>
-  <p class="label">
-    {{currentLabel}}
-  </p>
 </template>
 
 <script>
@@ -27,79 +43,60 @@
     data() {
       return {
         activeIndex: 0,
-        currentLabel: 'Arctic White',
         items: [
           [
-            'Arctic White',
-            'CX-60_Homura_ArcticWhite.jpg',
-            'CX3_CUT067_Color_Variation_Arctic White CLE.png',
-            'arctic-white',
+            'Moss Yellow',
+            'Denne livlige gulfargen er inspirert av lav på svensk granitt og laget spesielt for EX30. Den gir en sterk og frisk karakter som virkelig får din Volvo SUV til å skille seg ut fra mengden.',
+            'yellow.jpg',
+            'yellow',
+            '',
           ],
           [
-            'Deep Crystal Blue',
-            'CX-60_Homura_DeepCrystalBlue.jpg',
-              'CX3_CUT067_Color_Variation_Deep Crystal Blue Mc.png',
-            'deep-crystal-blue',
+            'Vapour Grey',
+            'En ensfarget metallic-effekt i nøytral gråfarge med et diffust snev, inspirert av værbitte nordiske kalksteinshus. Gir bilen et lyst og sprekt utseende. Den ensfargede flaten blir til lys, skimrende metallic i sollys.',
+            'grey.jpg',
+            'grey',
+            '',
           ],
           [
-            'Jet Black',
-            'CX-60_Homura_JetBlack.jpg',
-            'CX3_CUT067_Color_Variation_JET_Black.png',
-            'jet-black',
+            'Cloud Blue',
+            'En ren, lys ensfarget blå med et anstrøk av hvitt, inspirert av den kalde luften i snøkledd svensk vinterlandskap. Dette er en leken farge som fremhever det grafiske preget til Volvoen din.',
+            'blue.jpg',
+            'blue',
+            '',
           ],
           [
-            'Machine Grey',
-            'CX-60_Homura_MachineGrey.jpg',
-            'Mazda3_16CYIPM_CUT067_COMMON_COLOR_MACHINE_GRAY.png',
-            'machine-grey',
+            'Onyx Black',
+            'Elegant, dyp svart metallic som gnistrer i sterkt dagslys og antar en ren, mørk fargetone i redusert lys.',
+            'black.jpg',
+            'black',
+            '',
           ],
           [
-            'Platinum Quartz',
-            'CX-60_Homura_PlatinumQuartz.jpg',
-            '2021_Mazda2_IPM5_COMMON_C25_EXT_Color_Chip.png',
-            'platinum-quartz',
-          ],
-          [
-            'Rhodium White',
-            'CX-60_Homura_RhodiumWhite.jpg',
-            '2023_CX-90_Common_037_EXT_Color chip_RhodiumWhite.png',
-            'rhodium-white',
-          ],
-          [
-            'Sonic Silver',
-            'CX-60_Homura_SonicSilver.jpg',
-            '2018_Mazda3_SDN_5HB_19CY_STD_Common_C57_EXT_Color_SONIC_SILVER_M_45P.png',
-            'sonic-silver',
-          ],
-          [
-            'Soul Red Crystal',
-            'CX-60_Homura_SoulRedCrystal.jpg',
-            'CX3_CUT067_Color_Variation_SOUL_RED.png',
-            'soul-red-crystal',
+            'Chrystal White',
+            'Skimrende, glitrende hvit perlefarge bygget opp med tre strøk, som gir en dempet, dyp perlemoreffekt med silkeblank overflate og rent, eksklusivt utseende.',
+            'white.jpg',
+            'white',
+            '',
           ],
         ]
+      }
+    },
+    computed: {
+      currentItem() {
+        return this.items[this.activeIndex]
       }
     },
     methods: {
       setActive(index) {
         this.activeIndex = index
-        this.$emit('track', 'color-' + this.items[this.activeIndex][3])
       },
       isActive(index) {
         return this.activeIndex === index
       },
-      getColorThumb(image) {
+      getImage(image) {
         return require(`@/assets/colors/${image}`)
       },
-      getCurrentImage() {
-        return require(`@/assets/models/${this.items[this.activeIndex][1]}`)
-      },
-      setLabel(index) {
-        this.currentLabel = this.items[index][0]
-      },
-      unsetLabel() {
-        this.currentLabel = this.items[this.activeIndex][0]
-      }
     }
   }
 </script>
@@ -107,84 +104,117 @@
 <style scoped lang="scss">
   @import '@/scss/mixins.scss';
 
-  .image {
+  .wrapper {
+    position: relative;
+  }
+
+  .container {
     @include d {
-      width: 71%;
-      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
     }
-    .container {
-      position: relative;
-      aspect-ratio: 5000/2813;
-      overflow: hidden;
-      img {
-        @include cover;
-        @include m {
-          transform: scale(1.1);
-        }
+    .text {
+      @include d {
+        width: 28.5rem;
+      }
+    }
+    .image {
+      margin-top: 1.5rem;
+      @include d {
+        width: 28.5rem;
+        margin-top: 0;
       }
     }
   }
 
   .colors {
+    position: relative;
+    z-index: 3;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: .625rem 0;
-    @include m {
-      position: relative;
-      padding: 0;
-      &::before,
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        width: 2rem;
-        height: 100%;
-        pointer-events: none;
-      }
-      &::before {
-        left: 0;
-        background: linear-gradient(to right, #fff, #ffffff00);
-      }
-      &::after {
-        right: 0;
-        background: linear-gradient(to left, #fff, #ffffff00);
-      }
-      .scroll {
-        overflow: auto;
-      }
-      .items {
-        display: inline-flex;
-        padding: 1rem 2rem;
-      }
+    margin-top: 1rem;
+    @include d {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      justify-content: start;
+      margin-top: 0;
     }
     button {
-      width: 11vw;
-      margin: 0 2.5vw;
-      border-radius: 50%;
+      display: inline-flex;
+      width: 2.25rem;
+      height: 2.25rem;
       overflow: hidden;
       transition: .15s;
       @include d {
-        width: 3rem;
-        margin: 0 1rem;
+        width: 1.625rem;
+        height: 1.625rem;
       }
-      &:hover {
-          transform: scale(1.1);
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 1px solid transparent;
       }
-      &.active {
-        transform: scale(1.375);
-        box-shadow: 0 0 .5rem rgba(28, 118, 252, 0.51);
+      span {
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 50%;
         @include d {
-          box-shadow: 0 0 1.25rem rgba(28, 118, 252, 0.51);
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+      }
+      .yellow {
+        span {
+          background: #baae33,
+        }
+      }
+      .grey {
+        span {
+          background: #9b9da8,
+        }
+      }
+      .blue {
+        span {
+          background: #c8d8ef,
+        }
+      }
+      .black {
+        span {
+          background: #444444,
+        }
+      }
+      .white {
+        span {
+          background: #f0f0f0,
+        }
+      }
+      &.active,
+      &:hover {
+        .yellow {
+          border-color: #baae33,
+        }
+        .grey {
+          border-color: #9b9da8,
+        }
+        .blue {
+          border-color: #c8d8ef,
+        }
+        .black {
+          border-color: #444444,
+        }
+        .white {
+          border-color: #f0f0f0,
         }
       }
     }
-  }
-
-  .label {
-    padding: .625rem 0 2rem;
-    font-size: 1.125rem;
-    text-align: center;
+    button + button {
+      margin-left: .75rem;
+    }
   }
 
   .v-enter-active,

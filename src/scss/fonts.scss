@@ -1,8 +1,21 @@
 @font-face {
-    font-family: 'HelveticaNeue';
-    src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-        url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
+    font-family: 'Volvo Novum';
+    src: url('assets/fonts/VolvoNovum-Regular.woff2') format('woff2');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('assets/fonts/VolvoNovum-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Volvo Novum';
+    src: url('assets/fonts/VolvoNovum-SemiLight.woff2') format('woff2');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
