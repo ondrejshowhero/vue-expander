@@ -28,8 +28,8 @@
     },
     data() {
       return {
-        version: 'post',
-        url: 'https://ad.doubleclick.net/ddm/trackclk/N1218306.3993854SHOWHEROES/B32381922.399662644;dc_trk_aid=591774513;dc_trk_cid=219602784;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1'
+        version: 'pre',
+        url: 'https://secure.adnxs.com/clktrb?id=808370&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1218306.3993854SHOWHEROES%2FB32381922.399662644%3Bdc_trk_aid%3D591774513%3Bdc_trk_cid%3D219602784%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1'
       }
     },
     computed: {
@@ -45,7 +45,7 @@
     },
     created() {
       if (window.innerWidth < 480) {
-        this.url = 'https://ad.doubleclick.net/ddm/trackclk/N1218306.3993854SHOWHEROES/B32381922.400092153;dc_trk_aid=591771270;dc_trk_cid=219049825;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1'
+        this.url = 'https://secure.adnxs.com/clktrb?id=808371&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1218306.3993854SHOWHEROES%2FB32381922.400092153%3Bdc_trk_aid%3D591771270%3Bdc_trk_cid%3D219049825%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1'
       }
     },
   }
