@@ -1,48 +1,21 @@
 <template>
 
-  <section class="section-video">
-    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="" />
-  </section>
-
-  <section class="section-main">
-    <h1 class="heading">Some heading here</h1>
-    <p class="lead">
-      Some introductory text is placed here
-    </p>
-    <a href="" target="_blank" class="cta">Read more</a>
-  </section>
-
-  <section class="section-scroller">
-    <ExpanderScroller />
-  </section>
-     
-  <section class="section-slider">
-    <ExpanderSlider />
-  </section>
-
-  <footer class="section-footer sticky">
-    <div class="container">
-      <a href="" target="_blank" class="logo">
-        <img src="@/assets/logo.png">
-      </a> 
-      <a href="" target="_blank" class="cta">Read more</a>
-    </div>
-  </footer>
-
+  <div class="container">
+    <section class="section-video">
+      <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="https://secure.adnxs.com/clktrb?id=808372&redir=https://ad.doubleclick.net/ddm/trackclk/N6344.3993854SHOWHEROES/B32304782.400006214;dc_trk_aid=591880771;dc_trk_cid=219733077;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" />
+      <a href="https://secure.adnxs.com/clktrb?id=808372&redir=https://ad.doubleclick.net/ddm/trackclk/N6344.3993854SHOWHEROES/B32304782.400006214;dc_trk_aid=591880771;dc_trk_cid=219733077;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="cta">Stream nu</a>
+    </section>
+  </div>
 
 </template>
 
 <script>
   import ExpanderVideo from './components/ExpanderVideo.vue'
-  import ExpanderScroller from './components/ExpanderScroller.vue'
-  import ExpanderSlider from './components/ExpanderSlider.vue'
 
   export default {
     name: 'App',
     components: {
       ExpanderVideo,
-      ExpanderScroller,
-      ExpanderSlider,
     },
     data() {
       return {
@@ -65,13 +38,6 @@
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
 
-  :root {
-    --footer-height: 2rem;
-    @include d {
-      --footer-height: 4rem;
-    }
-  }
-
   html {
     font-family: $font, sans-serif;
     font-size: 16px;
@@ -91,10 +57,9 @@
     width: $width;
     max-width: 100%;
     margin: 0 auto;
-    background: $color-bg;
+    background: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding-bottom: var(--footer-height);
   }
 
   img,
@@ -124,25 +89,40 @@
 <style scoped lang="scss">
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: transparent;
+  }
 
-  .section-footer {
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: var(--footer-height);
-      padding: 0 1rem;
-      background: #fff;
-    }
-    &.sticky {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      z-index: 1000;
-      width: 100%;
-      .container {
-        max-width: $width;
-        margin: 0 auto;
+  .section-video {
+    position: relative;
+    .cta {
+      position: absolute;
+      left: 50%;
+      bottom: -13%;
+      padding: .125rem .5rem;
+      color: #fff;
+      font-size: .75rem;
+      font-weight: bold;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      z-index: 10000;
+      transform: translate(-50%, 0);
+      @include d {
+        bottom: -10%;
+        padding: .25rem 1rem;
+        font-size: 1.5rem;
+        transition: .15s;
+        border-width: .125rem;
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
       }
     }
   }
