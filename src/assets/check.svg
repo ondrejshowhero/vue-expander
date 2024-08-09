@@ -1,0 +1,10 @@
+<svg id="Check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Ellipse_1559" data-name="Ellipse 1559" fill="#547b83" stroke="#547b83" stroke-width="0.5" opacity="0">
+    <circle cx="12" cy="12" r="12" stroke="none"/>
+    <circle cx="12" cy="12" r="11.75" fill="none"/>
+  </g>
+  <g id="Delte_input" data-name="Delte input" transform="translate(22 2) rotate(90)">
+    <path id="Path_4742" data-name="Path 4742" d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20Zm0-.5A9.5,9.5,0,1,0,.5,10,9.5,9.5,0,0,0,10,19.5Z" fill="#547b83" stroke="#547b83" stroke-width="0.5" fill-rule="evenodd"/>
+    <path id="Checkmark" d="M6.425,18.4,13.768,11l.232.23L6.425,18.866,2,14.4l.232-.23Z" transform="translate(-4.933 17.387) rotate(-90)" fill="#547b83" stroke="#547b83" stroke-width="0.75" fill-rule="evenodd"/>
+  </g>
+</svg>
