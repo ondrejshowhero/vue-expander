@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "RijksoverheidSans";
+  src: url("@/assets/fonts/rijksoverheid-sans-regular.woff2") format("woff2"), url("@/assets/fonts/rijksoverheid-sans-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=fonts.css.map */

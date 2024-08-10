@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-countdown": "^2.1.0",
+    "bootstrap": "^5.3.3",
     "core-js": "^3.27.2",
     "minireset.css": "^0.0.7",
     "tiny-slider": "^2.9.4",
