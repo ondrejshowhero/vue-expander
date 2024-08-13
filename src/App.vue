@@ -1,48 +1,30 @@
 <template>
 
+  <header class="section-header">
+    <a href="https://secure.adnxs.com/clktrb?id=808720&redir=https://ad.doubleclick.net/ddm/trackclk/N3018.3993854SHOWHEROES/B32474142.401241925;dc_trk_aid=593378376;dc_trk_cid=220238920;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" rel="noopener noreferrer" class="logo">
+      <img src="@/assets/synoptik.png" alt="Synoptik">
+    </a>
+  </header>
+
   <section class="section-video">
-    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="" />
+    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="https://secure.adnxs.com/clktrb?id=808720&redir=https://ad.doubleclick.net/ddm/trackclk/N3018.3993854SHOWHEROES/B32474142.401241925;dc_trk_aid=593378376;dc_trk_cid=220238920;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" />
   </section>
 
   <section class="section-main">
-    <h1 class="heading">Some heading here</h1>
-    <p class="lead">
-      Some introductory text is placed here
-    </p>
-    <a href="" target="_blank" class="cta">Read more</a>
+    <a href="https://secure.adnxs.com/clktrb?id=808720&redir=https://ad.doubleclick.net/ddm/trackclk/N3018.3993854SHOWHEROES/B32474142.401241925;dc_trk_aid=593378376;dc_trk_cid=220238920;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" rel="noopener noreferrer">
+      <img src="@/assets/campaign.jpg" alt="Briller på abonnement">
+    </a>
   </section>
-
-  <section class="section-scroller">
-    <ExpanderScroller />
-  </section>
-     
-  <section class="section-slider">
-    <ExpanderSlider />
-  </section>
-
-  <footer class="section-footer sticky">
-    <div class="container">
-      <a href="" target="_blank" class="logo">
-        <img src="@/assets/logo.png">
-      </a> 
-      <a href="" target="_blank" class="cta">Read more</a>
-    </div>
-  </footer>
-
 
 </template>
 
 <script>
   import ExpanderVideo from './components/ExpanderVideo.vue'
-  import ExpanderScroller from './components/ExpanderScroller.vue'
-  import ExpanderSlider from './components/ExpanderSlider.vue'
 
   export default {
     name: 'App',
     components: {
       ExpanderVideo,
-      ExpanderScroller,
-      ExpanderSlider,
     },
     data() {
       return {
@@ -51,10 +33,10 @@
       }
     },
     created() {
-      // if (window.innerWidth < 480) {
-      //   this.mobile = true
-      //   this.videofile = '480.mp4'
-      // }
+      if (window.innerWidth < 480) {
+        this.mobile = true
+        this.videofile = '480.mp4'
+      }
     },
   }
 </script>
@@ -64,13 +46,6 @@
   @import '@/scss/fonts.scss';
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
-
-  :root {
-    --footer-height: 2rem;
-    @include d {
-      --footer-height: 4rem;
-    }
-  }
 
   html {
     font-family: $font, sans-serif;
@@ -125,24 +100,30 @@
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
 
-  .section-footer {
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: var(--footer-height);
-      padding: 0 1rem;
-      background: #fff;
+  .section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem 3.25rem;
+    @include d {
+      padding: 1.5rem 1rem 2rem;
     }
-    &.sticky {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      z-index: 1000;
-      width: 100%;
-      .container {
-        max-width: $width;
-        margin: 0 auto;
+    .logo {
+      width: 42%;
+      @include d {
+        width: 25.5rem;
+      }
+    }
+  }
+
+  .section-main {
+    a {
+      display: block;
+      @include d {
+        img {
+          width: 67.125rem;
+          margin: 0 auto;
+        }
       }
     }
   }
