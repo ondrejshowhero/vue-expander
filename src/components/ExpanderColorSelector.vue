@@ -10,8 +10,8 @@
           <p class="lead">
             {{ currentItem[1] }}
           </p>
-          <a href="https://secure.adnxs.com/clktrb?id=806046&redir=https://www.volvocars.com/no/build/ex30-electric?cbv=1&utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1&utm_campaign=no_electrification_awareness_2406_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="cta">Bygg din egen ></a>
-          <a href="https://secure.adnxs.com/clktrb?id=806046&redir=https://www.volvocars.com/no/build/ex30-electric?cbv=1&utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1&utm_campaign=no_electrification_awareness_2406_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="link"></a>
+          <a href="https://secure.adnxs.com/clktrb?id=808702&redir=https://www.volvocars.com/no/build/ex30-electric/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="cta">Bygg din egen ></a>
+          <a href="https://secure.adnxs.com/clktrb?id=808702&redir=https://www.volvocars.com/no/build/ex30-electric/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="link"></a>
         </div>
         <div class="image">
           <div class="container">

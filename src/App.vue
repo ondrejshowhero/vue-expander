@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderVideo :filename="videofile" :autoplay="true" url="https://www.volvocars.com/no/cars/ex30-electric/?utm_source=google&utm_medium=cpc&utm_campaign=no_nameplates_ex30_consideration-action_alwayson_npl_alon_mxd_nor&gad_source=1&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrcDtutQgTY_U3TEvu9jA3pGSwTV_bEI5xl5ZELmrOmclMrLquC4Y_YaAok8EALw_wcB&gclsrc=aw.ds" :mobile="mobile" />
+    <ExpanderVideo :filename="videofile" :autoplay="true" url="https://secure.adnxs.com/clktrb?id=808703&redir=https://ad.doubleclick.net/ddm/trackclk/N900445.4661577SHOWHEROESNO/B32393426.401320801;dc_trk_aid=593365988;dc_trk_cid=220302769;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" :mobile="mobile" />
   </section>
 
   <section class="section-main">
@@ -11,10 +11,10 @@
     </p>
     <p class="lead">
       Kjøp fra kr.&nbsp;344&nbsp;900,-<br>
-      eller leasing fra kr&nbsp;2&nbsp;490,- pr. md.
+      eller leasing fra kr&nbsp;2&nbsp;490,- pr. md. inkl. vinterhjul
     </p>
-    <a href="https://www.volvocars.com/no/cars/ex30-electric/?utm_source=google&utm_medium=cpc&utm_campaign=no_nameplates_ex30_consideration-action_alwayson_npl_alon_mxd_nor&gad_source=1&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrcDtutQgTY_U3TEvu9jA3pGSwTV_bEI5xl5ZELmrOmclMrLquC4Y_YaAok8EALw_wcB&gclsrc=aw.ds" target="_blank" class="cta">Bygg din EX30 ></a>
-    <a href="https://www.volvocars.com/no/cars/ex30-electric/?utm_source=google&utm_medium=cpc&utm_campaign=no_nameplates_ex30_consideration-action_alwayson_npl_alon_mxd_nor&gad_source=1&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrcDtutQgTY_U3TEvu9jA3pGSwTV_bEI5xl5ZELmrOmclMrLquC4Y_YaAok8EALw_wcB&gclsrc=aw.ds" target="_blank" class="link"></a>
+    <a href="https://secure.adnxs.com/clktrb?id=808699&redir=https://www.volvocars.com/no/cars/ex30-electric/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="cta">Bygg din EX30 ></a>
+    <a href="https://secure.adnxs.com/clktrb?id=808699&redir=https://www.volvocars.com/no/cars/ex30-electric/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="link"></a>
     <div class="usp">
       <div class="item">
         <div class="info">
@@ -62,8 +62,8 @@
       <p class="lead">
         Få tilgang til Driver Assistance og sikkerhetsinnovasjoner, designet for å holde deg og andre trygge i trafikken.
       </p>
-      <a href="https://www.volvocars.com/no/cars/ex30-electric/?utm_source=google&utm_medium=cpc&utm_campaign=no_nameplates_ex30_consideration-action_alwayson_npl_alon_mxd_nor&gad_source=1&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrcDtutQgTY_U3TEvu9jA3pGSwTV_bEI5xl5ZELmrOmclMrLquC4Y_YaAok8EALw_wcB&gclsrc=aw.ds" target="_blank" class="cta">Les mer ></a>
-      <a href="https://secure.adnxs.com/clktrb?id=806044&redir=https://www.volvocars.com/no/cars/ex30-electric/features/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1&utm_campaign=no_electrification_awareness_2406_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="link"></a>
+      <a href="https://secure.adnxs.com/clktrb?id=808700&redir=https://www.volvocars.com/no/cars/ex30-electric/features/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="cta">Les mer ></a>
+      <a href="https://secure.adnxs.com/clktrb?id=808700&redir=https://www.volvocars.com/no/cars/ex30-electric/features/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="link"></a>
     </div>
     <div class="slider">
       <ExpanderSlider />
@@ -77,8 +77,8 @@
       <p class="lead">
         Vi har skapt fire interiører inspirert av naturen for EX30. De kombinerer nydelige trekk i farger som passer sammen og dekor fremstilt av fornybare og resirkulerte materialer.
       </p>
-      <a href="https://secure.adnxs.com/clktrb?id=806045&redir=https://www.volvocars.com/no/cars/ex30-electric/interior-design/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1&utm_campaign=no_electrification_awareness_2406_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="cta">Les mer ></a>
-      <a href="https://secure.adnxs.com/clktrb?id=806045&redir=https://www.volvocars.com/no/cars/ex30-electric/interior-design/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1&utm_campaign=no_electrification_awareness_2406_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="link"></a>
+      <a href="https://secure.adnxs.com/clktrb?id=808701&redir=https://www.volvocars.com/no/cars/ex30-electric/interior-design/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="cta">Les mer ></a>
+      <a href="https://secure.adnxs.com/clktrb?id=808701&redir=https://www.volvocars.com/no/cars/ex30-electric/interior-design/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="link"></a>
     </div>
     <div class="gallery">
       <ExpanderGallery />
@@ -90,7 +90,7 @@
   </section>
 
   <footer class="section-footer">
-    <a href="https://secure.adnxs.com/clktrb?id=806042&redir=https://ad.doubleclick.net/ddm/trackclk/N900445.3239021PLAYADNO/B32095562.396325936;dc_trk_aid=588257484;dc_trk_cid=216585032;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="logo">
+    <a href="https://secure.adnxs.com/clktrb?id=808699&redir=https://www.volvocars.com/no/cars/ex30-electric/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="logo">
       <img src="@/assets/volvo.png">
     </a> 
   </footer>

@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="slider" ref="slider">
       <div class="item" v-for="item in items" :key="item">
-        <a href="https://secure.adnxs.com/clktrb?id=803243&redir=https://ad.doubleclick.net/ddm/trackclk/N900445.4661577SHOWHEROESNO/B31740359.391460102;dc_trk_aid=583008721;dc_trk_cid=212676196;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="inner">
+        <a href="https://secure.adnxs.com/clktrb?id=808700&redir=https://www.volvocars.com/no/cars/ex30-electric/features/?utm_kxconfid=u1ih78asv&utm_source=showheroes&utm_medium=display&utm_content=electrification_display_1x1_expander&utm_campaign=no_electrification_awareness_2408_nameplates_tactical_10027-thinking-small&sourceapplicationinformation=no_elc_awr_npl" target="_blank" class="inner">
           <p class="title">
             {{ item[0] }}
           </p>
