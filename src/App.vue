@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderVideo :filename="videoFile" :autoplay="true" url="https://ad.doubleclick.net/ddm/trackclk/N6344.3993854SHOWHEROES/B32418753.400181035;dc_trk_aid=592303272;dc_trk_cid=219589835;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" />
+    <ExpanderVideo :filename="videoFile" :autoplay="true" :url="url" />
   </section>
 
   <section class="section-main">
@@ -9,8 +9,8 @@
       <source :srcset="getDesktopImage()" media="(min-width: 480px)" />
       <img :src="getMobileImage()">
     </picture>
-    <a href="https://ad.doubleclick.net/ddm/trackclk/N6344.3993854SHOWHEROES/B32418753.400181035;dc_trk_aid=592303272;dc_trk_cid=219589835;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="link"></a>
-    <a href="https://ad.doubleclick.net/ddm/trackclk/N6344.3993854SHOWHEROES/B32418753.400181035;dc_trk_aid=592303272;dc_trk_cid=219589835;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="cta"><img src="@/assets/cta.png" alt="Tilmeld dig"></a>
+    <a :href="url" target="_blank" class="link"></a>
+    <a :href="url" target="_blank" class="cta"><img src="@/assets/cta.png" alt="Tilmeld dig"></a>
   </section>
 
 </template>
@@ -27,12 +27,18 @@
       return {
         mobile: false,
         // videoFile: '1080.mp4',
-        version: 'post',
+        version: 'pre',
       }
     },
     computed: {
       videoFile() {
         return `1080-${this.version}.mp4`
+      },
+      url() {
+        if (this.version === 'post')
+          return 'https://secure.adnxs.com/clktrb?id=808829&redir=https://ad.doubleclick.net/ddm/trackclk/N6344.3993854SHOWHEROES/B32418753.400181035;dc_trk_aid=592303272;dc_trk_cid=219589835;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1'
+        else
+          return 'https://secure.adnxs.com/clktrb?id=808828&redir=https://ad.doubleclick.net/ddm/trackclk/N6344.3993854SHOWHEROES/B32418753.400181035;dc_trk_aid=592303272;dc_trk_cid=219589835;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1'
       }
     },
     methods: {
