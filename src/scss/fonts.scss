@@ -1,8 +1,45 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: 'Royal Sans';
+    src: url('assets/fonts/RoyalSans-Bold.woff2') format('woff2'),
+        url('assets/fonts/RoyalSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Royal Sans';
+    src: url('assets/fonts/RoyalSans.woff2') format('woff2'),
+        url('assets/fonts/RoyalSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Royal Serif';
+    src: url('assets/fonts/RoyalSerif-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/RoyalSerif-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Royal Serif';
+    src: url('assets/fonts/RoyalSerif-Regular.woff2') format('woff2'),
+        url('assets/fonts/RoyalSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Royal Serif';
+    src: url('assets/fonts/RoyalSerif-Bold.woff2') format('woff2'),
+        url('assets/fonts/RoyalSerif-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
