@@ -8,7 +8,7 @@
   </div>
 
   <section class="section-video">
-    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="https://www.volvia.se/" />
+    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="https://secure.adnxs.com/clktrb?id=808937&redir=https://ad.doubleclick.net/ddm/trackclk/N709637.2537101SHOWHEROES/B32505045.402063447;dc_trk_aid=593779995;dc_trk_cid=168121569;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" />
   </section>
 
   <section class="section-main">
@@ -50,7 +50,7 @@
   <section class="section-info">
     <h2 class="heading">Därför har över 300 000 Volvoägare valt oss</h2>
     <div class="items">
-      <a href="https://www.volvia.se/bilforsakring/kundfordelar" target="_blank" class="item">
+      <a href="https://secure.adnxs.com/clktrb?id=808937&redir=https://ad.doubleclick.net/ddm/trackclk/N709637.2537101SHOWHEROES/B32505045.402063447;dc_trk_aid=593779995;dc_trk_cid=168121569;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="item">
         <article>
           <div class="image">
             <img src="@/assets/image-1.jpg">
@@ -69,7 +69,7 @@
           </div>
         </article>
       </a>
-      <a href="https://www.volvia.se/bilforsakring/kundfordelar/alltid-nara-dig" target="_blank" class="item">
+      <a href="https://secure.adnxs.com/clktrb?id=808937&redir=https://ad.doubleclick.net/ddm/trackclk/N709637.2537101SHOWHEROES/B32505045.402063447;dc_trk_aid=593779995;dc_trk_cid=168121569;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="item">
         <article class="item">
           <div class="image">
             <img src="@/assets/image-2.jpg">
@@ -88,7 +88,7 @@
           </div>
         </article>
       </a>
-      <a href="https://www.volvia.se/vid-skada" target="_blank" class="item">
+      <a href="https://secure.adnxs.com/clktrb?id=808937&redir=https://ad.doubleclick.net/ddm/trackclk/N709637.2537101SHOWHEROES/B32505045.402063447;dc_trk_aid=593779995;dc_trk_cid=168121569;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="item">
         <article class="item">
           <div class="image">
             <img src="@/assets/image-3.jpg">
@@ -111,7 +111,7 @@
   </section>
      
   <footer class="section-footer sticky">
-    <a href="https://www.volvia.se/" target="_blank" class="cta">
+    <a href="https://secure.adnxs.com/clktrb?id=808937&redir=https://ad.doubleclick.net/ddm/trackclk/N709637.2537101SHOWHEROES/B32505045.402063447;dc_trk_aid=593779995;dc_trk_cid=168121569;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=;dc_tdv=1" target="_blank" class="cta">
       Läs mer på Volvia.se
     </a> 
   </footer>
