@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
     <div class="slider" ref="slider">
-      <div class="item" v-for="item in 5" :key="item">
+      <div class="item" v-for="item in 6" :key="item">
         <a
-          href=""
+          href="https://secure.adnxs.com/clktrb?id=808760&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401482261%3Bdc_trk_aid%3D593516858%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
           target="_blank"
           class="inner"
           @click="$emit('track', 'test')"
@@ -11,6 +11,14 @@
           <img :src="getImage(item)" />
         </a>
       </div>
+    </div>
+    <div class="nav-dots">
+      <button
+        v-for="n in 6"
+        :key="n"
+        :class="{ 'nav-active': n === activeIndex }"
+        @click="goToSlide(n)"
+      ></button>
     </div>
   </div>
 </template>
@@ -21,23 +29,42 @@ import { tns } from "tiny-slider";
 export default {
   name: "ExpanderSlider",
   emits: ["track"],
+  data() {
+    return {
+      slider: null,
+      activeIndex: 1,
+    };
+  },
   mounted() {
-    tns({
+    this.slider = tns({
       container: this.$refs.slider,
-      items: 1,
+      items: 1, // Default to 1 item
       gutter: 20,
       controls: false,
       nav: false,
-      autoplay: true,
-      autoplayTimeout: 4000,
+      autoplay: false, // Turn off autoplay
+      autoplayTimeout: 8000,
       autoplayButtonOutput: false,
       speed: 1000,
-      loop: true,
+      loop: false, // Disable looping
+      onIndexChanged: this.updateActiveIndex,
+      responsive: {
+        480: {
+          items: 3, // Display 3 items starting from 480px
+        },
+      },
     });
   },
   methods: {
     getImage(image) {
-      return require(`@/assets/${image}.jpg`);
+      return require(`@/assets/image${image}.jpg`);
+    },
+    goToSlide(index) {
+      this.slider.goTo(index - 1);
+      this.activeIndex = index;
+    },
+    updateActiveIndex(info) {
+      this.activeIndex = info.displayIndex;
     },
   },
 };
@@ -77,14 +104,12 @@ export default {
       transform: translate(0, -50%);
       &:first-child {
         left: 0.5rem;
-        // background: url('../assets/arr-l.svg') no-repeat center center / contain;
         @include d {
           left: 1rem;
         }
       }
       &:last-child {
         right: 0.5rem;
-        // background: url('../assets/arr-r.svg') no-repeat center center / contain;
         @include m {
           right: 1rem;
         }
@@ -114,6 +139,41 @@ export default {
     .tns-nav-active {
       background: #fff;
     }
+  }
+
+  .nav-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    button {
+      width: 0.625rem;
+      height: 0.625rem;
+      margin: 0 0.375rem;
+      background: transparen;
+      border-radius: 50%;
+      border: 2px solid #8fcae8;
+      &.nav-active {
+        background-color: #006698;
+        border-radius: none;
+        border: none;
+      }
+    }
+  }
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+@media (max-width: 480px) {
+  .slider {
+    justify-content: center; /* Center horizontally */
+    margin: 0;
+  }
+  img {
+    padding: 2rem;
   }
 }
 </style>

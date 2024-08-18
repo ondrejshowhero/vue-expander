@@ -72,12 +72,16 @@ export default {
   display: flex;
   justify-content: center;
   border-width: 0 !important;
+  font-size: 1.125rem;
 }
 
 @media (max-width: 480px) {
   .tab-main {
     width: 100%;
     height: 35rem;
+  }
+  .nav-tabs {
+    font-size: 0.9375rem;
   }
 }
 </style>

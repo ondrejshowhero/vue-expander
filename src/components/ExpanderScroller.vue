@@ -80,6 +80,10 @@ export default {
     scrollToIndex(index) {
       let w = this.$refs.items.children[0].offsetWidth;
       this.$refs.scroller.scrollTo({ left: w * index, behavior: "smooth" });
+      this.currentIndex = index; // Ensure currentIndex is updated
+      console.log(
+        `Dot clicked: ${index}, currentIndex set to: ${this.currentIndex}`
+      );
     },
     scrollerScrolled() {
       let w = this.$refs.items.children[0].offsetWidth;
@@ -88,12 +92,15 @@ export default {
       this.rightMost =
         this.$refs.scroller.scrollLeft >
         this.$refs.items.offsetWidth - this.$refs.container.offsetWidth - 50;
+      console.log(
+        `Scrolled: scrollLeft=${this.$refs.scroller.scrollLeft}, currentIndex=${this.currentIndex}`
+      );
     },
     handleClick(url, event) {
       event.preventDefault(); // Prevent the default anchor click behavior
       this.$emit("track", url);
       setTimeout(() => {
-        const newWindow = window.open("https://showheroes.com/", "_blank");
+        const newWindow = window.open(url, "_blank");
         if (newWindow) newWindow.opener = null;
       }, 1000); // Adjust the delay as needed
     },

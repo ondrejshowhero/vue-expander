@@ -5,7 +5,7 @@
       :filename="videoFile"
       :mobile="mobile"
       :autoplay="true"
-      url="https://showheroes.com/"
+      url="https://secure.adnxs.com/clktrb?id=808760&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401482261%3Bdc_trk_aid%3D593516858%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
     />
   </section>
 
@@ -32,9 +32,9 @@
   <section class="section-tab">
     <TabNav
       :tabs="[
-        'Accountancy & Finance',
-        'Data & Analyse',
-        'Fiscaal & Juridisch',
+        'Accountancy & finance',
+        'Data & analyse',
+        'Fiscaal & juridisch',
         'ICT',
         'Starter',
         'Mbo',
@@ -42,8 +42,11 @@
       :selected="selected"
       @selected="setSelected"
     >
-      <Tab :isSelected="selected === 'Accountancy & Finance'">
-        <a href="https://showheroes.com/" target="_blank">
+      <Tab :isSelected="selected === 'Accountancy & finance'">
+        <a
+          href="https://secure.adnxs.com/clktrb?id=808764&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401286336%3Bdc_trk_aid%3D592870613%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
+          target="_blank"
+        >
           <picture>
             <source srcset="@/assets/1-mobile.jpg" media="(max-width: 480px)" />
             <img class="tab-img" src="@/assets/1.jpg" />
@@ -51,8 +54,11 @@
         </a>
       </Tab>
 
-      <Tab :isSelected="selected === 'Data & Analyse'">
-        <a href="https://showheroes.com/" target="_blank">
+      <Tab :isSelected="selected === 'Data & analyse'">
+        <a
+          href="https://secure.adnxs.com/clktrb?id=808762&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401286330%3Bdc_trk_aid%3D592851595%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
+          target="_blank"
+        >
           <picture>
             <source srcset="@/assets/2-mobile.jpg" media="(max-width: 480px)" />
             <img class="tab-img" src="@/assets/2.jpg" />
@@ -60,8 +66,11 @@
         </a>
       </Tab>
 
-      <Tab :isSelected="selected === 'Fiscaal & Juridisch'">
-        <a href="https://showheroes.com/" target="_blank">
+      <Tab :isSelected="selected === 'Fiscaal & juridisch'">
+        <a
+          href="https://secure.adnxs.com/clktrb?id=808763&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401286333%3Bdc_trk_aid%3D592870610%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
+          target="_blank"
+        >
           <picture>
             <source srcset="@/assets/3-mobile.jpg" media="(max-width: 480px)" />
             <img class="tab-img" src="@/assets/3.jpg" />
@@ -70,7 +79,10 @@
       </Tab>
 
       <Tab :isSelected="selected === 'ICT'">
-        <a href="https://showheroes.com/" target="_blank">
+        <a
+          href="https://secure.adnxs.com/clktrb?id=808761&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401283720%3Bdc_trk_aid%3D592971693%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
+          target="_blank"
+        >
           <picture>
             <source srcset="@/assets/4-mobile.jpg" media="(max-width: 480px)" />
             <img class="tab-img" src="@/assets/4.jpg" />
@@ -79,7 +91,10 @@
       </Tab>
 
       <Tab :isSelected="selected === 'Starter'">
-        <a href="https://showheroes.com/" target="_blank">
+        <a
+          href="https://secure.adnxs.com/clktrb?id=808765&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401286339%3Bdc_trk_aid%3D592870616%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
+          target="_blank"
+        >
           <picture>
             <source srcset="@/assets/5-mobile.jpg" media="(max-width: 480px)" />
             <img class="tab-img" src="@/assets/5.jpg" />
@@ -88,7 +103,10 @@
       </Tab>
 
       <Tab :isSelected="selected === 'Mbo'">
-        <a href="https://showheroes.com/" target="_blank">
+        <a
+          href="https://secure.adnxs.com/clktrb?id=808766&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401286342%3Bdc_trk_aid%3D592870619%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
+          target="_blank"
+        >
           <picture>
             <source srcset="@/assets/6-mobile.jpg" media="(max-width: 480px)" />
             <img class="tab-img" src="@/assets/6.jpg" />
@@ -100,16 +118,16 @@
 
   <section class="mid-txt">
     <p class="mid-p">
-      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-      praesentium voluptatum deleniti atque corrupti quos dolores et quas
-      molestias excepturi sint occaecati cupiditate non provident, similique
-      sunt in culpa qui officia deserunt mollitia animi, id est laborum et
-      dolorum fuga.
+      Werken bij de Belastingdienst betekent veel vrijheid en mogelijkheden om
+      je werk in te richten zoals je dat zelf wilt. Daarnaast investeren we in
+      jouw ontwikkeling met opleidingen, flexibele leertrajecten en interessante
+      projecten. Zodat jij je vak zo goed mogelijk kunt uitoefenen.
     </p>
   </section>
 
   <section class="section-scroller">
-    <ExpanderScroller />
+    <!-- <ExpanderScroller /> -->
+    <ExpanderSlider />
   </section>
 
   <section class="bottom-txt">
@@ -119,7 +137,10 @@
         Benieuwd naar jouw carrièremogelijkheden bij de Belastingdienst? Bekijk
         direct onze openstaande vacatures.
       </p>
-      <a href="https://showheroes.com/" target="_blank" class="cta"
+      <a
+        href="https://secure.adnxs.com/clktrb?id=808760&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401482261%3Bdc_trk_aid%3D593516858%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
+        target="_blank"
+        class="cta"
         >Bekijk alle vacatures</a
       >
     </section>
@@ -129,7 +150,11 @@
 
   <footer class="section-footer">
     <div class="container">
-      <a href="https://showheroes.com/" target="_blank" class="website">
+      <a
+        href="https://secure.adnxs.com/clktrb?id=808760&redir=https%3A%2F%2Fad.doubleclick.net%2Fddm%2Ftrackclk%2FN1405923.3848558MATTERKIND11%2FB32067229.401482261%3Bdc_trk_aid%3D593516858%3Bdc_trk_cid%3D217279617%3Bdc_lat%3D%3Bdc_rdid%3D%3Btag_for_child_directed_treatment%3D%3Btfua%3D%3Bltd%3D%3Bdc_tdv%3D1"
+        target="_blank"
+        class="website"
+      >
         <p>werken.belastingdienst.nl</p>
       </a>
     </div>
@@ -138,8 +163,8 @@
 
 <script>
 import ExpanderVideo from "./components/ExpanderVideo.vue";
-import ExpanderScroller from "./components/ExpanderScroller.vue";
-// import ExpanderSlider from "./components/ExpanderSlider.vue";
+// import ExpanderScroller from "./components/ExpanderScroller.vue";
+import ExpanderSlider from "./components/ExpanderSlider.vue";
 import TabNav from "./components/TabNav.vue";
 import Tab from "./components/Tab.vue";
 
@@ -147,8 +172,8 @@ export default {
   name: "App",
   components: {
     ExpanderVideo,
-    ExpanderScroller,
-    // ExpanderSlider,
+    // ExpanderScroller,
+    ExpanderSlider,
     TabNav,
     Tab,
   },
@@ -156,7 +181,7 @@ export default {
     return {
       mobile: false,
       videoFile: "1080.mp4",
-      selected: "Accountancy & Finance",
+      selected: "Accountancy & finance",
     };
   },
   methods: {
@@ -435,7 +460,7 @@ button {
 .section-footer {
   .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center !important;
     align-items: center;
     height: var(--footer-height);
     padding: 0 1rem;
