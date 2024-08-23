@@ -1,7 +1,7 @@
 <template>
   <div class="expander-video">
     <div class="video-frame" :class="{mobile: mobile, playing: playing}">
-      <video preload="auto" playsinline ref="video" @play="videoPlays()" @pause="videoPauses()" @click="togglePlay()">
+      <video preload="auto" playsinline ref="video" @play="videoPlays()" @pause="videoPauses()" @click="togglePlay()" data-track="true" data-name="MainVideo">
         <source :src="getVideoSrc()" type="video/mp4">
       </video>
       <a :href="url" target="_blank" class="link" v-if="url"></a>
