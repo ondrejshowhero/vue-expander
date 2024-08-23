@@ -1,8 +1,26 @@
 @font-face {
-    font-family: 'HelveticaNeue';
-    src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-        url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
+    font-family: 'Samsung Sharp Sans';
+    src: url('assets/fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+        url('assets/fonts/SamsungSharpSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samsung One';
+    src: url('assets/fonts/SamsungOne-400C.woff2') format('woff2'),
+        url('assets/fonts/SamsungOne-400C.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Samsung One';
+    src: url('assets/fonts/SamsungOne-700C.woff2') format('woff2'),
+        url('assets/fonts/SamsungOne-700C.woff') format('woff');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }

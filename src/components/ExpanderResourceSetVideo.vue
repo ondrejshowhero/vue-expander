@@ -32,7 +32,7 @@
   .video-frame {
     &.mobile {
       video {
-        aspect-ratio: 9/16;
+        aspect-ratio: 4/5;
       }
     }
   }

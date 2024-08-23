@@ -1,10 +1,10 @@
 <template>
   <div class="expander-video">
     <div class="video-frame" :class="{mobile: mobile, playing: playing}">
-      <video preload="auto" ref="video" @play="videoPlays()" @pause="videoPauses()" @click="togglePlay()">
+      <video preload="auto" playsinline loop ref="video" @play="videoPlays()" @pause="videoPauses()" @click="togglePlay()" data-track="true" data-name="MainVideo">
         <source :src="getVideoSrc()" type="video/mp4">
       </video>
-      <a :href="url" target="_blank" class="link" v-if="url"></a>
+      <a :href="url" target="_blank" class="link" v-if="url" data-name="Video"></a>
       <button class="play" @click="playButtonClicked()"></button>
       <button class="sound" @click="soundButtonClicked()" :class="{muted: muted}"></button>
     </div>
@@ -125,7 +125,7 @@
     aspect-ratio: 16/9;
     cursor: pointer;
     .mobile & {
-      aspect-ratio: 1/1;
+      aspect-ratio: 4/5;
     }
   }
 
