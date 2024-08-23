@@ -62,14 +62,14 @@
         <p>
           Har du spørgsmål til, hvordan Erhvervsinternet Sikker kan hjælpe med at optimere din virksomheds sikkerhed? Kontakt os, og bliv klogere på sikkert internet til din virksomhed.
         </p>
-        <a href="https://ad.doubleclick.net/ddm/trackclk/N1969113.2537101SHOWHEROES/B32343376.401754109;dc_trk_aid=594115870;dc_trk_cid=220881997;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7bGDPR%7d;gdpr_consent=%24%7bGDPR_CONSENT_755%7d;ltd=;dc_tdv=1" target="_blank" class="cta" data-name="Læs mere">Ring mig op</a>
+        <a href="https://ad.doubleclick.net/ddm/trackclk/N1969113.2537101SHOWHEROES/B32343376.401754109;dc_trk_aid=594115870;dc_trk_cid=220881997;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7bGDPR%7d;gdpr_consent=%24%7bGDPR_CONSENT_755%7d;ltd=;dc_tdv=1" target="_blank" class="cta" data-name="Ring mig op">Ring mig op</a>
       </div>
       <div class="image">
         <img src="@/assets/image-2.jpg">
       </div>
     </article>
     <div class="actions">
-      <a href="https://ad.doubleclick.net/ddm/trackclk/N1969113.2537101SHOWHEROES/B32343376.401754109;dc_trk_aid=593772080;dc_trk_cid=220724984;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7bGDPR%7d;gdpr_consent=%24%7bGDPR_CONSENT_755%7d;ltd=;dc_tdv=1" target="_blank" class="cta" data-name="Læs mere">Bestil Erhvervsinternet her</a>
+      <a href="https://ad.doubleclick.net/ddm/trackclk/N1969113.2537101SHOWHEROES/B32343376.401754109;dc_trk_aid=593772080;dc_trk_cid=220724984;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7bGDPR%7d;gdpr_consent=%24%7bGDPR_CONSENT_755%7d;ltd=;dc_tdv=1" target="_blank" class="cta" data-name="Bestil Erhvervsinternet her">Bestil Erhvervsinternet her</a>
     </div>
   </section>
 
