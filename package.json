@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-countdown": "^2.1.0",
+    "add-to-calendar-button": "^2.6.19",
     "core-js": "^3.27.2",
     "minireset.css": "^0.0.7",
     "tiny-slider": "^2.9.4",

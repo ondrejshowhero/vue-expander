@@ -24,7 +24,7 @@ export default {
   mounted() {
     tns({
       container: this.$refs.slider,
-      items: 3,
+      items: 1,
       gutter: 30,
       controls: true,
       nav: false,
@@ -33,6 +33,12 @@ export default {
       autoplayButtonOutput: false,
       speed: 900,
       loop: true,
+      responsive: {
+        480: {
+          items: 3,
+          gutter: 10,
+        },
+      },
     });
   },
   methods: {
@@ -67,8 +73,8 @@ export default {
     outline: 0;
     button {
       position: absolute;
-      height: 1.75rem;
-      width: 1.75rem;
+      width: 2.30413rem;
+      height: 2.30413rem;
       background: none;
       border: 0;
       text-indent: -2000%;
@@ -118,37 +124,90 @@ export default {
       background: #fff;
     }
   }
-
-  // .outer {
-  //   margin: 0 5rem !important;
-  // }
-
-  // .tns-outer {
-  //   margin: 0 5rem !important;
-  // }
-
-  // .tns-inner {
-  //   margin: 0 5rem !important;
-  // }
-
-  // .tns-controls {
-  //   margin: 0 -5rem !important;
-  // }
 }
-
 .tns-controls {
   margin: 0 -5rem !important;
 }
 
-// .tns-outer {
-//   margin: 0 5rem !important;
-// }
+@media (max-width: 480px) {
+  .wrapper {
+    position: relative;
+    margin: 0; // Adjust margin for mobile screens
+    .inner {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+      img {
+        display: block;
+        width: 54.583vw; // Set constant width for images
+        height: auto;
+        aspect-ratio: 1 / 1;
+        z-index: 0;
+      }
+    }
 
-// .tns-inner {
-//   margin: 0 5rem !important;
-// }
+    :deep(.tns-controls) {
+      outline: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      z-index: 10; // Ensure controls are above the images
+      button {
+        width: 2.30413rem;
+        height: 2.30413rem;
+        background: none;
+        border: 0;
+        text-indent: -2000%;
+        overflow: hidden;
+        border-radius: 50%;
+        &:first-child {
+          left: 0.5rem !important;
+          background: url("../assets/arr-l.svg") no-repeat center center /
+            contain;
+          margin-top: 3rem;
+        }
+        &:last-child {
+          right: 0.5rem !important;
+          background: url("../assets/arr-r.svg") no-repeat center center /
+            contain;
+          margin-top: 3rem !important;
+        }
+        &[disabled] {
+          display: none;
+        }
+      }
+    }
 
-// .tns-ovh {
-//   margin: 0 5rem !important;
-// }
+    :deep(.tns-nav) {
+      outline: 0;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: 0.5rem;
+        height: 0.5rem;
+        margin: 0 0.375rem;
+        background: #888;
+        border-radius: 50%;
+      }
+      .tns-nav-active {
+        background: #fff;
+      }
+    }
+  }
+
+  .wrapped .tns-controls button:last-child {
+    right: 0;
+  }
+}
 </style>

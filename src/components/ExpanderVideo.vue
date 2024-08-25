@@ -131,12 +131,12 @@ button {
 video {
   display: block;
   width: 100%;
-  aspect-ratio: 1080/446.926;
+  aspect-ratio: 1920/802;
   // width: 1080px;
   // height: 446.926px;
   cursor: pointer;
   .mobile & {
-    aspect-ratio: 1080/446.926;
+    aspect-ratio: 1920/802;
   }
 }
 
