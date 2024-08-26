@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="slider" ref="slider">
       <div class="item" v-for="item in 5" :key="item">
-        <a href="" target="_blank" class="inner" @click="$emit('track', 'test')">
+        <a href="" target="_blank" class="inner" @click="$emit('track', 'test')" :data-name="`Slider - ${item}`">
           <img :src="getImage(item)">
         </a>
       </div>

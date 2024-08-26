@@ -1,7 +1,7 @@
 <template>
 
   <section class="section-video">
-    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="" />
+    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="" name="Main Video" />
   </section>
 
   <section class="section-main">
@@ -9,7 +9,7 @@
     <p class="lead">
       Some introductory text is placed here
     </p>
-    <a href="" target="_blank" class="cta">Read more</a>
+    <a href="" target="_blank" class="cta" data-name="Read more">Read more</a>
   </section>
 
   <section class="section-scroller">
@@ -22,10 +22,10 @@
 
   <footer class="section-footer sticky">
     <div class="container">
-      <a href="" target="_blank" class="logo">
+      <a href="" target="_blank" class="logo" data-name="Logo">
         <img src="@/assets/logo.png">
       </a> 
-      <a href="" target="_blank" class="cta">Read more</a>
+      <a href="" target="_blank" class="cta" data-name="Read more">Read more</a>
     </div>
   </footer>
 
@@ -56,6 +56,12 @@
       //   this.videofile = '480.mp4'
       // }
     },
+    methods: {
+      track(label, category) {
+        category = category || 'Click'
+        window.customTrack(category, 'interaction', label)
+      }
+    }
   }
 </script>
 

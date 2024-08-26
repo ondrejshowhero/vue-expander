@@ -2,7 +2,7 @@
   <div class="scroll-container" :class="{leftmost: leftMost, rightmost: rightMost}" ref="container">
     <div class="scroller" ref="scroller" @scroll="scrollerScrolled">
       <div class="items" ref="items">
-        <a :href="item[3]" target="_blank" class="item" v-for="item in scrollerItems" :key="item" @click="$emit('track', item[3])">
+        <a :href="item[3]" target="_blank" class="item" v-for="item in scrollerItems" :key="item" @click="$emit('track', item[3])" :data-name="`Scroller - ${item[0]}`">
           <div class="image">
             <img :src="getImageUrl(item[2])">
           </div>
