@@ -1,7 +1,7 @@
 <template>
   <div class="expander-video">
     <div class="video-frame" :class="{mobile: mobile, playing: playing}">
-      <video preload="auto" playsinline ref="video" @play="videoPlays()" @pause="videoPauses()" @click="togglePlay()">
+      <video preload="auto" playsinline ref="video" @play="videoPlays()" @pause="videoPauses()" @click="togglePlay()" :poster="poster ? getVideoPoster() : null">
         <source :src="getVideoSrc()" type="video/mp4">
       </video>
       <a :href="url" target="_blank" class="link" v-if="url"></a>
@@ -18,7 +18,8 @@
       filename: { type: String, required: true },
       mobile: { type: Boolean },
       autoplay: { type: Boolean },
-      url: { type: String }
+      url: { type: String },
+      poster: { type: String },
     },
     data() {
       return {
@@ -60,6 +61,9 @@
     methods: {
       getVideoSrc() {
         return require(`@/assets/video/${this.filename}`)
+      },
+      getVideoPoster() {
+        return require(`@/assets/video/${this.poster}`)
       },
       videoPlays() {
         this.playing = true
