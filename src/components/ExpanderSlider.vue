@@ -3,10 +3,11 @@
     <div class="slider" ref="slider">
       <div class="item" v-for="item in 7" :key="item">
         <a
-          href=""
+          href="https://sfstudios-dk.muvi.film/it-ends-with-us/?utm_medium=display&utm_source=showheroes&utm_campaign=digital-display&utm_content=campaign"
           target="_blank"
           class="inner"
           @click="$emit('track', 'test')"
+          :data-name="`Slider - ${item}`"
         >
           <img :src="getImage(item)" />
         </a>

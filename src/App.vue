@@ -1,11 +1,17 @@
 <template>
   <section class="main-poster">
-    <div class="countdown-container">
-      <div class="countdown-title">
-        <h1 class="countdown-title-h1">Se IT ENDS WITH US i biografen om:</h1>
+    <a
+      href="https://sfstudios-dk.muvi.film/it-ends-with-us/?utm_medium=display&utm_source=showheroes&utm_campaign=digital-display&utm_content=campaign"
+      target="_blank"
+      data-name="Main Poster"
+    >
+      <div class="countdown-container">
+        <div class="countdown-title">
+          <h1 class="countdown-title-h1">Se IT ENDS WITH US i biografen om:</h1>
+        </div>
+        <ExpanderCountdown />
       </div>
-      <ExpanderCountdown />
-    </div>
+    </a>
   </section>
 
   <section class="section-video">
@@ -17,31 +23,36 @@
     />
   </section>
 
-  <!-- <section class="section-main">
-    <h1 class="heading">Some heading here</h1>
-    <p class="lead">Some introductory text is placed here</p>
-    <a href="" target="_blank" class="cta">Read more</a>
-  </section> -->
-
   <section class="section-scroller">
-    <h1 class="heading">I BIOGRAFEN 5. SEPTEMBER</h1>
-    <!-- <h1 class="heading">
-      <AddToCalendar />
-    </h1> -->
+    <a
+      href="https://sfstudios-dk.muvi.film/it-ends-with-us/?utm_medium=display&utm_source=showheroes&utm_campaign=digital-display&utm_content=campaign"
+      target="_blank"
+      data-name="I BIOGRAFEN 5. SEPTEMBER"
+    >
+      <h1 class="heading">I BIOGRAFEN 5. SEPTEMBER</h1>
+    </a>
     <ExpanderScroller />
-    <div class="p-container">
-      <p class="lead">
-        Lily Bloom (Blake Lively) har ikke altid haft det let, men nu ser alt
-        lysere ud. Hun er klar til at starte sit nye liv i Boston og realisere
-        sin livslange drøm om at få sin egen blomsterbutik. Helt tilfældigt
-        møder hun den meget charmerende neurokirurg Ryle (Justin Baldoni), der
-        fuldstændig slår benene væk under hende. De forelsker sig dybt, men der
-        er også sider i deres forhold, som skaber udfordringer. Da Lilys første
-        kærlighed, Atlas (Brandon Sklenar), pludselig kommer ind i hendes liv
-        igen, ændres hendes forhold til Ryle, og Lily indser, at hun må lære at
-        stole på egen styrke for at træffe et umuligt valg for sin fremtid...
-      </p>
-    </div>
+
+    <a
+      href="https://sfstudios-dk.muvi.film/it-ends-with-us/?utm_medium=display&utm_source=showheroes&utm_campaign=digital-display&utm_content=campaign"
+      target="_blank"
+      data-name="I BIOGRAFEN 5. SEPTEMBER"
+    >
+      <div class="p-container">
+        <p class="lead">
+          Lily Bloom (Blake Lively) har ikke altid haft det let, men nu ser alt
+          lysere ud. Hun er klar til at starte sit nye liv i Boston og realisere
+          sin livslange drøm om at få sin egen blomsterbutik. Helt tilfældigt
+          møder hun den meget charmerende neurokirurg Ryle (Justin Baldoni), der
+          fuldstændig slår benene væk under hende. De forelsker sig dybt, men
+          der er også sider i deres forhold, som skaber udfordringer. Da Lilys
+          første kærlighed, Atlas (Brandon Sklenar), pludselig kommer ind i
+          hendes liv igen, ændres hendes forhold til Ryle, og Lily indser, at
+          hun må lære at stole på egen styrke for at træffe et umuligt valg for
+          sin fremtid...
+        </p>
+      </div>
+    </a>
   </section>
 
   <section class="section-slider">
@@ -50,6 +61,7 @@
 
   <footer class="section-footer sticky">
     <div class="container">
+      <p class="footer-p">Tilføj til kalender</p>
       <AddToCalendar />
       <!-- <a href="" target="_blank" class="cta">I BIOGRAFEN 5. SEPTEMBER</a> -->
     </div>
@@ -58,7 +70,6 @@
 
 <script>
 import ExpanderVideo from "./components/ExpanderVideo.vue";
-// import ExpanderScroller from "./components/ExpanderScroller.vue";
 import ExpanderSlider from "./components/ExpanderSlider.vue";
 import ExpanderCountdown from "./components/ExpanderCountdown.vue";
 import AddToCalendar from "./components/AddToCalendar.vue";
@@ -67,7 +78,6 @@ export default {
   name: "App",
   components: {
     ExpanderVideo,
-    // ExpanderScroller,
     ExpanderSlider,
     ExpanderCountdown,
     AddToCalendar,
@@ -83,6 +93,12 @@ export default {
     //   this.mobile = true
     //   this.videofile = '480.mp4'
     // }
+  },
+  methods: {
+    track(label, category) {
+      category = category || "Click";
+      window.customTrack(category, "interaction", label);
+    },
   },
 };
 </script>
@@ -281,6 +297,7 @@ code for custom scrollbar ::-webkit-scrollbar {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    flex-direction: column;
   }
   &.sticky {
     position: fixed;
@@ -293,7 +310,7 @@ code for custom scrollbar ::-webkit-scrollbar {
       margin: 0 auto;
     }
   }
-  height: 5rem;
+  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -301,6 +318,10 @@ code for custom scrollbar ::-webkit-scrollbar {
   background: #121f28;
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #9f9ecf;
+}
+
+.footer-p {
+  padding: 0 0 0.7rem 0;
 }
 .main-poster {
   width: 100%;
@@ -313,7 +334,13 @@ code for custom scrollbar ::-webkit-scrollbar {
 
 @media (max-width: 800px) {
   .section-footer {
-    height: 8rem;
+    height: 9rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .section-footer {
+    height: 10rem;
   }
 }
 
@@ -327,7 +354,21 @@ code for custom scrollbar ::-webkit-scrollbar {
     background-color: #121f28;
   }
   .section-footer {
-    height: 17vw;
+    height: 22vw;
+  }
+  .footer-p {
+    padding: 0 0 1vw 0;
+    font-size: 3.3vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-footer {
+    height: 27vw;
+  }
+  .footer-p {
+    padding: 0 0 1vw 0;
+    font-size: 3.3vw;
   }
 }
 </style>
