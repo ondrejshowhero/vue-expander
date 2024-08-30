@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "TeliaHeading";
+  src: url("assets/fonts/TeliaSansHeading-Heading.woff2") format("woff2"), url("assets/fonts/TeliaSansHeading-Heading.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TeliaBold";
+  src: url("assets/fonts/TeliaSans-Bold.woff2") format("woff2"), url("assets/fonts/TeliaSans-Bold.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TeliaRegular";
+  src: url("assets/fonts/TeliaSans-Regular.woff") format("woff2"), url("assets/fonts/TeliaSans-Regular.woff") format("woff");
+  font-style: normal;
+  font-display: swap;
+}/*# sourceMappingURL=fonts.css.map */
