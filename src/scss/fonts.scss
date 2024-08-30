@@ -1,8 +1,27 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: 'Elkjop Bodytext';
+    src: url('assets/fonts/ElkjopBodytext-Regular.woff2') format('woff2'),
+        url('assets/fonts/ElkjopBodytext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Elkjop Bodytext';
+    src: url('assets/fonts/ElkjopBodytext-DemiBold.woff2') format('woff2'),
+        url('assets/fonts/ElkjopBodytext-DemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Elkjop2 Headline2';
+    src: url('assets/fonts/Elkjop2Headline-Regular.woff2') format('woff2'),
+        url('assets/fonts/Elkjop2Headline-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
