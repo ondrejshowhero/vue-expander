@@ -94,7 +94,7 @@
     data() {
       return {
         mobile: false,
-        videoFile: '1080.mp4'
+        videoFile: '1080-2.mp4'
       }
     },
     created() {
