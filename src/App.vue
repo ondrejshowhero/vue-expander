@@ -1,25 +1,25 @@
 <template>
-  <section class="main-poster">
-    <a
-      href="https://sfstudios-dk.muvi.film/it-ends-with-us/?utm_medium=display&utm_source=showheroes&utm_campaign=digital-display&utm_content=campaign"
-      target="_blank"
-      data-name="Main Poster"
-    >
-      <div class="countdown-container">
+  <a
+    href="https://sfstudios-dk.muvi.film/it-ends-with-us/?utm_medium=display&utm_source=showheroes&utm_campaign=digital-display&utm_content=campaign"
+    target="_blank"
+    data-name="Main Poster"
+  >
+    <section class="main-poster">
+      <!-- <div class="countdown-container">
         <div class="countdown-title">
           <h1 class="countdown-title-h1">Se IT ENDS WITH US i biografen om:</h1>
         </div>
         <ExpanderCountdown />
-      </div>
-    </a>
-  </section>
+      </div> -->
+    </section>
+  </a>
 
   <section class="section-video">
     <ExpanderVideo
       :filename="videoFile"
       :mobile="mobile"
       :autoplay="true"
-      url=""
+      url="https://sfstudios-dk.muvi.film/it-ends-with-us/?utm_medium=display&utm_source=showheroes&utm_campaign=digital-display&utm_content=campaign"
     />
   </section>
 
@@ -61,8 +61,15 @@
 
   <footer class="section-footer sticky">
     <div class="container">
-      <p class="footer-p">Tilføj til kalender</p>
-      <AddToCalendar />
+      <a
+        href="https://sfstudios-dk.muvi.film/it-ends-with-us/?utm_medium=display&utm_source=showheroes&utm_campaign=digital-display&utm_content=campaign"
+        target="_blank"
+        data-name="I biografen nu"
+      >
+        <p class="footer-p">I biografen nu</p>
+      </a>
+
+      <!-- <AddToCalendar /> -->
       <!-- <a href="" target="_blank" class="cta">I BIOGRAFEN 5. SEPTEMBER</a> -->
     </div>
   </footer>
@@ -71,16 +78,16 @@
 <script>
 import ExpanderVideo from "./components/ExpanderVideo.vue";
 import ExpanderSlider from "./components/ExpanderSlider.vue";
-import ExpanderCountdown from "./components/ExpanderCountdown.vue";
-import AddToCalendar from "./components/AddToCalendar.vue";
+// import ExpanderCountdown from "./components/ExpanderCountdown.vue";
+// import AddToCalendar from "./components/AddToCalendar.vue";
 
 export default {
   name: "App",
   components: {
     ExpanderVideo,
     ExpanderSlider,
-    ExpanderCountdown,
-    AddToCalendar,
+    // ExpanderCountdown,
+    // AddToCalendar,
   },
   data() {
     return {
@@ -239,7 +246,47 @@ code for custom scrollbar ::-webkit-scrollbar {
   padding-left: 3.75rem;
 }
 
+.section-footer {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    padding: 0 1rem;
+    color: #fff;
+    font-family: "Gotham", sans-serif;
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    flex-direction: column;
+  }
+  &.sticky {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    .container {
+      max-width: $width;
+      margin: 0 auto;
+    }
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid #9f9ecf !important;
+  background: #121f28;
+  -webkit-text-stroke-color: #9f9ecf;
+}
+.section-footer {
+  height: 6rem;
+}
+
 @media (max-width: 480px) {
+  .section-footer {
+    height: 16vw !important;
+  }
   .countdown-container {
     padding-top: 94vw;
     display: flex;
@@ -271,9 +318,6 @@ code for custom scrollbar ::-webkit-scrollbar {
   .cta {
     font-size: 5.833vw;
   }
-  .section-footer {
-    height: 22.292vw;
-  }
   .section-slider {
     margin-top: -160vw;
   }
@@ -284,44 +328,9 @@ code for custom scrollbar ::-webkit-scrollbar {
 @import "@/scss/variables.scss";
 @import "@/scss/mixins.scss";
 
-.section-footer {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: var(--footer-height);
-    padding: 0 1rem;
-    color: #fff;
-    font-family: "Gotham", sans-serif;
-    font-size: 2.1875rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    flex-direction: column;
-  }
-  &.sticky {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 1000;
-    width: 100%;
-    .container {
-      max-width: $width;
-      margin: 0 auto;
-    }
-  }
-  height: 7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 5px solid #9f9ecf !important;
-  background: #121f28;
-  -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: #9f9ecf;
-}
-
 .footer-p {
-  padding: 0 0 0.7rem 0;
+  font-size: 4rem;
+  font-family: "Bebas", sans-serif;
 }
 .main-poster {
   width: 100%;
@@ -330,18 +339,6 @@ code for custom scrollbar ::-webkit-scrollbar {
   background-size: cover; /* Ensure the image covers the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
-}
-
-@media (max-width: 800px) {
-  .section-footer {
-    height: 9rem;
-  }
-}
-
-@media (max-width: 580px) {
-  .section-footer {
-    height: 10rem;
-  }
 }
 
 @media (max-width: 480px) {
@@ -353,22 +350,9 @@ code for custom scrollbar ::-webkit-scrollbar {
     background-repeat: no-repeat;
     background-color: #121f28;
   }
-  .section-footer {
-    height: 22vw;
-  }
   .footer-p {
     padding: 0 0 1vw 0;
-    font-size: 3.3vw;
-  }
-}
-
-@media (max-width: 320px) {
-  .section-footer {
-    height: 27vw;
-  }
-  .footer-p {
-    padding: 0 0 1vw 0;
-    font-size: 3.3vw;
+    font-size: 9vw;
   }
 }
 </style>
