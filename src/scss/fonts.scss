@@ -1,8 +1,27 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: 'TT Norms';
+    src: url('assets/fonts/TTNorms-Bold.woff2') format('woff2'),
+        url('assets/fonts/TTNorms-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('assets/fonts/TTNorms-Light.woff2') format('woff2'),
+        url('assets/fonts/TTNorms-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url('assets/fonts/TTNorms-Medium.woff2') format('woff2'),
+        url('assets/fonts/TTNorms-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
