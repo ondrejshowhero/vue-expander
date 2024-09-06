@@ -1,24 +1,15 @@
 <template>
   <div class="wrapper">
     <div class="slider" ref="slider">
-      <div class="item" v-for="(item, index) in carouselItems" :key="item">
-        <div class="inner">
-          <div class="text">
-            <p class="lead">
-              Top 9: Sønderjyske naturoplevelser
-            </p>
-            <h2 class="title">{{index + 1}}. {{item[0]}}</h2>
-            <p class="description">
-              {{item[1]}}
-            </p>
-            <a href="https://www.visitsonderjylland.dk/turist/overnatning/camping?utm_source=web-2022&utm_medium=havas&utm_campaign=camping-22" target="_blank" class="link" :data-track="item[0]" :data-res-action="`1780-${item[3]}`">
-              Læs mere
-            </a>
-          </div>
+      <div class="item" v-for="item in carouselItems" :key="item">
+        <a :href="item[2]" target="_blank" class="inner" :data-name="item[0]">
+          <p class="title">
+            {{ item[0] }}
+          </p>
           <div class="image">
-            <img :src="getImage(item[2])">
+            <img :src="getImage(item[1])">
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -33,25 +24,19 @@
       return {
         carouselItems: [
           [
-            'Aerodynamisk design',
-            'IONIQ 6 inspireras av konceptbilen Prophecy och kännetecknas av rena, enkla linjer och en slank aerodynamisk form som beskrivs som Emotional Efficiency.',
-            'slide-1',
+            'Sunprime Atlantic View',
+            'atlantic.jpg',
+            'https://www.spies.dk/de-kanariske-oer/gran-canaria/playa-del-ingles/sunprime-atlantic-view'
           ],
           [
-            'Upp till 610 km räckvidd',
-            'Tack vare en ultralåg luftmotståndskoefficient på endast 0,21 och ett anpassningsbart körsystem kan IONIQ 6 köra upp till 610 km på en enda laddning.',
-            'slide-2',
-            'Slutgiltigt typgodkännande för räckvidd är ännu ej fastställt.',
+            'Sunprime Coral Suites',
+            'suites.jpg',
+            'https://www.spies.dk/de-kanariske-oer/tenerife/playa-de-las-americas/sunprime-coral-suites-spa'
           ],
           [
-            'Innovativa material',
-            'Innovativa och delvis återvunna material har använts vid skapandet av IONIQ 6, bland annat garn som tillverkats av återvunna plastflaskor och marint avfall.',
-            'slide-3',
-          ],
-          [
-            'Flexibla säten',
-            'Den rymliga interiören gör att passagerarna i framsätet enkelt kan sträcka på benen och koppla av under resan. Framsätena är enkla att justera och kan fällas ner med ett enda knapptryck. ',
-            'slide-4',
+            'Sunprime Ocean View',
+            'ocean.jpg',
+            'https://www.spies.dk/de-kanariske-oer/tenerife/playa-de-las-americas/sunprime-ocean-view'
           ],
         ]
       }
@@ -61,16 +46,18 @@
         container: this.$refs.slider,
         items: 1,
         gutter: 0,
-        controls: true,
+        controls: false,
         nav: false,
-        autoplay: false,
+        autoplay: true,
+        autoplayTimeout: 2500,
         autoplayButtonOutput: false,
-        loop: false
+        loop: true,
+        mode: 'gallery',
       });
     },
     methods: {
       getImage(image) {
-        return require(`@/assets/carousel/${image}.webp`)
+        return require(`@/assets/gallery/${image}`)
       }
     }
   }
@@ -78,119 +65,93 @@
 
 <style lang="scss">
   @import "node_modules/tiny-slider/src/tiny-slider";
+</style>
+
+<style scoped lang="scss">
+  @import "node_modules/tiny-slider/src/tiny-slider";
   @import '@/scss/variables.scss';
   @import '@/scss/mixins.scss';
 
-  .section-slider {
+  .inner {
     position: relative;
-    .inner {
-      position: relative;
-      @include d {
-        display: flex;
-        .text,
-        .image {
-          width: 50%;
-        }
-      }
-      .text {
-        background: $color-2;
-        padding: 2rem 3rem;
-        @include d {
-          padding: 4rem 5rem 0;
-        }
-      }
-      .lead {
-        margin-bottom: 1.5rem;
-        font-size: .75rem;
-        font-weight: bold; 
-        color: #ADACAC;
-        @include d {
-          font-size: 1rem;
-        }
-      }
-      .title {
-        margin-bottom: 1rem;
-        font-size: 1.25rem;
-        font-weight: bold;
-        @include d {
-          margin-bottom: 1.75rem;
-          font-size: 2.5rem;
-        }
-      }
-      .description {
-        font-size: .875rem;
-        @include d {
-          font-size: 1rem;
-        }
-      }
-      .link {
-        display: inline-block;
-        font-size: .875rem;
-        color: $color-1;
-        text-decoration: underline;
+    display: block;
+    .title {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem 1rem 1rem 4.875rem;
+      font-size: 3rem;
+      font-family: $font-2;
+      background: linear-gradient(180deg, rgba(255, 126, 51, 0.00) 0%, rgba(255, 126, 51, 0.50) 100%);
+      color: #fff;
+      z-index: 100;
+      &::before {
+        content: '';
+        @include cover;
+        background: $color-1;
+        opacity: 0;
         transition: .15s;
-        margin-top: 1rem;
-        @include d {
-          position: absolute;
-          left: 5rem;
-          bottom: 3.5rem;
-          font-size: 1rem;
-        }
-        &:hover {
-          color: darken($color-1, 10%);
+        z-index: -1;
+      }
+    }
+    &:hover {
+      .title {
+        &::before {
+          opacity: 1;
         }
       }
     }
-    .tns-controls {
-      outline: 0;
-      @include d {
+  }
+  .tns-controls {
+    outline: 0;
+    @include d {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 13rem;
+      z-index: 10;
+    }
+    button {
+      height: 1.75rem;
+      width: 1.75rem;
+      background: none;
+      border: 0;
+      text-indent: -2000%;
+      overflow: hidden;
+      border-radius: 50%;
+      background-color: $color-2 !important;
+      @include m {
         position: absolute;
-        bottom: 2.5rem;
-        left: 13rem;
-        z-index: 10;
+        top: 8.75rem;
+        z-index: 100;
       }
-      button {
-        height: 1.75rem;
-        width: 1.75rem;
-        background: none;
-        border: 0;
-        text-indent: -2000%;
-        overflow: hidden;
-        border-radius: 50%;
-        background-color: $color-2 !important;
-        @include m {
-          position: absolute;
-          top: 8.75rem;
-          z-index: 100;
-        }
-        @include d {
-          height: 3.125rem;
-          width: 3.125rem;
-          transition: .15s;
-        }
-        &:first-child {
-          background: url('../assets/arr-l.svg') no-repeat center center / contain;
-          @include m {
-            left: .5rem;
-          }
-        }
-        &:last-child {
-          background: url('../assets/arr-r.svg') no-repeat center center / contain;
-          @include m {
-            right: .5rem;
-          }
-          @include d {
-            margin-left: 0.625rem;
-          }
-        }
+      @include d {
+        height: 3.125rem;
+        width: 3.125rem;
+        transition: .15s;
+      }
+      // &:first-child {
+      //   background: url('../assets/arr-l.svg') no-repeat center center / contain;
+      //   @include m {
+      //     left: .5rem;
+      //   }
+      // }
+      // &:last-child {
+      //   background: url('../assets/arr-r.svg') no-repeat center center / contain;
+      //   @include m {
+      //     right: .5rem;
+      //   }
+      //   @include d {
+      //     margin-left: 0.625rem;
+      //   }
+      // }
+      &:hover {
+        background-color: darken($color-2, 5%) !important;
+      }
+      &[disabled] {
+        opacity: .4;
         &:hover {
-          background-color: darken($color-2, 5%) !important;
-        }
-        &[disabled] {
-          opacity: .4;
-          &:hover {
-            background-color: transparent !important;
-          }
+          background-color: transparent !important;
         }
       }
     }
