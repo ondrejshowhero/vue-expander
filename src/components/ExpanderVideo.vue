@@ -131,7 +131,7 @@
     aspect-ratio: 16/9;
     cursor: pointer;
     .mobile & {
-      aspect-ratio: 1/1;
+      aspect-ratio: 9/16;
     }
   }
 
