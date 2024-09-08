@@ -75,17 +75,33 @@
   .inner {
     position: relative;
     display: block;
+    .image {
+      img {
+        @include m {
+          aspect-ratio: 1;
+          width: 100%;
+          object-fit: cover;
+          // max-width: none;
+        }
+      }
+    }
     .title {
       position: absolute;
       left: 0;
       bottom: 0;
       width: 100%;
-      padding: 1rem 1rem 1rem 4.875rem;
-      font-size: 3rem;
+      padding: .625rem;
+      font-size: 2rem;
       font-family: $font-2;
+      text-align: center;
       background: linear-gradient(180deg, rgba(255, 126, 51, 0.00) 0%, rgba(255, 126, 51, 0.50) 100%);
       color: #fff;
       z-index: 100;
+      @include d {
+        padding: 1rem 1rem 1rem 4.875rem;
+        font-size: 3rem;
+        text-align: left;
+      }
       &::before {
         content: '';
         @include cover;

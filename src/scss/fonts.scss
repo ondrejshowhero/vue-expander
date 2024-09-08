@@ -25,3 +25,12 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Thomas Headline';
+    src: url('assets/fonts/ThomasHeadline-Bold.woff2') format('woff2'),
+        url('assets/fonts/ThomasHeadline-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

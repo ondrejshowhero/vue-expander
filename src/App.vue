@@ -8,7 +8,7 @@
     <div class="logo">
       <img src="@/assets/ving.png">
     </div>
-    <h1 class="heading">Oplev Spies-effekten på De Kanariske Øer</h1>
+    <h1 class="heading">Oplev Spies-effekten på De&nbsp;Kanariske Øer</h1>
     <p class="lead">
       En rigtig god ferie gør noget magisk ved os.<br>
       Nøglen til den magi? En bekymringsfri rejse.<br>
@@ -34,7 +34,7 @@
   </section>
      
   <section class="section-slider">
-    <h1 class="heading">Flere hoteltips til dig, der rejser uden børn</h1>
+    <h1 class="heading">Flere hoteltips til dig, <span>der rejser uden børn</span></h1>
     <ExpanderSlider />
   </section>
 
@@ -90,7 +90,7 @@
   @import '@/scss/mixins.scss';
 
   :root {
-    --footer-height: 8rem;
+    --footer-height: 6rem;
     @include d {
       --footer-height: 10rem;
     }
@@ -152,21 +152,39 @@
   .section-main {
     padding: 4.75rem 1.5rem 5rem;
     text-align: center;
-    background: url('@/assets/bg-1.jpg') no-repeat center center / cover;
+    background: #fdfdfb url('@/assets/bg.jpg') no-repeat center center / cover;
+    @include d {
+      background: #fdfdfb url('@/assets/bg.jpg') no-repeat center bottom / 100% auto;
+    }
     .logo {
       display: block;
-      width: 13rem;
-      margin: 0 auto 2.25rem;
+      width: 8.25rem;
+      margin: 0 auto 3.5rem;
+      @include d {
+        width: 13rem;
+        margin: 0 auto 2.25rem;
+      }
     }
     .heading {
       margin-bottom: 1.75rem;
       font-family: $font-2;
-      font-size: 2.25rem;
+      font-size: 1.625rem;
+      @include d {
+        font-size: 2.25rem;
+      }
     }
     .lead {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
       max-width: 40rem;
       margin: 0 auto;
+      @include m {
+        br {
+          display: none;
+        }
+      }
+      @include d {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -175,34 +193,56 @@
       padding: 2.5rem 1.5rem;
       background: #fff;
       .lead {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         max-width: 40rem;
         margin: 0 auto;
         text-align: center;
+        @include d {
+          font-size: 1.5rem;
+        }
       }
     }
     .info {
-      padding: 3rem 4.75rem;
+      padding: 2.75rem 1.5rem;
+      @include d {
+        padding: 3rem 4.75rem;
+      }
       .heading {
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         font-family: $font-2;
-        font-size: 2.25rem;
+        font-size: 1.625rem;
+        @include d {
+          margin-bottom: 1rem;
+          font-size: 2.25rem;
+        }
       }
       p {
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         max-width: 41rem;
+        @include d {
+          font-size: 1.5rem;
+        }
       }
     }
   }
 
   .section-slider {
-    padding: 2rem 4.75rem;
+    padding: .625rem 1.5rem 4.5rem;
     background: #fff;
     box-shadow: .125rem .125rem .625rem 0rem rgba(0, 0, 0, 0.10);
+    @include d {
+      padding: 2rem 4.75rem 5rem;
+    }
     .heading {
       margin-bottom: 1rem;
       font-family: $font-2;
-      font-size: 2.25rem;
+      font-size: 1.625rem;
+      @include d {
+        font-size: 2.25rem;
+      }
+      span {
+        white-space: nowrap;
+      }
     }
   }
 
@@ -212,25 +252,40 @@
       justify-content: space-between;
       align-items: center;
       height: var(--footer-height);
-      padding: 0 1rem;
-      background: url('@/assets/bg-footer.png') no-repeat center bottom / 100% auto;
+      padding: 2rem 1.25rem 0;
+      background: url('@/assets/bg-footer-mobile.png') no-repeat center bottom / 100% auto;
       @include d {
         padding: 5rem 3.5rem 0;
+        background: url('@/assets/bg-footer.png') no-repeat center bottom / 100% auto;
       }
     }
     .logo {
-      width: 10rem;
+      width: 8.25rem;
+      @include d {
+        width: 10rem;
+      }
     }
     .cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10.125rem;
+      height: 2.625rem;
+      padding: .25rem .25rem 0;
       font-family: $font-3;
-      font-size: 1.875rem;
-      padding: .75rem 3rem .375rem;
+      font-size: 1.5rem;
       border-radius: 3rem;
       color: $color-1;
       background: #fff;
       transition: .15s;
+      @include d {
+        width: 13.625rem;
+        height: 3.625rem;
+        padding: .25rem .25rem 0;
+        font-size: 1.875rem;
+      }
       &:hover {
-        opacity: .8;
+        font-weight: bold;
       }
     }
     &.sticky {
