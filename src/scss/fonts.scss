@@ -1,8 +1,17 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "BrownLight";
+  src: url("assets/fonts/Brown-Light.woff2") format("woff2"),
+    url("assets/fonts/Brown-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrownRegular";
+  src: url("assets/fonts/Brown-Regular.woff2") format("woff2"),
+    url("assets/fonts/Brown-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
