@@ -27,21 +27,21 @@ export default {
           "Sunprime Atlantic View",
           "atlantic.jpg",
           this.generateUrl(
-            "https://www.ving.no/kanarioyene/gran-canaria/playa-del-ingles/sunprime-atlantic-view"
+            "https://www.ving.se/kanarieoarna/gran-canaria/playa-del-ingles/sunprime-atlantic-view"
           ),
         ],
         [
           "Sunprime Coral Suites",
           "suites.jpg",
           this.generateUrl(
-            "https://www.ving.no/kanarioyene/tenerife/playa-de-las-americas/sunprime-coral-suites-and-spa"
+            "https://www.ving.se/kanarieoarna/teneriffa/playa-de-las-americas/sunprime-coral-suites-and-spa"
           ),
         ],
         [
           "Sunprime Ocean View",
           "ocean.jpg",
           this.generateUrl(
-            "https://www.ving.no/kanarioyene/tenerife/playa-de-las-americas/sunprime-oceanview"
+            "https://www.ving.se/kanarieoarna/teneriffa/playa-de-las-americas/sunprime-ocean-view"
           ),
         ],
       ],

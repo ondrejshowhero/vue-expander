@@ -4,7 +4,7 @@
       :filename="videoFile"
       :mobile="mobile"
       :autoplay="true"
-      :url="generateUrl('https://www.ving.no/kanarioyene/hotell')"
+      :url="generateUrl('https://www.ving.se/kanarieoarna/hotell')"
       name="Main Video"
     />
   </section>
@@ -14,11 +14,11 @@
       <div class="logo">
         <img src="@/assets/ving.png" />
       </div>
-      <h1 class="heading">Opplev Ving-effekten på Kanariøyene</h1>
+      <h1 class="heading">Upplev Ving-effekten på Kanarieöarna</h1>
       <p class="lead">
-        En skikkelig bra ferie gjør underverker. Men hva gjør ferien skikkelig
-        bra? Null bekymringer. Som når noen andre har tatt seg av alt - stort og
-        smått. Vi kaller det Ving-effekten.
+        En riktigt bra semester gör något magiskt med oss. Nyckeln till den
+        magin? En bekymmersfri resa. När någon har löst alla problem åt dig. Det
+        är vad vi kallar Ving-effekten.
       </p>
     </div>
   </section>
@@ -26,9 +26,9 @@
   <section class="section-gallery">
     <div class="intro">
       <p class="lead">
-        På Kanariøyene finner du noen av våre beste hotell for deg som reiser
-        uten barn. Hotellene har aldersgrense og er kun for voksne gjester, slik
-        at du kan nyte ferien i fred og ro.
+        På Kanarieöarna finns flera av våra bästa hotell för dig som reser utan
+        barn. Vuxenhotellen har en högre åldersgräns, så att du bättre kan njuta
+        av din semester i lugn och ro.
       </p>
     </div>
     <ExpanderGallery />
@@ -36,23 +36,23 @@
       <div class="section-main-content">
         <h1 class="heading">Sunprime Hotels</h1>
         <p>
-          Sunprime er våre egne konsepthotell kun for voksne. Her kan du nyte
-          herlige spabehandlinger og smakfull mat i fredelige omgivelser.
-          Hotellene har 16-års aldersgrense.
+          Sunprime är våra egna koncepthotell bara för vuxna. Här kan du njuta
+          av härliga spabehandlingar och utsökt mat i lugna omgivningar.
+          Hotellen har en åldersgräns på 16 år.
         </p>
       </div>
     </section>
   </section>
 
   <section class="section-slider">
-    <h1 class="heading">Flere hotelltips til deg som reiser uten barn</h1>
+    <h1 class="heading">Fler hotelltips för dig som reser utan barn</h1>
     <ExpanderSlider />
   </section>
 
   <footer class="section-footer sticky">
     <div class="container">
       <a
-        :href="generateUrl('https://www.ving.no/kanarioyene/hotell')"
+        :href="generateUrl('https://www.ving.se/kanarieoarna/hotell')"
         target="_blank"
         class="logo"
         data-name="Logo"
@@ -60,12 +60,12 @@
         <img src="@/assets/ving-w.svg" />
       </a>
       <a
-        :href="generateUrl('https://www.ving.no/kanarioyene/hotell')"
+        :href="generateUrl('https://www.ving.se/kanarieoarna/hotell')"
         target="_blank"
         class="cta"
         data-name="Boka nu"
       >
-        Bestill nå
+        BOKA nu
       </a>
     </div>
   </footer>
@@ -390,7 +390,6 @@ button {
     }
     p {
       font-size: 1.125rem;
-      max-width: 22rem;
       @include d {
         font-size: 1.5rem;
       }
@@ -399,6 +398,13 @@ button {
 }
 
 @media (max-width: 480px) {
+  .section-gallery {
+    .info {
+      p {
+        max-width: 22rem;
+      }
+    }
+  }
   .section-main-content {
     padding: 1.5rem;
 

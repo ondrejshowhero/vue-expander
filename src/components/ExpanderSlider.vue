@@ -28,28 +28,28 @@ export default {
           "Adult only selection",
           "adult.jpg",
           this.generateUrl(
-            "https://www.ving.no/kanarioyene/hotell?filters=wChd%2CwCii%2CwCha%2CwCht%2CsAo"
+            "https://www.ving.se/kanarieoarna/hotell?filters=wChd%2CwCii%2CwCht%2CsAo"
           ),
         ],
         [
           "Nordic favourite selection",
           "nordic.jpg",
           this.generateUrl(
-            "https://www.ving.no/kanarioyene/hotell?filters=wChd%2CwCii%2CwCht%2CNo"
+            "https://www.ving.se/kanarieoarna/hotell?filters=wChd%2CwCii%2CwCht%2CNo"
           ),
         ],
         [
           "Top selection",
           "top.jpg",
           this.generateUrl(
-            "https://www.ving.no/kanarioyene/hotell?filters=wChd%2CwCii%2CwCha%2CwCht%2CsTo"
+            "https://www.ving.se/kanarieoarna/hotell?filters=wChd%2CwCii%2CwCht%2CsTo"
           ),
         ],
         [
           "Active selection",
           "active.jpg",
           this.generateUrl(
-            "https://www.ving.no/kanarioyene/hotell?filters=wChd%2CwCii%2CwCha%2CwCht%2CwChv%2CsAc"
+            "https://www.ving.se/kanarieoarna/hotell?filters=wChd%2CwCii%2CwCha%2CwCht%2CwChv%2CsAc"
           ),
         ],
       ],
