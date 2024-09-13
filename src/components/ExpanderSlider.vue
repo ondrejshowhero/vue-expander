@@ -27,22 +27,30 @@ export default {
         [
           "Adult only selection",
           "adult.jpg",
-          "https://www.spies.dk/de-kanariske-oer/hoteller?filters=wChd%2CwCii%2CwCht%2CsAo",
+          this.generateUrl(
+            "https://www.tjareborg.fi/kanariansaaret/hotellit?filters=wChd%2CwCii%2CwCha%2CwCht%2CwChv%2CsAo"
+          ),
         ],
         [
           "Nordic favourite selection",
           "nordic.jpg",
-          "https://www.spies.dk/de-kanariske-oer/hoteller?filters=wChd%2CwCii%2CwCht%2CNo",
+          this.generateUrl(
+            "https://www.tjareborg.fi/kanariansaaret/hotellit?filters=wChd%2CwCii%2CwCha%2CwCht%2CwChv%2CNo"
+          ),
         ],
         [
           "Top selection",
           "top.jpg",
-          "https://www.spies.dk/de-kanariske-oer/hoteller?filters=wChd%2CwCii%2CsTf%2CwCht",
+          this.generateUrl(
+            "https://www.tjareborg.fi/kanariansaaret/hotellit?filters=wChd%2CwCii%2CwCha%2CwCht%2CwChv%2CsTo"
+          ),
         ],
         [
           "Active selection",
           "active.jpg",
-          "https://www.spies.dk/de-kanariske-oer/hoteller?filters=wChd%2CwCii%2CwCht%2CsAc",
+          this.generateUrl(
+            "https://www.tjareborg.fi/kanariansaaret/hotellit?filters=wChd%2CwCii%2CwCha%2CwCht%2CwChv%2CsTo"
+          ),
         ],
       ],
     };
@@ -71,6 +79,13 @@ export default {
   methods: {
     getImage(image) {
       return require(`@/assets/offer/${image}`);
+    },
+    generateUrl(baseUrl) {
+      const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+      const utmParams = isMobile
+        ? "?utm_source=programmatic&utm_medium=display&utm_campaign=semi-tct-aws-w2425-canarias-longhaul-brd-exp&utm_content=semi-tct-aws-w2425-canarias-longhaul-mix-ia-exp-mob-v1"
+        : "?utm_source=programmatic&utm_medium=display&utm_campaign=semi-tct-aws-w2425-canarias-longhaul-brd-exp&utm_content=semi-tct-aws-w2425-canarias-longhaul-mix-ia-exp-dsk-v1";
+      return `${baseUrl}${utmParams}`;
     },
   },
 };

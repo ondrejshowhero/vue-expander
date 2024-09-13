@@ -4,7 +4,7 @@
       :filename="videoFile"
       :mobile="mobile"
       :autoplay="true"
-      url="https://www.spies.dk/de-kanariske-oer/hoteller"
+      :url="generateUrl('https://www.tjareborg.fi/kanariansaaret/hotellit')"
       name="Main Video"
     />
   </section>
@@ -14,12 +14,11 @@
       <div class="logo">
         <img src="@/assets/ving.png" />
       </div>
-      <h1 class="heading">Oplev Spies-effekten på De&nbsp;Kanariske Øer</h1>
+      <h1 class="heading">Löydä lomatunne Kanariansaarilla</h1>
       <p class="lead">
-        En rigtig god ferie gør noget magisk ved os.<br />
-        Nøglen til den magi? En bekymringsfri rejse.<br />
-        Når nogen har løst alt det besværlige for dig.<br />
-        Det kalder vi for Spies-effekten.
+        Loma on kuin taikaa. Askel kevenee, mieli rauhoittuu ja hymy nousee
+        huulille yhtä mittaa. Me kutsumme sitä Tjäreborgin lomaefektiksi. Kun
+        joku muu on huolehtinut kaikesta, ja sinä voit vain nauttia!
       </p>
     </div>
   </section>
@@ -27,9 +26,9 @@
   <section class="section-gallery">
     <div class="intro">
       <p class="lead">
-        De Kanariske Øer har nogle af vores bedste hoteller for dig, der rejser
-        uden børn. Voksenhotellerne har en nedre aldersgrænse, så du bedre kan
-        nyde din ferie i fred og ro.
+        Kanariansaarilla on erinomaisia hotellivaihtoehtoja vain aikuisten
+        kesken lomaileville. Aikuisille suunnatuissa hotelleissa on alaikäraja
+        ja rauhallinen tunnelma.
       </p>
     </div>
     <ExpanderGallery />
@@ -37,38 +36,39 @@
       <div class="section-main-content">
         <h1 class="heading">Sunprime Hotels</h1>
         <p>
-          Sunprime er vores egne koncepthoteller kun for voksne.<br />
-          Her kan du nyde godt af skønne spabehandlinger og lækker mad i
-          fredelige omgivelser. Hotellerne har en aldersgrænse på 16 år.
+          Sunprime Hotels on oma hotellikonseptimme vain aikuisille. Nauti
+          rennosta lomatunnelmasta, hemmottelevista spa-hoidoista ja
+          herkullisesta ruoasta. Alaikäraja hotelleihin on 16 vuotta.
         </p>
       </div>
     </section>
   </section>
 
   <section class="section-slider">
-    <h1 class="heading">
-      Flere hoteltips til dig, <span>der rejser uden børn</span>
-    </h1>
+    <h1 class="heading">Lisää hotellivinkkejä aikuiseen makuun</h1>
     <ExpanderSlider />
   </section>
 
   <footer class="section-footer sticky">
     <div class="container">
       <a
-        href="https://www.spies.dk/de-kanariske-oer/hoteller"
+        href="https://www.tjareborg.fi/kanariansaaret/hotellit"
         target="_blank"
         class="logo"
         data-name="Logo"
+        v-utm
       >
         <img src="@/assets/ving-w.svg" />
       </a>
       <a
-        href="https://www.spies.dk/de-kanariske-oer/hoteller"
+        href="https://www.tjareborg.fi/kanariansaaret/hotellit"
         target="_blank"
         class="cta"
         data-name="Boka nu"
-        >Bestil nu</a
+        v-utm
       >
+        Varaa nyt
+      </a>
     </div>
   </footer>
 </template>
@@ -77,6 +77,7 @@
 import ExpanderVideo from "./components/ExpanderVideo.vue";
 import ExpanderGallery from "./components/ExpanderGallery.vue";
 import ExpanderSlider from "./components/ExpanderSlider.vue";
+import utmDirective from "./directives/utm";
 
 export default {
   name: "App",
@@ -85,18 +86,16 @@ export default {
     ExpanderGallery,
     ExpanderSlider,
   },
+  directives: {
+    utm: utmDirective,
+  },
   data() {
     return {
       mobile: false,
       videoFile: "1080.mp4",
     };
   },
-  created() {
-    // if (window.innerWidth < 480) {
-    //   this.mobile = true;
-    //   this.videoFile = "480.mp4";
-    // }
-  },
+  created() {},
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
     this.centerImage();
@@ -133,6 +132,13 @@ export default {
         const topMargin = (containerHeight - imageHeight) / 2;
         image.style.marginTop = `${topMargin}px`;
       }
+    },
+    generateUrl(baseUrl) {
+      const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+      const utmParams = isMobile
+        ? "?utm_source=programmatic&utm_medium=display&utm_campaign=semi-tct-aws-w2425-canarias-longhaul-brd-exp&utm_content=semi-tct-aws-w2425-canarias-longhaul-mix-ia-xpa-mob-v1"
+        : "?utm_source=programmatic&utm_medium=display&utm_campaign=semi-tct-aws-w2425-canarias-longhaul-brd-exp&utm_content=semi-tct-aws-w2425-canarias-longhaul-mix-ia-xpa-dsk-v1";
+      return `${baseUrl}${utmParams}`;
     },
   },
 };
@@ -217,7 +223,7 @@ button {
     width: 8.25rem;
     margin: 0 auto 3.5rem;
     @include d {
-      width: 13rem;
+      width: 32rem;
       margin: 0 auto 2.25rem;
     }
   }
@@ -284,7 +290,7 @@ button {
   .logo {
     width: 8.25rem;
     @include d {
-      width: 10rem;
+      width: 17.5625rem;
     }
   }
   .cta {

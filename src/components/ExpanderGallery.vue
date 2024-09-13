@@ -26,17 +26,23 @@ export default {
         [
           "Sunprime Atlantic View",
           "atlantic.jpg",
-          "https://www.spies.dk/de-kanariske-oer/gran-canaria/playa-del-ingles/sunprime-atlantic-view",
+          this.generateUrl(
+            "https://www.tjareborg.fi/kanariansaaret/gran-canaria/playa-del-ingles/sunprime-atlantic-view"
+          ),
         ],
         [
           "Sunprime Coral Suites",
           "suites.jpg",
-          "https://www.spies.dk/de-kanariske-oer/tenerife/playa-de-las-americas/sunprime-coral-suites-spa",
+          this.generateUrl(
+            "https://www.tjareborg.fi/kanariansaaret/teneriffa/playa-de-las-americas/sunprime-coral-suites-spa"
+          ),
         ],
         [
           "Sunprime Ocean View",
           "ocean.jpg",
-          "https://www.spies.dk/de-kanariske-oer/tenerife/playa-de-las-americas/sunprime-ocean-view",
+          this.generateUrl(
+            "https://www.tjareborg.fi/kanariansaaret/teneriffa/playa-de-las-americas/sunprime-ocean-view"
+          ),
         ],
       ],
     };
@@ -59,6 +65,13 @@ export default {
   methods: {
     getImage(image) {
       return require(`@/assets/gallery/${image}`);
+    },
+    generateUrl(baseUrl) {
+      const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+      const utmParams = isMobile
+        ? "?utm_source=programmatic&utm_medium=display&utm_campaign=semi-tct-aws-w2425-canarias-longhaul-brd-exp&utm_content=semi-tct-aws-w2425-canarias-longhaul-mix-ia-exp-mob-v1"
+        : "?utm_source=programmatic&utm_medium=display&utm_campaign=semi-tct-aws-w2425-canarias-longhaul-brd-exp&utm_content=semi-tct-aws-w2425-canarias-longhaul-mix-ia-exp-dsk-v1";
+      return `${baseUrl}${utmParams}`;
     },
   },
 };
