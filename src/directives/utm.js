@@ -1,7 +1,5 @@
 export default {
   bind(el) {
-    console.log("UTM directive applied to element:", el);
-    console.log("Element:", el);
     const isMobile = /Mobi|Android/i.test(navigator.userAgent);
     const utmParams = isMobile
       ? "?utm_source=programmatic&utm_medium=display&utm_campaign=semi-tct-aws-w2425-canarias-longhaul-brd-exp&utm_content=semi-tct-aws-w2425-canarias-longhaul-mix-ia-xpa-mob-v1"

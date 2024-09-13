@@ -45,13 +45,6 @@ export default {
             "https://www.tjareborg.fi/kanariansaaret/hotellit?filters=wChd%2CwCii%2CwCha%2CwCht%2CwChv%2CsTo"
           ),
         ],
-        [
-          "Active selection",
-          "active.jpg",
-          this.generateUrl(
-            "https://www.tjareborg.fi/kanariansaaret/hotellit?filters=wChd%2CwCii%2CwCha%2CwCht%2CwChv%2CsTo"
-          ),
-        ],
       ],
     };
   },

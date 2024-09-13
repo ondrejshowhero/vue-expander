@@ -9,7 +9,7 @@
     />
   </section>
 
-  <section class="section-main" ref="sectionMain">
+  <section class="section-main section-main-first" ref="sectionMain">
     <div class="section-main-content">
       <div class="logo">
         <img src="@/assets/ving.png" />
@@ -52,20 +52,18 @@
   <footer class="section-footer sticky">
     <div class="container">
       <a
-        href="https://www.tjareborg.fi/kanariansaaret/hotellit"
+        :href="generateUrl('https://www.tjareborg.fi/kanariansaaret/hotellit')"
         target="_blank"
         class="logo"
         data-name="Logo"
-        v-utm
       >
         <img src="@/assets/ving-w.svg" />
       </a>
       <a
-        href="https://www.tjareborg.fi/kanariansaaret/hotellit"
+        :href="generateUrl('https://www.tjareborg.fi/kanariansaaret/hotellit')"
         target="_blank"
         class="cta"
         data-name="Boka nu"
-        v-utm
       >
         Varaa nyt
       </a>
@@ -223,7 +221,7 @@ button {
     width: 8.25rem;
     margin: 0 auto 3.5rem;
     @include d {
-      width: 32rem;
+      width: 25rem;
       margin: 0 auto 2.25rem;
     }
   }
@@ -297,8 +295,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10.125rem;
-    height: 2.625rem;
+    width: 33.75vw;
+    height: 8.75vw;
     padding: 0.25rem 0.25rem 0;
     font-family: $font-3;
     font-size: 1.5rem;
@@ -397,6 +395,31 @@ button {
         font-size: 1.5rem;
       }
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .section-main-content {
+    padding: 1.5rem;
+
+    .logo {
+      width: 70vw;
+      height: auto;
+    }
+  }
+  .section-main-content {
+    padding: 1rem;
+  }
+  .section-main-first {
+    padding: 3.5rem 1.5rem 5rem;
+  }
+  .container {
+    margin-bottom: -0.1rem !important;
+  }
+  .cta {
+    font-size: 5vw !important; /* Converted font-size */
+    width: 33.75vw !important;
+    height: 8.75vw !important;
   }
 }
 </style>
