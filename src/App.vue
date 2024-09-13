@@ -4,7 +4,7 @@
       :filename="videoFile"
       :mobile="mobile"
       :autoplay="true"
-      :url="generateUrl('https://www.tjareborg.fi/kanariansaaret/hotellit')"
+      :url="generateUrl('https://www.ving.no/kanarioyene/hotell')"
       name="Main Video"
     />
   </section>
@@ -14,11 +14,11 @@
       <div class="logo">
         <img src="@/assets/ving.png" />
       </div>
-      <h1 class="heading">Löydä lomatunne Kanariansaarilla</h1>
+      <h1 class="heading">Opplev Ving-effekten på Kanariøyene</h1>
       <p class="lead">
-        Loma on kuin taikaa. Askel kevenee, mieli rauhoittuu ja hymy nousee
-        huulille yhtä mittaa. Me kutsumme sitä Tjäreborgin lomaefektiksi. Kun
-        joku muu on huolehtinut kaikesta, ja sinä voit vain nauttia!
+        En skikkelig bra ferie gjør underverker. Men hva gjør ferien skikkelig
+        bra? Null bekymringer. Som når noen andre har tatt seg av alt - stort og
+        smått. Vi kaller det Ving-effekten.
       </p>
     </div>
   </section>
@@ -26,9 +26,9 @@
   <section class="section-gallery">
     <div class="intro">
       <p class="lead">
-        Kanariansaarilla on erinomaisia hotellivaihtoehtoja vain aikuisten
-        kesken lomaileville. Aikuisille suunnatuissa hotelleissa on alaikäraja
-        ja rauhallinen tunnelma.
+        På Kanariøyene finner du noen av våre beste hotell for deg som reiser
+        uten barn. Hotellene har aldersgrense og er kun for voksne gjester, slik
+        at du kan nyte ferien i fred og ro.
       </p>
     </div>
     <ExpanderGallery />
@@ -36,23 +36,23 @@
       <div class="section-main-content">
         <h1 class="heading">Sunprime Hotels</h1>
         <p>
-          Sunprime Hotels on oma hotellikonseptimme vain aikuisille. Nauti
-          rennosta lomatunnelmasta, hemmottelevista spa-hoidoista ja
-          herkullisesta ruoasta. Alaikäraja hotelleihin on 16 vuotta.
+          Sunprime er våre egne konsepthotell kun for voksne. Her kan du nyte
+          herlige spabehandlinger og smakfull mat i fredelige omgivelser.
+          Hotellene har 16-års aldersgrense.
         </p>
       </div>
     </section>
   </section>
 
   <section class="section-slider">
-    <h1 class="heading">Lisää hotellivinkkejä aikuiseen makuun</h1>
+    <h1 class="heading">Flere hotelltips til deg som reiser uten barn</h1>
     <ExpanderSlider />
   </section>
 
   <footer class="section-footer sticky">
     <div class="container">
       <a
-        :href="generateUrl('https://www.tjareborg.fi/kanariansaaret/hotellit')"
+        :href="generateUrl('https://www.ving.no/kanarioyene/hotell')"
         target="_blank"
         class="logo"
         data-name="Logo"
@@ -60,12 +60,12 @@
         <img src="@/assets/ving-w.svg" />
       </a>
       <a
-        :href="generateUrl('https://www.tjareborg.fi/kanariansaaret/hotellit')"
+        :href="generateUrl('https://www.ving.no/kanarioyene/hotell')"
         target="_blank"
         class="cta"
         data-name="Boka nu"
       >
-        Varaa nyt
+        Bestill nå
       </a>
     </div>
   </footer>
@@ -221,7 +221,7 @@ button {
     width: 8.25rem;
     margin: 0 auto 3.5rem;
     @include d {
-      width: 25rem;
+      width: 15rem;
       margin: 0 auto 2.25rem;
     }
   }
@@ -230,7 +230,7 @@ button {
     font-family: $font-2;
     font-size: 1.625rem;
     margin: 0 auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     @include d {
       font-size: 2.25rem;
     }
@@ -286,9 +286,9 @@ button {
     }
   }
   .logo {
-    width: 8.25rem;
+    width: 27.5vw;
     @include d {
-      width: 17.5625rem;
+      width: 10rem;
     }
   }
   .cta {
@@ -378,11 +378,11 @@ button {
       // padding: 3rem 4.75rem;
     }
     .heading {
-      margin-bottom: 0.5rem;
       font-family: $font-2;
       font-size: 1.625rem;
       text-align: left;
       margin: 0;
+      margin-bottom: 1rem;
       @include d {
         margin-bottom: 1rem;
         font-size: 2.25rem;
@@ -390,7 +390,7 @@ button {
     }
     p {
       font-size: 1.125rem;
-      max-width: 41rem;
+      max-width: 22rem;
       @include d {
         font-size: 1.5rem;
       }
@@ -403,7 +403,7 @@ button {
     padding: 1.5rem;
 
     .logo {
-      width: 70vw;
+      width: 50vw;
       height: auto;
     }
   }
