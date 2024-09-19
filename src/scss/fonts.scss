@@ -1,8 +1,17 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+    font-family: 'bmwTypeNextWeb';
+    src: url('assets/fonts/BMWTypeNext-Bold.woff2') format('woff2'),
+        url('assets/fonts/BMWTypeNext-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'bmwTypeNextWeb';
+    src: url('assets/fonts/BMWTypeNext-Light.woff2') format('woff2'),
+        url('assets/fonts/BMWTypeNext-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
