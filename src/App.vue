@@ -1,13 +1,13 @@
 <template>
 
   <header class="section-header">
-    <a href="" target="_blank" class="logo" data-name="Logo">
+    <a href="https://ad.doubleclick.net/ddm/trackclk/N880395.3993854SHOWHEROES/B32557598.404391716;dc_trk_aid=596329527;dc_trk_cid=223052829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7BGDPR%7D;gdpr_consent=%24%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1" target="_blank" class="logo" data-name="Logo">
       <img src="@/assets/logo.svg">
     </a>
   </header>
 
   <section class="section-video">
-    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="" name="Main Video" />
+    <ExpanderVideo :filename="videoFile" :mobile="mobile" :autoplay="true" url="https://ad.doubleclick.net/ddm/trackclk/N880395.3993854SHOWHEROES/B32557598.404391713;dc_trk_aid=596329524;dc_trk_cid=223052829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7BGDPR%7D;gdpr_consent=%24%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1" name="Main Video" />
   </section>
 
   <section class="section-main">
@@ -19,7 +19,8 @@
       <p class="lead">
         Den praktiska spraypumpen ger en behaglig spraydusch och har ett kort sprayhuvud som känns behagligt i näsan. Spraypumpen är enkel att använda och <strong>ett enkelt knapptryck räcker</strong>. Endast 1 spraydusch per näsborre behövs. Utan konserveringsmedel.
       </p>
-      <a href="" target="_blank" class="cta" data-name="Köp nu">Köp nu</a>
+      <a href="https://ad.doubleclick.net/ddm/trackclk/N880395.3993854SHOWHEROES/B32557598.404391713;dc_trk_aid=596329524;dc_trk_cid=223052829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7BGDPR%7D;gdpr_consent=%24%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1" target="_blank" class="cta" data-name="Köp nu">Köp nu</a>
+      <a href="https://ad.doubleclick.net/ddm/trackclk/N880395.3993854SHOWHEROES/B32557598.404391716;dc_trk_aid=596329527;dc_trk_cid=223052829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7BGDPR%7D;gdpr_consent=%24%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1" target="_blank" class="cta alt" data-name="Läs mer">Läs mer</a>
     </div>
     <div class="image">
       <img src="@/assets/image-1.png">
@@ -41,7 +42,7 @@
   </section>
 
   <section class="section-faq">
-    <a href="" target="_blank" class="item" data-name="Hur påverkar...">
+    <a href="https://ad.doubleclick.net/ddm/trackclk/N880395.3993854SHOWHEROES/B32557598.404391716;dc_trk_aid=596329527;dc_trk_cid=223052829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7BGDPR%7D;gdpr_consent=%24%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1" target="_blank" class="item" data-name="Hur påverkar...">
       <div class="image">
         <img src="@/assets/faq-1.jpg">
       </div>
@@ -49,7 +50,7 @@
         Hur påverkar nästäppa hur vi andas?
       </p>
     </a>
-    <a href="" target="_blank" class="item" data-name="Förkylning eller...">
+    <a href="https://ad.doubleclick.net/ddm/trackclk/N880395.3993854SHOWHEROES/B32557598.404391716;dc_trk_aid=596329527;dc_trk_cid=223052829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7BGDPR%7D;gdpr_consent=%24%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1" target="_blank" class="item" data-name="Förkylning eller...">
       <div class="image">
         <img src="@/assets/faq-2.jpg">
       </div>
@@ -57,7 +58,7 @@
         Förkylning eller bihåleinflamation?
       </p>
     </a>
-    <a href="" target="_blank" class="item" data-name="Så hjälper du barn...">
+    <a href="https://ad.doubleclick.net/ddm/trackclk/N880395.3993854SHOWHEROES/B32557598.404391716;dc_trk_aid=596329527;dc_trk_cid=223052829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7BGDPR%7D;gdpr_consent=%24%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1" target="_blank" class="item" data-name="Så hjälper du barn...">
       <div class="image">
         <img src="@/assets/faq-3.jpg">
       </div>
@@ -69,7 +70,7 @@
      
   <footer class="section-footer">
     <div class="container">
-      <a href="" target="_blank" class="logo" data-name="Logo">
+      <a href="https://ad.doubleclick.net/ddm/trackclk/N880395.3993854SHOWHEROES/B32557598.404391716;dc_trk_aid=596329527;dc_trk_cid=223052829;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=%24%7BGDPR%7D;gdpr_consent=%24%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1" target="_blank" class="logo" data-name="Logo">
         <img src="@/assets/logo-w.svg">
       </a> 
       <p>
@@ -228,6 +229,15 @@
           background: darken($color-2, 5%);
           box-shadow: 0 0 .5rem rgba(#000, .25);
         }
+        &.alt {
+          font-weight: 500;
+          color: $color-2;
+          border: 2px solid $color-2;
+          background: #fff;
+        }
+      }
+      .cta + .cta {
+        margin-left: 1.5rem;
       }
     }
     .image {
@@ -270,9 +280,11 @@
       width: 10rem;
       margin: -5rem auto;
       @include d {
+        position: absolute;
         width: 21.5rem;
         left: 50%;
         top: 50%;
+        margin: 0;
         transform: translate(-50%, -50%);
       }
     }
