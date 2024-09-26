@@ -1,9 +1,18 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-        "@/*": ["./src/*"],
-        }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
     },
-    "exclude": ["node_modules", "dist"]
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "ignoreDeprecations": "5.0"
+  },
+  "exclude": ["node_modules", "dist"]
 }

@@ -3,157 +3,159 @@
     <ExpanderVideo
       :filename="videoFile"
       :mobile="mobile"
-      :autoplay="false"
+      :autoplay="true"
       url=""
       name="Main Video"
     />
   </section>
 
-  <div class="sticky-blue">
-    <h1 class="centered">Mehr erfahren</h1>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M4.52441 14.8854L14.8853 4.52447"
-        stroke="white"
-        stroke-width="2"
-      />
-      <path
-        d="M14.8315 13.6286L14.8442 4.56667L5.78223 4.57935"
-        stroke="white"
-        stroke-width="2"
-      />
-    </svg>
+  <div class="sticky-container">
+    <div class="sticky-blue">
+      <h1 class="centered">Mehr erfahren</h1>
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4.52441 14.8854L14.8853 4.52447"
+          stroke="white"
+          stroke-width="2"
+        />
+        <path
+          d="M14.8315 13.6286L14.8442 4.56667L5.78223 4.57935"
+          stroke="white"
+          stroke-width="2"
+        />
+      </svg>
+    </div>
+
+    <section class="section-main">
+      <div class="black-line"></div>
+      <div class="section-main-inner">
+        <div class="three-elemets elemet1">
+          <div class="top-element">
+            <img src="@/assets/leaf.png" />
+            <div class="element-txt">
+              <h2>Next-level comfort</h2>
+              <p>
+                Innovative Materialien & Innovationen für Kleidung, die alles
+                mitmacht.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="three-elemets elemet2">
+          <div class="top-element">
+            <img src="@/assets/compass.png" />
+            <div class="element-txt">
+              <h2>Skandinavisches design</h2>
+              <p>Zeitlose Styles, die immer modern sind.</p>
+            </div>
+          </div>
+        </div>
+        <div class="three-elemets elemet3">
+          <div class="top-element">
+            <img src="@/assets/needle.png" />
+            <div class="element-txt">
+              <h2>Made in Europe</h2>
+              <p class="top-final-p">
+                Europäische Fertigung mit Expertise für hochwertige Kleidung.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="black-line"></div>
+    </section>
+
+    <section class="section-second">
+      <div class="section-second-inner-one">
+        <h1>
+          Du musst nicht <br />
+          -&nbsp;aber du kannst
+        </h1>
+        <p class="section-second-main-p">
+          Du bestimmst: Unsere Hosen, Hemden und Anzüge machen alles mit. Wir
+          haben sie unter Extrembedingungen getestet, damit du in jeder
+          Situation über dich hinauswachsen kannst. Und sie geben dir den
+          unglaublichen Komfort, mit dem du einfach du selbst sein kannst.
+        </p>
+        <div class="section-second-icon-container">
+          <div class="section-second-icon-1 section-second-icon">
+            <img src="@/assets/Innovative.png" />
+            <p>Innovative Materialien</p>
+          </div>
+          <div class="section-second-icon-2 section-second-icon">
+            <img src="@/assets/Comfort.png" />
+            <p>Next-level Comfort</p>
+          </div>
+          <div class="section-second-icon-3 section-second-icon">
+            <img src="@/assets/Design.png" />
+            <p>Zeitloses Design</p>
+          </div>
+        </div>
+        <div class="section-second-inner-one-bottom">
+          <p>Erlebe die Menswear-Revolution</p>
+          <h4>500.000 MÄNNER KÖNNEN NICHT IRREN</h4>
+          <div class="rating-container">
+            <img src="@/assets/five_stars.png" />
+
+            <img src="@/assets/trustpilot.png" />
+          </div>
+        </div>
+      </div>
+      <div class="section-second-inner-two">
+        <div class="image-container-1">
+          <img class="zoom" src="@/assets/biker.jpg" />
+        </div>
+        <div class="image-container-2">
+          <img class="zoom" src="@/assets/man.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="small-video-container">
+      <div class="small-video-container-left">
+        <video src="@/assets/small_video.mp4" muted loop autoplay></video>
+        <div class="image-container-3">
+          <img class="zoom" src="@/assets/climber.jpg" />
+        </div>
+      </div>
+      <div class="small-video-container-right">
+        <h1>Getestet von Sportlern<br />- gemacht für alle</h1>
+        <p>
+          Guter Style - einfach und bequem: Unsere Kleidung hat nicht nur
+          innovative Features, die deinen Alltag erleichtert. Das zeitlose
+          skandinavische Design passt zu jedem Dresscode und integriert sich
+          ganz easy in deinen persönlichen Stil.
+        </p>
+      </div>
+    </section>
+
+    <section class="products">
+      <h1>Finde deinen perfekten Look</h1>
+      <div class="products-container">
+        <articcle class="item" v-for="item in items" :key="item">
+          <div class="image-container-4">
+            <img class="zoom" :src="require(`@/assets/${item.image}`)" />
+          </div>
+          <h2>{{ item.title }}</h2>
+          <a class="cta-products" :href="item.link" @click="track(item.title)">
+            {{ item.cta }}
+          </a>
+        </articcle>
+      </div>
+    </section>
+
+    <section class="base">
+      <img src="@/assets/bottom-img.jpg" />
+      <img src="@/assets/map.jpg" />
+    </section>
   </div>
-
-  <section class="section-main">
-    <div class="black-line"></div>
-    <div class="section-main-inner">
-      <div class="three-elemets elemet1">
-        <div class="top-element">
-          <img src="@/assets/leaf.png" />
-          <div class="element-txt">
-            <h2>Next-level comfort</h2>
-            <p>
-              Innovative Materialien & Innovationen für Kleidung, die alles
-              mitmacht.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="three-elemets elemet2">
-        <div class="top-element">
-          <img src="@/assets/compass.png" />
-          <div class="element-txt">
-            <h2>Skandinavisches design</h2>
-            <p>Zeitlose Styles, die immer modern sind.</p>
-          </div>
-        </div>
-      </div>
-      <div class="three-elemets elemet3">
-        <div class="top-element">
-          <img src="@/assets/needle.png" />
-          <div class="element-txt">
-            <h2>Made in Europe</h2>
-            <p class="top-final-p">
-              Europäische Fertigung mit Expertise für hochwertige Kleidung.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="black-line"></div>
-  </section>
-
-  <section class="section-second">
-    <div class="section-second-inner-one">
-      <h1>
-        Du musst nicht <br />
-        -&nbsp;aber du kannst
-      </h1>
-      <p class="section-second-main-p">
-        Du bestimmst: Unsere Hosen, Hemden und Anzüge machen alles mit. Wir
-        haben sie unter Extrembedingungen getestet, damit du in jeder Situation
-        über dich hinauswachsen kannst. Und sie geben dir den unglaublichen
-        Komfort, mit dem du einfach du selbst sein kannst.
-      </p>
-      <div class="section-second-icon-container">
-        <div class="section-second-icon-1 section-second-icon">
-          <img src="@/assets/Innovative.png" />
-          <p>Innovative Materialien</p>
-        </div>
-        <div class="section-second-icon-2 section-second-icon">
-          <img src="@/assets/Comfort.png" />
-          <p>Next-level Comfort</p>
-        </div>
-        <div class="section-second-icon-3 section-second-icon">
-          <img src="@/assets/Design.png" />
-          <p>Zeitloses Design</p>
-        </div>
-      </div>
-      <div class="section-second-inner-one-bottom">
-        <p>Erlebe die Menswear-Revolution</p>
-        <h4>500.000 MÄNNER KÖNNEN NICHT IRREN</h4>
-        <div class="rating-container">
-          <img src="@/assets/five_stars.png" />
-
-          <img src="@/assets/trustpilot.png" />
-        </div>
-      </div>
-    </div>
-    <div class="section-second-inner-two">
-      <div class="image-container-1">
-        <img class="zoom" src="@/assets/biker.jpg" />
-      </div>
-      <div class="image-container-2">
-        <img class="zoom" src="@/assets/man.jpg" />
-      </div>
-    </div>
-  </section>
-
-  <section class="small-video-container">
-    <div class="small-video-container-left">
-      <video src="@/assets/small_video.mp4" muted loop autoplay></video>
-      <div class="image-container-3">
-        <img class="zoom" src="@/assets/climber.jpg" />
-      </div>
-    </div>
-    <div class="small-video-container-right">
-      <h1>Getestet von Sportlern<br />- gemacht für alle</h1>
-      <p>
-        Guter Style - einfach und bequem: Unsere Kleidung hat nicht nur
-        innovative Features, die deinen Alltag erleichtert. Das zeitlose
-        skandinavische Design passt zu jedem Dresscode und integriert sich ganz
-        easy in deinen persönlichen Stil.
-      </p>
-    </div>
-  </section>
-
-  <section class="products">
-    <h1>Finde deinen perfekten Look</h1>
-    <div class="products-container">
-      <articcle class="item" v-for="item in items" :key="item">
-        <div class="image-container-4">
-          <img class="zoom" :src="require(`@/assets/${item.image}`)" />
-        </div>
-        <h2>{{ item.title }}</h2>
-        <a class="cta-products" :href="item.link" @click="track(item.title)">
-          {{ item.cta }}
-        </a>
-      </articcle>
-    </div>
-  </section>
-
-  <section class="base">
-    <img src="@/assets/bottom-img.jpg" />
-    <img src="@/assets/map.jpg" />
-  </section>
 </template>
 
 <script>
@@ -205,9 +207,12 @@ export default {
       const isMobile = window.innerWidth <= 480;
       this.mobile = isMobile;
       this.items.forEach((item) => {
-        item.image = isMobile
-          ? item.mobileImage
-          : item.image.replace("_mobile", "");
+        if (item.type !== "video") {
+          // Check if the item is not a video
+          item.image = isMobile
+            ? item.mobileImage
+            : item.image.replace("_mobile", "");
+        }
       });
     },
     track(label, category) {
@@ -611,15 +616,57 @@ button {
 html {
   scroll-behavior: smooth;
 }
+.sticky-blue {
+  position: sticky;
+  top: 37.8125rem;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 11;
+}
+
+// test
 
 .sticky-container {
   position: relative;
-  height: 1000px; /* Adjust as needed to allow scrolling */
+  min-height: 159.4315rem;
 }
 
 .sticky-blue {
   position: sticky;
-  top: 10px; /* Adjust as needed */
+  bottom: 0; /* Stick to the bottom of the viewport */
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 11;
+}
+
+.centered {
+  margin: 0;
+}
+
+// test
+
+html {
+  scroll-behavior: smooth;
+}
+
+// .parent-container {
+//   padding-bottom: 20rem; /* Add padding to compensate for the negative margin */
+// }
+
+.sticky-container {
+  position: relative;
+  // min-height: 200vh; /* Ensure the container is tall enough */
+  margin-bottom: -20rem; /* Hide 20rem of the container */
+  min-height: 145rem;
+}
+
+.sticky-blue {
+  position: sticky;
+  bottom: 0; /* Stick to the bottom of the viewport */
   background-color: blue;
   color: white;
   text-align: center;
@@ -632,6 +679,9 @@ html {
 }
 
 @media (max-width: 480px) {
+  .sticky-blue {
+    top: 52.6vw;
+  }
   .section-main-inner {
     height: 24rem;
     align-items: flex-start;
