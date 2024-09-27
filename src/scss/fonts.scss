@@ -1,8 +1,21 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "GjensidigeDisplay";
+  src: url("assets/fonts/GjensidigeDisplay-Regular.woff2") format("woff2"),
+    url("assets/fonts/GjensidigeDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GjensidigeType";
+  src: url("assets/fonts/GjensidigeType-Regular.woff2") format("woff2"),
+    url("assets/fonts/GjensidigeType-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+// font-family: 'Inter', sans-serif;
