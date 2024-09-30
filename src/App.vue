@@ -247,12 +247,12 @@ button {
 }
 .heading {
   font-size: 1.75rem;
-  font-family: "GjensidigeType", sans-serif;
+  font-family: "GjensidigeDisplay", sans-serif;
 }
 .lead {
   font-size: 1.125rem;
   font-family: "GjensidigeType", sans-serif;
-  padding-top: 2.19594rem;
+  padding-top: 1.4rem;
 }
 .cta {
   display: flex;
@@ -279,7 +279,7 @@ button {
 .lead-dark {
   font-size: 1.125rem;
   font-family: "GjensidigeType", sans-serif;
-  margin-top: 2.19594rem;
+  margin-top: 1.4rem;
   color: #090c33;
   line-height: normal;
 }
