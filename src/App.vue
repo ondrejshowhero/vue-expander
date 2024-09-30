@@ -3,68 +3,64 @@
     <ExpanderVideo
       :filename="videoFile"
       :mobile="mobile"
-      :autoplay="false"
-      url=""
+      :autoplay="true"
+      url="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
       name="Main Video"
     />
   </section>
-
-  <div class="sticky-blue">
-    <h1 class="centered">Mehr erfahren</h1>
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M4.52441 14.8854L14.8853 4.52447"
-        stroke="white"
-        stroke-width="2"
-      />
-      <path
-        d="M14.8315 13.6286L14.8442 4.56667L5.78223 4.57935"
-        stroke="white"
-        stroke-width="2"
-      />
-    </svg>
-  </div>
 
   <section class="section-main">
     <div class="black-line"></div>
     <div class="section-main-inner">
       <div class="three-elemets elemet1">
-        <div class="top-element">
-          <img src="@/assets/leaf.png" />
-          <div class="element-txt">
-            <h2>Next-level comfort</h2>
-            <p>
-              Innovative Materialien & Innovationen für Kleidung, die alles
-              mitmacht.
-            </p>
+        <a
+          href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+          target="_blank"
+          data-name="image"
+        >
+          <div class="top-element">
+            <img src="@/assets/leaf.png" />
+            <div class="element-txt">
+              <h2>Next-level comfort</h2>
+              <p>
+                Innovative Materialien & Innovationen für Kleidung, die alles
+                mitmacht.
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="three-elemets elemet2">
-        <div class="top-element">
-          <img src="@/assets/compass.png" />
-          <div class="element-txt">
-            <h2>Skandinavisches design</h2>
-            <p>Zeitlose Styles, die immer modern sind.</p>
+        <a
+          href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+          target="_blank"
+          data-name="image"
+        >
+          <div class="top-element">
+            <img src="@/assets/compass.png" />
+            <div class="element-txt">
+              <h2>Skandinavisches design</h2>
+              <p>Zeitlose Styles, die immer modern sind.</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="three-elemets elemet3">
-        <div class="top-element">
-          <img src="@/assets/needle.png" />
-          <div class="element-txt">
-            <h2>Made in Europe</h2>
-            <p class="top-final-p">
-              Europäische Fertigung mit Expertise für hochwertige Kleidung.
-            </p>
+        <a
+          href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+          target="_blank"
+          data-name="image"
+        >
+          <div class="top-element">
+            <img src="@/assets/needle.png" />
+            <div class="element-txt">
+              <h2>Made in Europe</h2>
+              <p class="top-final-p">
+                Europäische Fertigung mit Expertise für hochwertige Kleidung.
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -85,15 +81,33 @@
       </p>
       <div class="section-second-icon-container">
         <div class="section-second-icon-1 section-second-icon">
-          <img src="@/assets/Innovative.png" />
+          <a
+            href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+            target="_blank"
+            data-name="image"
+          >
+            <img src="@/assets/Innovative.png" />
+          </a>
           <p>Innovative Materialien</p>
         </div>
         <div class="section-second-icon-2 section-second-icon">
-          <img src="@/assets/Comfort.png" />
+          <a
+            href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+            target="_blank"
+            data-name="image"
+          >
+            <img src="@/assets/Comfort.png" />
+          </a>
           <p>Next-level Comfort</p>
         </div>
         <div class="section-second-icon-3 section-second-icon">
-          <img src="@/assets/Design.png" />
+          <a
+            href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+            target="_blank"
+            data-name="image"
+          >
+            <img src="@/assets/Design.png" />
+          </a>
           <p>Zeitloses Design</p>
         </div>
       </div>
@@ -109,19 +123,43 @@
     </div>
     <div class="section-second-inner-two">
       <div class="image-container-1">
-        <img class="zoom" src="@/assets/biker.jpg" />
+        <a
+          href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+          target="_blank"
+          data-name="image"
+        >
+          <img class="zoom" src="@/assets/biker.jpg" />
+        </a>
       </div>
       <div class="image-container-2">
-        <img class="zoom" src="@/assets/man.jpg" />
+        <a
+          href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+          target="_blank"
+          data-name="image"
+        >
+          <img class="zoom" src="@/assets/man.jpg" />
+        </a>
       </div>
     </div>
   </section>
 
   <section class="small-video-container">
     <div class="small-video-container-left">
-      <video src="@/assets/small_video.mp4" muted loop autoplay></video>
+      <a
+        href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+        target="_blank"
+        data-name="image"
+      >
+        <video src="@/assets/small_video.mp4" muted loop autoplay></video>
+      </a>
       <div class="image-container-3">
-        <img class="zoom" src="@/assets/climber.jpg" />
+        <a
+          href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405455961;dc_trk_aid=597080935;dc_trk_cid=223597797;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+          target="_blank"
+          data-name="image"
+        >
+          <img class="zoom" src="@/assets/climber.jpg" />
+        </a>
       </div>
     </div>
     <div class="small-video-container-right">
@@ -138,22 +176,72 @@
   <section class="products">
     <h1>Finde deinen perfekten Look</h1>
     <div class="products-container">
-      <articcle class="item" v-for="item in items" :key="item">
+      <article class="item" v-for="item in items" :key="item">
         <div class="image-container-4">
-          <img class="zoom" :src="require(`@/assets/${item.image}`)" />
+          <a
+            :href="item.link"
+            target="_blank"
+            rel="noopener noreferrer"
+            @click="track(item.title)"
+            data-name="product"
+          >
+            <img class="zoom" :src="require(`@/assets/${item.image}`)" />
+          </a>
         </div>
         <h2>{{ item.title }}</h2>
-        <a class="cta-products" :href="item.link" @click="track(item.title)">
+        <a
+          class="cta-products"
+          :href="item.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          @click="track(item.title)"
+        >
           {{ item.cta }}
         </a>
-      </articcle>
+      </article>
     </div>
   </section>
 
-  <section class="base">
-    <img src="@/assets/bottom-img.jpg" />
-    <img src="@/assets/map.jpg" />
-  </section>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405001012;dc_trk_aid=597090813;dc_trk_cid=223597725;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="image-base"
+  >
+    <section class="base">
+      <img src="@/assets/bottom-img.jpg" />
+      <img src="@/assets/map.jpg" />
+    </section>
+  </a>
+
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405001012;dc_trk_aid=597090813;dc_trk_cid=223597725;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="sticky-footer"
+  >
+    <footer class="section-footer sticky">
+      <div class="sticky-blue">
+        <h1 class="centered">Mehr erfahren</h1>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.52441 14.8854L14.8853 4.52447"
+            stroke="white"
+            stroke-width="2"
+          />
+          <path
+            d="M14.8315 13.6286L14.8442 4.56667L5.78223 4.57935"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </footer>
+  </a>
 </template>
 
 <script>
@@ -174,21 +262,21 @@ export default {
           cta: "Jetzt entdecken",
           image: "HEMDEN.png",
           mobileImage: "HEMDEN_mobile.png",
-          link: "#",
+          link: "https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405001003;dc_trk_aid=597080632;dc_trk_cid=223042567;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
         },
         {
           title: "Hosen",
           cta: "Jetzt entdecken",
           image: "HOSEN.png",
           mobileImage: "HOSEN_mobile.png",
-          link: "#",
+          link: "https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405001009;dc_trk_aid=597080662;dc_trk_cid=223119194;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
         },
         {
           title: "Anzüge",
           cta: "Jetzt entdecken",
           image: "ANZUGE.png",
           mobileImage: "ANZUGE_mobile.png",
-          link: "#",
+          link: "https://ad.doubleclick.net/ddm/trackclk/N1787467.279382DBMPRECISDIGITAL/B32589644.405136280;dc_trk_aid=597095960;dc_trk_cid=223119371;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1",
         },
       ],
     };
@@ -324,6 +412,7 @@ button {
   text-transform: uppercase;
   width: 14.47181rem;
   margin-bottom: 0.1rem;
+  line-height: 90%;
 }
 .top-element {
   display: flex;
@@ -610,11 +699,6 @@ button {
 
 html {
   scroll-behavior: smooth;
-}
-
-.sticky-container {
-  position: relative;
-  height: 1000px; /* Adjust as needed to allow scrolling */
 }
 
 .sticky-blue {
