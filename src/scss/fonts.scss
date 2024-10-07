@@ -1,8 +1,17 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "CamphorProForXiaoMi-Bold";
+  src: url("assets/fonts/CamphorProForXiaoMi-Bold.woff2") format("woff2"),
+    url("assets/fonts/CamphorProForXiaoMi-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CamphorProForXiaoMi-Regular";
+  src: url("assets/fonts/CamphorProForXiaoMi-Regular.woff2") format("woff2"),
+    url("assets/fonts/CamphorProForXiaoMi-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
