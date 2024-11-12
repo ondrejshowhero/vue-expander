@@ -1,8 +1,24 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "SuisseIntl-Bold";
+  src: url("assets/fonts/SuisseIntl-Bold.woff2") format("woff2"),
+    url("assets/fonts/SuisseIntl-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SuisseIntl-Regular";
+  src: url("assets/fonts/SuisseIntl-Regular.woff2") format("woff2"),
+    url("assets/fonts/SuisseIntl-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SuisseIntl-SemiBold";
+  src: url("assets/fonts/SuisseIntl-SemiBold.woff2") format("woff2"),
+    url("assets/fonts/SuisseIntl-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
