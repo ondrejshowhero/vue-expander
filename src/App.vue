@@ -9,24 +9,38 @@
     />
   </section>
 
-  <section class="section-main">
-    <h1 class="heading">WINTER 2024</h1>
-    <p class="lead">
-      Entdecken Sie eine neue Kollektion mit Must-haves für den Winter, bei
-      denen hochwertige Materialien, präzise Schnitte und durchdachte Details im
-      Vordergrund stehen.
-    </p>
-    <div class="line"></div>
-  </section>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Top Text"
+  >
+    <section class="section-main">
+      <h1 class="heading">WINTER 2024</h1>
+      <p class="lead">
+        Entdecken Sie eine neue Kollektion mit Must-haves für den Winter, bei
+        denen hochwertige Materialien, präzise Schnitte und durchdachte Details
+        im Vordergrund stehen.
+      </p>
+      <div class="line"></div>
+    </section>
+  </a>
 
-  <section class="gallery-text">
-    <h2 class="heading2">LUXUS NEU DEFINIERT</h2>
-    <p class="lead">
-      Entdecken Sie eine neue Kollektion mit Must-haves für den Winter, bei
-      denen hochwertige Materialien, präzise Schnitte und durchdachte Details im
-      Vordergrund stehen.
-    </p>
-  </section>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Top Text"
+  >
+    <section class="gallery-text">
+      <h2 class="heading2">LUXUS NEU DEFINIERT</h2>
+      <p class="lead">
+        Bei COS finden Sie Kleidungsstücke und Accessoires, die sich durch ihre
+        herausragende Qualität und ihr nachhaltiges Design auszeichnen. Die
+        Kollektionen, bei denen der Schwerpunkt auf handwerklicher Expertise,
+        Innovation und Langlebigkeit liegt, verbinden Moderne und Zeitlosigkeit
+        nahtlos miteinander.
+      </p>
+    </section>
+  </a>
 
   <section class="products">
     <div v-for="(item, index) in items" :key="index">
@@ -47,17 +61,35 @@
     >
   </div>
 
-  <div class="images-container">
-    <img src="@/assets/images/1.jpg" />
-    <img src="@/assets/images/2.jpg" />
-  </div>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Bottom Images"
+  >
+    <div class="images-container">
+      <img src="@/assets/images/1.jpg" />
+      <img src="@/assets/images/2.jpg" />
+    </div>
+  </a>
 
-  <h1 class="heading heading-images">DIE MUST-HAVES DER WINTERGARDEROBE</h1>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Bottom Images"
+  >
+    <h1 class="heading heading-images">DIE MUST-HAVES DER WINTERGARDEROBE</h1>
+  </a>
 
-  <div class="images-container">
-    <img src="@/assets/images/3.jpg" />
-    <img src="@/assets/images/4.jpg" />
-  </div>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Bottom Images"
+  >
+    <div class="images-container">
+      <img src="@/assets/images/3.jpg" />
+      <img src="@/assets/images/4.jpg" />
+    </div>
+  </a>
 
   <div class="footer-container">
     <a
@@ -104,43 +136,43 @@ export default {
       items: [
         {
           image: require("@/assets/products/1.jpg"),
-          text: "Product name in here",
+          text: "SERIF TOTE BAG - VELOURSLEDER",
           href: "https://www.cos.com/de-de/women/accessories/bags/cuir/product/serif-tote-suede-dark-brown-1260359001",
         },
         {
           image: require("@/assets/products/2.jpg"),
-          text: "Product name in here",
+          text: "MANTEL MIT GÜRTEL",
           href: "https://www.cos.com/de-de/women/womenswear/coatsjackets/coats/product/belted-double-faced-wool-coat-grey-1097894007",
         },
         {
           image: require("@/assets/products/3.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/knitwear/merinoknitwear/product/ribbed-cashmere-blend-funnel-neck-jumper-beige-mlange-1255842001",
+          text: "GROBSTRICKPULLOVER",
+          href: "https://www.cos.com/de-de/women/womenswear/knitwear/jumpers/product/chunkypurecashmereturtleneckjumper-beige-1230301002",
         },
         {
           image: require("@/assets/products/4.jpg"),
-          text: "Product name in here",
+          text: "KLEID MIT BARDOT-AUSSCHNITT",
           href: "https://www.cos.com/de-de/women/womenswear/dresses/longdresses/product/merino-wool-bardot-dress-black-1250704001",
         },
         {
           image: require("@/assets/products/5.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/coatsjackets/coats/product/oversized-single-breasted-wool-coat-navy-1246231001",
+          text: "SCHULTERFREIER PULLOVER",
+          href: "https://www.cos.com/de-de/women/womenswear/tops/longsleevetops/product/off-the-shoulder-merino-wool-jumper-mole-1250703002",
         },
         {
           image: require("@/assets/products/6.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/knitwear/jumpers/product/chunkypurecashmereturtleneckjumper-beige-1230301002",
+          text: "GESPRENKELTES BAUMWOLLHEMD",
+          href: "https://www.cos.com/de-de/women/womenswear/shirts/product/flecked-cotton-shirt-cream-1246087001",
         },
         {
           image: require("@/assets/products/7.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/trousers/wideleg/product/wide-leg-tailored-wool-trousers-black-1129676006",
+          text: "ELEGANTE HOSE AUS WOLL-MIX",
+          href: "https://www.cos.com/de-de/women/womenswear/trousers/slimfit/product/slim-tailored-wool-blend-trousers-black-1242912001",
         },
         {
           image: require("@/assets/products/8.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/shirts/product/flecked-cotton-shirt-cream-1246087001",
+          text: "KASTENFÖRMIGE WOLLJACKE",
+          href: "https://www.cos.com/de-de/women/womenswear/coatsjackets/jackets/product/boxy-double-faced-wool-jacket-light-grey-1246537003",
         },
       ],
     };
