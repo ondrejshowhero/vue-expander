@@ -4,29 +4,42 @@
       :filename="videoFile"
       :mobile="mobile"
       :autoplay="true"
-      url="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+      url="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
       name="Main Video"
     />
   </section>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Top Text"
+  >
+    <section class="section-main">
+      <h1 class="heading">WINTER 2024</h1>
+      <p class="lead">
+        Entdecken Sie eine neue Kollektion mit Must-haves für den Winter, bei
+        denen hochwertige Materialien, präzise Schnitte und durchdachte Details
+        im Vordergrund stehen.
+      </p>
+      <div class="line"></div>
+    </section>
+  </a>
 
-  <section class="section-main">
-    <h1 class="heading">WINTER 2024</h1>
-    <p class="lead">
-      Entdecken Sie eine neue Kollektion mit Must-haves für den Winter, bei
-      denen hochwertige Materialien, präzise Schnitte und durchdachte Details im
-      Vordergrund stehen.
-    </p>
-    <div class="line"></div>
-  </section>
-
-  <section class="gallery-text">
-    <h2 class="heading2">LUXUS NEU DEFINIERT</h2>
-    <p class="lead">
-      Entdecken Sie eine neue Kollektion mit Must-haves für den Winter, bei
-      denen hochwertige Materialien, präzise Schnitte und durchdachte Details im
-      Vordergrund stehen.
-    </p>
-  </section>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Top Text"
+  >
+    <section class="gallery-text">
+      <h2 class="heading2">LUXUS NEU DEFINIERT</h2>
+      <p class="lead">
+        Bei COS finden Sie Kleidungsstücke und Accessoires, die sich durch ihre
+        herausragende Qualität und ihr nachhaltiges Design auszeichnen. Die
+        Kollektionen, bei denen der Schwerpunkt auf handwerklicher Expertise,
+        Innovation und Langlebigkeit liegt, verbinden Moderne und Zeitlosigkeit
+        nahtlos miteinander.
+      </p>
+    </section>
+  </a>
 
   <section class="products">
     <div v-for="(item, index) in items" :key="index">
@@ -39,7 +52,7 @@
 
   <div class="cta-container">
     <a
-      href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+      href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
       target="_blank"
       class="cta"
       data-name="Jetzt entdecken"
@@ -47,28 +60,46 @@
     >
   </div>
 
-  <div class="images-container">
-    <img src="@/assets/images/1.jpg" />
-    <img src="@/assets/images/2.jpg" />
-  </div>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Bottom Images"
+  >
+    <div class="images-container">
+      <img src="@/assets/images/1.jpg" />
+      <img src="@/assets/images/2.jpg" />
+    </div>
+  </a>
 
-  <h1 class="heading heading-images">DIE MUST-HAVES DER WINTERGARDEROBE</h1>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Bottom Images"
+  >
+    <h1 class="heading heading-images">DIE MUST-HAVES DER WINTERGARDEROBE</h1>
+  </a>
 
-  <div class="images-container">
-    <img src="@/assets/images/3.jpg" />
-    <img src="@/assets/images/4.jpg" />
-  </div>
+  <a
+    href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    target="_blank"
+    data-name="Bottom Images"
+  >
+    <div class="images-container">
+      <img src="@/assets/images/3.jpg" />
+      <img src="@/assets/images/4.jpg" />
+    </div>
+  </a>
 
   <div class="footer-container">
     <a
-      href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+      href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
       target="_blank"
       class="cta cta2"
       data-name="Jetzt entdecken"
       >Jetzt entdecken</a
     >
     <a
-      href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406341193;dc_trk_aid=598414987;dc_trk_cid=224110715;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+      href="https://ad.doubleclick.net/ddm/trackclk/N803235.279382DBMHMPORTFOLIOBRA2/B32786214.406458227;dc_trk_aid=598458864;dc_trk_cid=224064571;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
       target="_blank"
       class="logo"
       data-name="Logo"
@@ -104,43 +135,43 @@ export default {
       items: [
         {
           image: require("@/assets/products/1.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/accessories/bags/cuir/product/serif-tote-suede-dark-brown-1260359001",
+          text: "PULLOVER MIT REISSVERSCHLUSS",
+          href: "https://www.cos.com/de-de/men/menswear/knitwear/jumpers/product/woolandcotton-blendhalf-zipjumper-beige-1188205005",
         },
         {
           image: require("@/assets/products/2.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/coatsjackets/coats/product/belted-double-faced-wool-coat-grey-1097894007",
+          text: "GEFÜTTERTE TEDDYJACKE",
+          href: "https://www.cos.com/de-de/men/menswear/coatsjackets/padded/product/padded-faux-shearling-jacket-dark-brown-1203771002",
         },
         {
           image: require("@/assets/products/3.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/knitwear/merinoknitwear/product/ribbed-cashmere-blend-funnel-neck-jumper-beige-mlange-1255842001",
+          text: "GEFLOCHTENE TOTE BAG",
+          href: "https://www.cos.com/de-de/men/accessories/bagswallets/totebags/product/woven-tote-webbing-dark-brown-1238666002",
         },
         {
           image: require("@/assets/products/4.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/dresses/longdresses/product/merino-wool-bardot-dress-black-1250704001",
+          text: "LOCKERER ZWEIREIHIGER BLAZER",
+          href: "https://www.cos.com/de-de/men/menswear/suits/blazers/product/relaxed-double-breasted-wool-blend-blazer-dark-beige-1250551001",
         },
         {
           image: require("@/assets/products/5.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/coatsjackets/coats/product/oversized-single-breasted-wool-coat-navy-1246231001",
+          text: "CORDHOSE MIT WEITEM BEIN",
+          href: "https://www.cos.com/de-de/men/menswear/trousers/wide-fit/product/corduroy-wide-leg-trousers-dark-khaki-1243946002",
         },
         {
           image: require("@/assets/products/6.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/knitwear/jumpers/product/chunkypurecashmereturtleneckjumper-beige-1230301002",
+          text: "DOPPELREIHIGE CABANJACKE",
+          href: "https://www.cos.com/de-de/men/menswear/coatsjackets/coats/product/double-breasted-wool-pea-coat-navy-1250534001",
         },
         {
           image: require("@/assets/products/7.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/trousers/wideleg/product/wide-leg-tailored-wool-trousers-black-1129676006",
+          text: "DOME BEFLOCKTE JEANS",
+          href: "https://www.cos.com/de-de/men/menswear/jeans/straightleg/product/dome-flocked-straight-leg-jeans-black-1265077001",
         },
         {
           image: require("@/assets/products/8.jpg"),
-          text: "Product name in here",
-          href: "https://www.cos.com/de-de/women/womenswear/shirts/product/flecked-cotton-shirt-cream-1246087001",
+          text: "GROBSTRICKPULLOVER",
+          href: "https://www.cos.com/de-de/men/menswear/knitwear/cashmere/product/chunky-pure-cashmere-jumper-beige-1251102001",
         },
       ],
     };
