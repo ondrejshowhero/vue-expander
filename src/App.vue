@@ -4,7 +4,7 @@
       :filename="videoFile"
       :mobile="mobile"
       :autoplay="false"
-      url=""
+      url="https://www.postnord.no/"
       name="Main Video"
     />
   </section>
@@ -21,7 +21,11 @@
       Husk å sende pakken din innen 16. desember for å være <br />
       sikker på at den kommer frem til jul.
     </p>
-    <a href="" target="_blank" class="cta" data-name="Read more"
+    <a
+      href="https://www.postnord.no/"
+      target="_blank"
+      class="cta"
+      data-name="Read more"
       >Bestill frakt her</a
     >
   </section>
@@ -47,14 +51,14 @@
       :filename="videoFile2"
       :mobile="mobile"
       :autoplay="false"
-      url=""
+      url="https://www.postnord.no/"
       name="Video 2"
     />
   </section>
 
   <section class="footer">
     <div class="logo-cont">
-      <a href="" target="_blank" data-name="Logo">
+      <a href="https://www.postnord.no/" target="_blank" data-name="Logo">
         <img class="logo" src="@/assets/images/logo.png" />
       </a>
     </div>
