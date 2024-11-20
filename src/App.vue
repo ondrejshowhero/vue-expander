@@ -243,6 +243,12 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  @include mobile {
+    width: 85vw;
+    height: 15vw;
+    font-size: 6.875vw;
+  }
 }
 .lead2 {
   padding-bottom: 3.25rem;
