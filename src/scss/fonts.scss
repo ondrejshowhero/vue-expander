@@ -1,8 +1,35 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "PostNordSansBold";
+  src: url("assets/fonts/PostNordSansBold.woff2") format("woff2"),
+    url("assets/fonts/PostNordSansBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PostNordSansLight";
+  src: url("assets/fonts/PostNordSansLight.woff2") format("woff2"),
+    url("assets/fonts/PostNordSansLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PostNordSansMedium";
+  src: url("assets/fonts/PostNordSansMedium.woff2") format("woff2"),
+    url("assets/fonts/PostNordSansMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PostNordSansRegular";
+  src: url("assets/fonts/PostNordSansRegular.woff2") format("woff2"),
+    url("assets/fonts/PostNordSansRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
