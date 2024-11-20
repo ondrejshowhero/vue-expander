@@ -3,7 +3,7 @@
     <ExpanderVideo
       :filename="videoFile"
       :mobile="mobile"
-      :autoplay="false"
+      :autoplay="true"
       url="https://www.postnord.no/"
       name="Main Video"
     />
@@ -50,7 +50,7 @@
     <ExpanderVideo
       :filename="videoFile2"
       :mobile="mobile"
-      :autoplay="false"
+      :autoplay="true"
       url="https://www.postnord.no/"
       name="Video 2"
     />
