@@ -10,43 +10,43 @@
   </section>
 
   <section class="section-main">
-    <h1 class="heading">Send julegavene dine med PostNord</h1>
+    <h1 class="heading">Velg levering i pakkeautomat</h1>
     <p class="lead">
-      Med PostNord kan du enkelt, trygt og rimelig sende pakker i hele Norge.
-      Bestill og betal enkelt på nett, og send fra et av våre 1600
-      leveringssteder. Vi har emballasje og etiketter på alle våre steder for
-      enkel innpakning.
+      Velger du pakkeautomat når du handler på nett, kan du hente pakken din der
+      du bor eller ferdes, når som helst. Pakkeautomatene våre er åpne hele
+      døgnet, så du slipper å forholde deg til både kø og åpningstider.
     </p>
     <p class="lead lead2">
-      Husk å sende pakken din innen 16. desember for å være <br />
-      sikker på at den kommer frem til jul.
+      Vi har nå nesten 4000 pakkeautomater rundt omkring i hele landet.<br />Vet
+      du hvor din nærmeste pakkeautomat er?
     </p>
     <a
       href="https://www.postnord.no/"
       target="_blank"
       class="cta"
       data-name="Read more"
-      >Bestill frakt her</a
+      >Her er din nærmeste pakkeautomat</a
     >
   </section>
 
+  <section class="section-slider">
+    <ExpanderSlider />
+  </section>
+
   <section class="options-container">
+    <div class="options-header">
+      <h1 class="options-header-txt">Slik fungerer det</h1>
+    </div>
     <div class="options-box">
       <div class="option" v-for="(option, index) in options" :key="index">
-        <h1 class="options-heading">{{ option.heading }}</h1>
+        <!-- <h1 class="options-heading">{{ option.heading }}</h1> -->
+        <img :src="option.imageSrc" class="options-img" />
         <p class="options-p" v-html="option.text"></p>
       </div>
     </div>
-
-    <div class="options-small-txt-container">
-      <p class="options-small-txt">
-        Maksimal lengde på pakken er 120 cm. Lengde + omkrets kan maksimalt være
-        240 cm, uansett vekt.
-      </p>
-    </div>
   </section>
 
-  <section class="section-video">
+  <!-- <section class="section-video">
     <ExpanderVideo
       :filename="videoFile2"
       :mobile="mobile"
@@ -54,7 +54,7 @@
       url="https://www.postnord.no/"
       name="Video 2"
     />
-  </section>
+  </section> -->
 
   <section class="footer">
     <div class="logo-cont">
@@ -69,10 +69,6 @@
 
   <!-- <section class="section-scroller">
     <ExpanderScroller />
-  </section>
-     
-  <section class="section-slider">
-    <ExpanderSlider />
   </section> -->
 
   <!-- <footer class="section-footer sticky">
@@ -88,14 +84,14 @@
 <script>
 import ExpanderVideo from "./components/ExpanderVideo.vue";
 // import ExpanderScroller from './components/ExpanderScroller.vue'
-// import ExpanderSlider from './components/ExpanderSlider.vue'
+import ExpanderSlider from "./components/ExpanderSlider.vue";
 
 export default {
   name: "App",
   components: {
     ExpanderVideo,
     // ExpanderScroller,
-    // ExpanderSlider,
+    ExpanderSlider,
   },
   data() {
     return {
@@ -104,16 +100,16 @@ export default {
       videoFile2: "video2.mp4",
       options: [
         {
-          heading: "Enkelt",
-          text: "Betal på nett og lever pakken på et av våre 1600 pakkeleveringssteder. <span class='underline'>Finn ditt nærmeste sted her.</span>",
+          imageSrc: require("@/assets/images/1.png"),
+          text: "Sjekk om nettbutikken tilbyr levering til en automat i nærheten og velg dette alternativet i kassen",
         },
         {
-          heading: "Trygt",
-          text: "Pakken kan spores av både deg og mottaker fra den sendes til den er trygt levert.",
+          imageSrc: require("@/assets/images/2.png"),
+          text: "Du mottar varsel på SMS når pakken er klar til å hentes i automaten.",
         },
         {
-          heading: "Rimelig",
-          text: "For pakker opptil 5 kg betaler du kun 69 kroner. Skal du sende større pakker koster det mer. <span class='underline'>Se alle priser her.</span>",
+          imageSrc: require("@/assets/images/3.png"),
+          text: "Bruk PostNord-appen til å åpne luken. I appen kan du også følge med på sendingen underveis.",
         },
       ],
     };
@@ -204,7 +200,7 @@ button {
     background-size: contain;
     background-repeat: no-repeat;
     height: 45rem;
-    background-color: #e8f9ef;
+    background-color: #8eddf9;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -212,14 +208,14 @@ button {
   }
 }
 .heading {
-  color: #002f24;
+  color: #0d234b;
   font-family: "PostNordSansBold", sans-serif;
   font-size: 2.625rem;
   margin-bottom: 1.8rem;
   line-height: normal;
 }
 .lead {
-  color: #002f24;
+  color: #0d234b;
   font-family: "PostNordSansRegular", sans-serif;
   font-size: 1.65625rem;
   padding-bottom: 2rem;
@@ -231,18 +227,23 @@ button {
   }
 }
 .cta {
-  width: 25.5rem;
-  height: 4.5rem;
+  width: 28.25rem;
+  height: 4.875rem;
   border-radius: 3.125rem;
-  background: #005e41;
-  color: #e8f9ef;
+  background: #005d92;
+  color: #e0f8ff;
   text-align: center;
-  font-family: "PostNord Sans";
-  font-size: 2.0625rem;
-  font-family: "PostNordSansBold", sans-serif;
+  font-size: 1.5625rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "PostNordSansMedium", sans-serif;
+  cursor: pointer;
+  @include mobile {
+    width: 94.17vw;
+    height: 16.25vw;
+    font-size: 5.21vw;
+  }
 }
 .lead2 {
   padding-bottom: 3.25rem;
@@ -253,21 +254,26 @@ button {
 .options-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 13.31rem;
-  background: #abe3bb;
+  background: #8eddf9;
   @include mobile {
     height: auto;
   }
 }
 .option {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   text-align: center;
-  width: 18.1rem;
+  // width: 14.8125rem;
+}
+.options-img {
+  width: 4.25rem;
+  height: 4.25rem;
+  margin-right: 1rem;
 }
 .options-heading {
   color: #002f24;
@@ -282,24 +288,29 @@ button {
   text-align: center;
   font-size: 1.0625rem;
   font-family: "PostNordSansRegular", sans-serif;
+  width: 14.8125rem;
 }
 .options-box {
   display: flex;
-  gap: 4.44rem;
-  margin: 2.13rem 0 1.6rem;
+  gap: 3.9rem;
+  // margin: 2.13rem 0 1.6rem;
+  align-items: flex-start;
+  padding: 2rem 2.19rem 0;
   @include mobile {
     flex-direction: column;
+    padding: 2rem 2.19rem;
   }
 }
-.options-small-txt {
-  font-family: "PostNordSansLight", sans-serif;
-  margin-bottom: 1rem;
-  color: #002f24;
+.options-header-txt {
+  color: #0d234b;
   text-align: center;
-  font-size: 0.8125rem;
+  font-family: "PostNordSansBold", sans-serif;
+  font-size: 2.28125rem;
+  margin-top: 1rem;
 }
+
 .footer {
-  background-color: #002f24;
+  background: #005d92;
   height: 9.81rem;
   display: flex;
   justify-content: flex-start;
