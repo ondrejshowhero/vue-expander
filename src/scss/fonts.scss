@@ -1,8 +1,24 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "AllenteSans-Bold";
+  src: url("assets/fonts/AllenteSans-Bold.woff2") format("woff2"),
+    url("assets/fonts/AllenteSans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AllenteSans-Medium";
+  src: url("assets/fonts/AllenteSans-Medium.woff2") format("woff2"),
+    url("assets/fonts/AllenteSans-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AllenteSans-Regular";
+  src: url("assets/fonts/AllenteSans-Regular.woff2") format("woff2"),
+    url("assets/fonts/AllenteSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
