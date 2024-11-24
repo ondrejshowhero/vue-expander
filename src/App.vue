@@ -10,7 +10,7 @@
   </section>
 
   <a
-    href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.409304730;dc_trk_aid=601105617;dc_trk_cid=225976115;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+    href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.408960566;dc_trk_aid=601105914;dc_trk_cid=226016254;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
     target="_blank"
     data-name="Røykvarslerdagen"
   >
@@ -24,23 +24,22 @@
 
   <section class="tile-container">
     <div class="tile-one">
-      <img src="@/assets/mobile1.png" class="tile-img" />
+      <img src="@/assets/mobile1.gif" class="tile-img" />
     </div>
     <div class="tile-two">
-      <h1 class="tile-header">Ikke glem røykvarsleren i jula</h1>
+      <h1 class="tile-header">Mye julekos og spenning kan fort bli tenning</h1>
       <p class="tile-p">
-        Bor du i kollektiv eller nettopp flyttet for deg selv? Da kan du endelig
-        slippe maset fra mamma, men husk for all del å bytte batteri på
-        røykvarslerdagen 1. desember!
+        Jo, juletreet kan faktisk ta fyr. Hva vet du om de vanligste årsakene
+        til brann i jula?
       </p>
 
       <a
-        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.409304730;dc_trk_aid=601105617;dc_trk_cid=225976115;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.408960566;dc_trk_aid=601105914;dc_trk_cid=226016254;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
         target="_blank"
         data-name="Røykvarslerdagen"
       >
         <div class="tile-cta">
-          <h2 class="tile-cta-txt">Hvorfor er det så viktig?</h2>
+          <h2 class="tile-cta-txt">Unngå disse feilene</h2>
           <img src="@/assets/arrow.png" class="tile-arrow" />
         </div>
       </a>
@@ -53,33 +52,24 @@
 
   <section class="tile-container tile-container2">
     <div class="tile-one tile-one2">
-      <img src="@/assets/ornament.gif" class="tile-img tile-img2" />
+      <img src="@/assets/ornament.png" class="tile-img tile-img2" />
     </div>
     <div class="tile-two tile-two2">
-      <h1 class="tile-header">Nå tennes tusen julelys..</h1>
+      <h1 class="tile-header">
+        Bekymret for strømprisene<br />
+        i jula?
+      </h1>
       <p class="tile-p">
-        Den gode stemningen kan fort kortslutte. Sjekk om du har julebelysningen
-        på stell:
+        Her er noen tips til hvordan du kan bruke strømmen smart for å unngå
+        overraskelser<br />på strømregningen i januar.
       </p>
-      <p class="tile-p"></p>
-      <ul class="tile-p dot-list a">
-        <li>Er utelysene merket med CE og IP44 eller høyere?</li>
-        <li>Bruker du en godkjent utekontakt?</li>
-        <li>
-          Har du sjekket om lysene er varme, lyser ujevnt eller har skader?
-        </li>
-        <li>Bruker du skjøteledninger beregnet for utendørs bruk?</li>
-      </ul>
-
       <a
-        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.409304730;dc_trk_aid=601066010;dc_trk_cid=226052462;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.408960566;dc_trk_aid=601068614;dc_trk_cid=226053155;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
         target="_blank"
         data-name="Utebelysning"
       >
         <div class="tile-cta">
-          <h2 class="tile-cta-txt tile-cta-txt2">
-            Les mer om trygg utebelysning
-          </h2>
+          <h2 class="tile-cta-txt tile-cta-txt2">Dette bruker mest strøm</h2>
           <img src="@/assets/arrow.png" class="tile-arrow" />
         </div>
       </a>
@@ -88,23 +78,22 @@
 
   <section class="tile-container tile-container3">
     <div class="tile-one">
-      <img src="@/assets/bottom.gif" class="tile-img" />
+      <img src="@/assets/mobile2.gif" class="tile-img" />
     </div>
     <div class="tile-two tile-two3">
-      <h1 class="tile-header">Ingen jul uten skjøteledninger?</h1>
+      <h1 class="tile-header">Kommer hobbyelektrikeren i deg frem til jul?</h1>
       <p class="tile-p">
-        Det er fort gjort å gå crazy og få overtenning når du pynter til jul.
-        Skjøteledninger kan virke som redningen, men det er faktisk stikk
-        motsatt. Dropp skjøteledningene og bruk heller huet!
+        Noe kan du gjøre selv, men det kan være lurt å la fagfolk ta seg av det
+        elektriske.
       </p>
 
       <a
-        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.409304730;dc_trk_aid=601066031;dc_trk_cid=226017232;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.408960566;dc_trk_aid=601214604;dc_trk_cid=226053158;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
         target="_blank"
         data-name="Skjoteledninger"
       >
         <div class="tile-cta">
-          <h2 class="tile-cta-txt tile-cta-txt3">Få flere elektriske tips</h2>
+          <h2 class="tile-cta-txt tile-cta-txt3">Les hva kan du gjøre selv</h2>
           <img src="@/assets/arrow.png" class="tile-arrow" />
         </div>
       </a>
@@ -114,7 +103,7 @@
   <footer class="section-footer sticky">
     <div class="container">
       <a
-        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.409304730;dc_trk_aid=601066031;dc_trk_cid=226017232;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.408960566;dc_trk_aid=601214604;dc_trk_cid=226053158;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
         target="_blank"
         class="logo"
         data-name="Logo"
@@ -122,7 +111,7 @@
         <img src="@/assets/logo.png" />
       </a>
       <a
-        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.409304730;dc_trk_aid=601066031;dc_trk_cid=226017232;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
+        href="https://ad.doubleclick.net/ddm/trackclk/N513812.279382DBMAMIDAYSNORWAY26/B32920662.408960566;dc_trk_aid=601214604;dc_trk_cid=226053158;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ltd=;dc_tdv=1"
         target="_blank"
         class="cta"
         data-name="cta"
@@ -331,19 +320,23 @@ button {
 }
 .tile-container2 {
   flex-direction: row-reverse;
-  height: 49rem;
+  height: 42rem;
   z-index: 0;
   @include mobile {
     flex-direction: column-reverse;
     height: 66rem;
     margin-top: 0;
+    height: 234vw;
   }
 }
 .tile-two2 {
   margin-left: 3.5rem;
+  justify-content: flex-start;
+  margin-top: 13rem;
   @include mobile {
     margin-left: 0;
     z-index: 1000;
+    margin-top: 15vw;
   }
 }
 .tile-img2 {
@@ -354,15 +347,15 @@ button {
   overflow: hidden;
   margin-right: -5rem;
   @include mobile {
-    width: 113.33vw;
-    height: 163.13vw;
     margin-top: -8vw;
+    width: 104.33vw;
+    height: auto;
   }
 }
 .tile-one2 {
   width: 48.75rem;
   height: 48.75rem;
-  margin-right: -5rem;
+  margin-right: 0;
   margin-top: -3rem;
 }
 .branch-overlay {
@@ -391,7 +384,7 @@ ul.a {
   }
 }
 .tile-container3 {
-  margin-top: 0;
+  margin-top: -3rem;
 }
 .tile-cta-txt3 {
   width: auto;
@@ -430,7 +423,10 @@ ul.a {
   }
 }
 .tile-two3 {
-  margin-top: 1rem;
+  margin-top: 6rem;
+  @include mobile {
+    margin-top: 5rem;
+  }
 }
 </style>
 
