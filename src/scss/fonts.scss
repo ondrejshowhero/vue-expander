@@ -1,8 +1,25 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "RedHatDisplay-Bold";
+  src: url("assets/fonts/RedHatDisplay-Bold.woff2") format("woff2"),
+    url("assets/fonts/RedHatDisplay-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RedHatDisplay-Regular";
+  src: url("assets/fonts/RedHatDisplay-Regular.woff2") format("woff2"),
+    url("assets/fonts/RedHatDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "RedHatDisplay-SemiBold";
+  src: url("assets/fonts/RedHatDisplay-SemiBold.woff2") format("woff2"),
+    url("assets/fonts/RedHatDisplay-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
