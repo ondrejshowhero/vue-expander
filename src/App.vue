@@ -6,7 +6,7 @@
     <ExpanderVideo
       :filename="videoFile"
       :mobile="mobile"
-      :autoplay="false"
+      :autoplay="true"
       url="https://www.norwegian.no/om-oss/opplev-oss/barekraftig-luftfart/"
       name="Main Video"
     />
@@ -213,7 +213,7 @@ button {
 .section-main {
   padding: 2.44rem 5.94rem;
   @include mobile {
-    padding: 1rem;
+    padding: 2.75rem 1rem 1rem;
   }
 }
 .heading {
