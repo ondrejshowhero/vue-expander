@@ -1,8 +1,25 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "ViaplaySans-Black";
+  src: url("assets/fonts/ViaplaySans-Black.woff2") format("woff2"),
+    url("assets/fonts/ViaplaySans-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ViaplaySans-Bold";
+  src: url("assets/fonts/ViaplaySans-Bold.woff2") format("woff2"),
+    url("assets/fonts/ViaplaySans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ViaplaySans-Regular";
+  src: url("assets/fonts/ViaplaySans-Regular.woff2") format("woff2"),
+    url("assets/fonts/ViaplaySans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
