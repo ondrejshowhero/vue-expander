@@ -63,8 +63,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @include d {
-    width: 4.5rem;
+  width: 4.5rem;
+
+  @include m {
+    width: 7.29vw; // 3.5rem converted to vw for 480px screen width
   }
 }
 .value {
@@ -75,10 +77,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  letter-spacing: 2.6rem;
-
-  @include d {
-    font-size: 1.5rem;
+  letter-spacing: 2.9rem;
+  font-size: 1.5rem;
+  @include m {
+    width: 7.29vw; // 4.5rem converted to vw for 480px screen width
+    letter-spacing: 4.5vw; // 2.6rem converted to vw for 480px screen width
+    font-size: 3.13vw; // 1.5rem converted to vw for 480px screen width
   }
 }
 .label {
@@ -89,6 +93,8 @@ export default {
   margin-top: 0.6rem;
   font-size: 0.875rem;
   @include m {
+    font-size: 1.56vw; // 0.75rem converted to vw for 480px screen width
+    margin-top: 0.65vw; // 0.31rem converted to vw for 480px screen width
   }
 }
 .container-numbers {
@@ -104,5 +110,9 @@ export default {
   background-repeat: no-repeat;
   color: #000;
   font-size: 2rem;
+  @include m {
+    width: 13.02vw; // 5rem converted to vw for 480px screen width
+    height: 7.81vw; // 3rem converted to vw for 480px screen width
+  }
 }
 </style>

@@ -2,14 +2,28 @@
   <footer class="section-footer-top sticky sticky-top">
     <div class="container">
       <div class="container-img">
-        <a href="" target="_blank" class="logo" data-name="Logo">
+        <a
+          href="https://viaplay.dk/serier/paradise-hotel?utm_source=showheroes&utm_medium=outstream&utm_campaign=mrkt_dk_pub_uf_webm_series-paradise-hotel-s21-danmark_20241227_svod_all_paradise-hotel-s21__reach_showheroes_PD10000075_ref3_204305821_&utm_content=mrkt3_da_paradise-hotel-s21_vid_outstream-mp4_&utm_term=mrkt2_dk_paradise-hotel-s21__ron_websitevisitors_a___"
+          target="_blank"
+          class="logo"
+          data-name="Logo-viaplay"
+        >
           <img src="@/assets/logo_viaplay.png" />
         </a>
-        <a href="" target="_blank" class="logo-two" data-name="Logo">
+        <a
+          href="https://viaplay.dk/serier/paradise-hotel?utm_source=showheroes&utm_medium=outstream&utm_campaign=mrkt_dk_pub_uf_webm_series-paradise-hotel-s21-danmark_20241227_svod_all_paradise-hotel-s21__reach_showheroes_PD10000075_ref3_204305821_&utm_content=mrkt3_da_paradise-hotel-s21_vid_outstream-mp4_&utm_term=mrkt2_dk_paradise-hotel-s21__ron_websitevisitors_a___"
+          target="_blank"
+          class="logo-two"
+          data-name="Logo-3"
+        >
           <img src="@/assets/logo_3.png" />
         </a>
-        <a href="" target="_blank" class="slogan" data-name="Read more"
-          >Paradise Hotel</a
+        <a
+          href="https://viaplay.dk/serier/paradise-hotel?utm_source=showheroes&utm_medium=outstream&utm_campaign=mrkt_dk_pub_uf_webm_series-paradise-hotel-s21-danmark_20241227_svod_all_paradise-hotel-s21__reach_showheroes_PD10000075_ref3_204305821_&utm_content=mrkt3_da_paradise-hotel-s21_vid_outstream-mp4_&utm_term=mrkt2_dk_paradise-hotel-s21__ron_websitevisitors_a___"
+          target="_blank"
+          class="slogan"
+          data-name="Premiere d. 1. januar "
+          >Paradise Hotel Premiere</a
         >
       </div>
       <!-- <a href="" target="_blank" class="slogan" data-name="Read more"
@@ -17,7 +31,7 @@
       > -->
       <div class="container-countdown">
         <ExpanderCountdown
-          :date="new Date('2024-12-31T23:59:59').toISOString()"
+          :date="new Date('2025-01-01T10:00:00').toISOString()"
         />
       </div>
     </div>
@@ -29,7 +43,7 @@
         :filename="videoFile"
         :mobile="mobile"
         :autoplay="true"
-        url=""
+        url="https://viaplay.dk/serier/paradise-hotel?utm_source=showheroes&utm_medium=outstream&utm_campaign=mrkt_dk_pub_uf_webm_series-paradise-hotel-s21-danmark_20241227_svod_all_paradise-hotel-s21__reach_showheroes_PD10000075_ref3_204305821_&utm_content=mrkt3_da_paradise-hotel-s21_vid_outstream-mp4_&utm_term=mrkt2_dk_paradise-hotel-s21__ron_websitevisitors_a___"
         name="Main Video"
       />
     </section>
@@ -44,17 +58,33 @@
   <footer class="section-footer sticky">
     <div class="container">
       <div class="container-img">
-        <a href="" target="_blank" class="logo" data-name="Logo">
+        <a
+          href="https://viaplay.dk/serier/paradise-hotel?utm_source=showheroes&utm_medium=outstream&utm_campaign=mrkt_dk_pub_uf_webm_series-paradise-hotel-s21-danmark_20241227_svod_all_paradise-hotel-s21__reach_showheroes_PD10000075_ref3_204305821_&utm_content=mrkt3_da_paradise-hotel-s21_vid_outstream-mp4_&utm_term=mrkt2_dk_paradise-hotel-s21__ron_websitevisitors_a___"
+          target="_blank"
+          class="logo"
+          data-name="Logo-viaplay-bottom"
+        >
           <img src="@/assets/logo_viaplay.png" />
         </a>
-        <a href="" target="_blank" class="logo-two" data-name="Logo">
+        <a
+          href="https://viaplay.dk/serier/paradise-hotel?utm_source=showheroes&utm_medium=outstream&utm_campaign=mrkt_dk_pub_uf_webm_series-paradise-hotel-s21-danmark_20241227_svod_all_paradise-hotel-s21__reach_showheroes_PD10000075_ref3_204305821_&utm_content=mrkt3_da_paradise-hotel-s21_vid_outstream-mp4_&utm_term=mrkt2_dk_paradise-hotel-s21__ron_websitevisitors_a___"
+          target="_blank"
+          class="logo-two"
+          data-name="Logo-3-bottom"
+        >
           <img src="@/assets/logo_3.png" />
         </a>
-        <a href="" target="_blank" class="slogan" data-name="Read more"
-          >Tirsdag-torsdag fra 22.00</a
+        <a
+          href="https://viaplay.dk/serier/paradise-hotel?utm_source=showheroes&utm_medium=outstream&utm_campaign=mrkt_dk_pub_uf_webm_series-paradise-hotel-s21-danmark_20241227_svod_all_paradise-hotel-s21__reach_showheroes_PD10000075_ref3_204305821_&utm_content=mrkt3_da_paradise-hotel-s21_vid_outstream-mp4_&utm_term=mrkt2_dk_paradise-hotel-s21__ron_websitevisitors_a___"
+          target="_blank"
+          class="slogan slogan-two"
+          data-name="Tårer, taktik & trekanter"
+          >Tårer, taktik & trekanter</a
         >
       </div>
-      <a href="" target="_blank" class="cta" data-name="Read more">STREAM NU</a>
+      <a href="" target="_blank" class="cta" data-name="Read more"
+        >Premiere d. 1. januar
+      </a>
     </div>
   </footer>
 </template>
@@ -129,7 +159,7 @@ html {
   padding-top: 7.31rem;
   background: #252433;
   @include mobile {
-    padding-top: 9.5vw;
+    padding-top: 16.54vw;
   }
 }
 
@@ -165,9 +195,17 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: var(--footer-height);
+    height: 5.75rem;
     padding: 0 1rem;
-    background: #fff;
+    background: #252433;
+    gap: 0.5rem;
+
+    @include mobile {
+      flex-direction: column;
+      height: 21vw; /* 7.25rem converted to vw for 480px screen width */
+      padding: 1.85vw 0 2.08vw; /* 0.89rem and 1rem converted to vw for 480px screen width */
+      justify-content: center;
+    }
   }
   &.sticky {
     position: fixed;
@@ -191,8 +229,8 @@ button {
     height: 7.31rem;
     background: #252433;
     @include mobile {
-      height: 9.5vw;
-      padding: 0 1rem 0 1rem;
+      height: 16.54vw;
+      padding: 0 2.08vw 0 2.08vw;
     }
   }
   &.sticky-top {
@@ -216,6 +254,7 @@ button {
 .container-img {
   display: flex;
   gap: 0.19rem;
+  align-items: center;
 }
 .logo {
   width: 4.75rem;
@@ -242,7 +281,10 @@ button {
   display: flex;
   font-family: "ViaplaySans-Bold", sans-serif;
   @include mobile {
-    font-size: 2.5vw;
+    font-size: 3.125vw;
+    width: 23vw;
+    margin-left: 2.35vw;
+    padding: 0;
   }
 }
 .section-background {
@@ -257,10 +299,54 @@ button {
     background: url("@/assets/img_mobile.jpg") no-repeat top / 100% auto;
     background-size: contain; /* Adjust as needed */
     background-position: top center;
-    max-height: 206vh;
+    height: auto;
+    padding-bottom: 144vw;
   }
 }
 .container-countdown {
   color: #fff;
+}
+.cta {
+  display: flex;
+  height: 2.9375rem;
+  padding: 0.4375rem 1.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 3.125rem;
+  background: var(--Primary-Yellow, #ffc900);
+  color: var(--Black, #000);
+  text-align: center;
+  font-family: "ViaplaySans-Black", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: -0.045rem;
+  text-transform: uppercase;
+  @include mobile {
+    display: flex;
+    // width: 26.04vw;
+    // height: 3.78vw;
+    // padding: 7.19vw 1.56vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3vw;
+    font-size: 3.33vw; /* 16px converted to vw for 480px screen width */
+    letter-spacing: -0.125vw; /* Adjusted for better scaling */
+    text-transform: uppercase;
+    width: auto;
+    height: 6.14vw; /* 39px converted to vw for 480px screen width */
+    padding: 1vw 3vw;
+  }
+}
+.slogan-two {
+  @include mobile {
+    font-size: 3.6vw; /* 1.25rem converted to vw for 480px screen width */
+  }
+  width: auto;
+}
+.expander-video {
+  border: 3px solid var(--White, #fff);
+
+  /* Gold border */
+  box-shadow: 0px 0px 15px 7px #e8cb9f;
 }
 </style>
