@@ -53,7 +53,7 @@
     created() {
       // if (window.innerWidth < 480) {
       //   this.mobile = true
-      //   this.videofile = '480.mp4'
+      //   this.videoFile = '480.mp4'
       // }
     },
     methods: {
