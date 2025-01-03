@@ -1,8 +1,17 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "ProgramNarOT";
+  src: url("assets/fonts/ProgramNarOT.woff2") format("woff2"),
+    url("assets/fonts/ProgramNarOT.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ProgramOT-Book";
+  src: url("assets/fonts/ProgramOT-Book.woff2") format("woff2"),
+    url("assets/fonts/ProgramOT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
