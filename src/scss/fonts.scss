@@ -1,8 +1,32 @@
-// @font-face {
-//     font-family: 'HelveticaNeue';
-//     src: url('assets/fonts/HelveticaNeueRegular.woff2') format('woff2'),
-//         url('assets/fonts/HelveticaNeueRegular.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-//     font-display: swap;
-// }
+@font-face {
+  font-family: "JumboIntroHead-Heavy";
+  src: url("assets/fonts/JumboIntroHead-Heavy.woff2") format("woff2"),
+    url("assets/fonts/JumboIntroHead-Heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JumboIntroHead-Regular";
+  src: url("assets/fonts/JumboIntroHead-Regular.woff2") format("woff2"),
+    url("assets/fonts/JumboIntroHead-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JumboMindset-Regular";
+  src: url("assets/fonts/JumboMindset-Regular.woff2") format("woff2"),
+    url("assets/fonts/JumboMindset-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JumboTheSans-Bold";
+  src: url("assets/fonts/JumboTheSans-Bold.woff2") format("woff2"),
+    url("assets/fonts/JumboTheSans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
